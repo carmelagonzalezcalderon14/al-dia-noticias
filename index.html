@@ -205,6 +205,14 @@ textarea { min-height: 90px; resize: vertical; }
 .wbox li b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-family: var(--f-mono); font-size: 13px; }
 .wbox small { color: var(--muted); font-size: 13px; }
 .wgo { background: var(--accent); color: #fff; border: 0; border-radius: 999px; padding: 13px 20px; font-weight: 600; font-size: 16px; min-height: 48px; }
+.weekcta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; width: 100%; text-align: left; background: var(--surface); color: var(--ink); border: 2px solid var(--accent); border-radius: 18px; padding: 20px 20px 18px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+.weekcta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px -14px rgba(43,61,255,.6); }
+.weekcta .wkey { background: var(--pop); color: #1a1300; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px; transform: rotate(-2deg); }
+.weekcta .wtit { font-family: var(--f-display); font-size: 24px; font-weight: 700; line-height: 1.2; }
+.weekcta .wchips { display: flex; flex-wrap: wrap; gap: 6px; }
+.weekcta .wchips span { background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 500; }
+.weekcta .wgoarrow { background: var(--accent); color: #fff; font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 999px; margin-top: 2px; }
+@media (prefers-reduced-motion: reduce) { .weekcta, .weekcta:hover { transition: none; transform: none; } }
 .idea { background: var(--pop); color: #1a1300; border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; max-width: 64ch; }
 .idea h3 { margin: 0; font-family: var(--f-display); font-size: 19px; }
 .idea p { margin: 0; font-size: 16px; line-height: 1.55; padding-left: 14px; border-left: 3px solid rgba(26,19,0,.25); }
@@ -432,6 +440,15 @@ h1.edtitle { font-size: 26px; }
       var ol = el("ol");
       items.forEach(function (it) { var li = el("li"); li.appendChild(el("span", "btag", sub(it))); var a = el("a", null, it.title); a.href = "#n-" + it.id; li.appendChild(a); ol.appendChild(li); });
       b.appendChild(ol); feed.appendChild(b);
+    }
+    if (view.day === HOY && WEEK.length) {
+      var wk = el("button", "weekcta"); wk.type = "button";
+      wk.appendChild(el("span", "wkey", "¿Te has perdido algo?"));
+      wk.appendChild(el("span", "wtit", "Resumen de la semana en 2 minutos"));
+      var chips = el("span", "wchips"); WEEK.forEach(function (bk) { chips.appendChild(el("span", null, bk.h)); }); wk.appendChild(chips);
+      wk.appendChild(el("span", "wgoarrow", "Leer el resumen →"));
+      wk.onclick = function () { track("/resumen-semana", "Resumen de la semana", true); view.week = true; paintNav(); go(); };
+      feed.appendChild(wk);
     }
     items.forEach(function (it, i) { feed.appendChild(card(it, view.day === HOY && i === 0)); });
     if (view.day === HOY) {
