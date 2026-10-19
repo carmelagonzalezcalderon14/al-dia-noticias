@@ -243,6 +243,16 @@ textarea { min-height: 90px; resize: vertical; }
 .edardos .ewho b { color: var(--ink); }
 .erel { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
 .erel a { color: var(--accent); font-weight: 500; }
+.wsub { background: var(--soft); border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.wsubt { margin: 0; font-weight: 600; font-size: 16px; }
+.wsubd { margin: 0; font-size: 14px; color: var(--muted); }
+.wrow { display: flex; gap: 8px; flex-wrap: wrap; }
+.wrow input { flex: 1 1 180px; min-width: 0; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 10px 14px; min-height: 44px; }
+.wsend { flex: 0 0 auto; background: var(--ink); color: var(--bg); border: 0; border-radius: 999px; padding: 10px 16px; font-weight: 600; min-height: 44px; }
+.wok { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--muted); }
+.wok input { margin-top: 3px; accent-color: var(--accent); }
+.wstatus { margin: 0; font-size: 13px; min-height: 1.2em; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .idea { background: var(--pop); color: #1a1300; border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; max-width: 64ch; }
 .idea h3 { margin: 0; font-family: var(--f-display); font-size: 19px; }
 .idea p { margin: 0; font-size: 16px; line-height: 1.55; padding-left: 14px; border-left: 3px solid rgba(26,19,0,.25); }
@@ -320,10 +330,28 @@ h1.edtitle { font-size: 26px; }
       <li><b>?</b><span>Contexto cuando hace falta y ejemplos para entender los números. Nunca relleno.</span></li>
       <li><b>♥</b><span>Tú decides qué te interesa: marca “La leería” o “Paso” y el feed se adapta a ti.</span></li>
     </ul>
+    <form class="wsub" id="wsub" novalidate>
+      <p class="wsubt">¿Te molaría que te llegara un resumen del día al correo?</p>
+      <p class="wsubd">Tú decides si lo lees o no. Y te das de baja cuando quieras.</p>
+      <div class="wrow">
+        <label class="sr" for="wemail">Tu correo</label>
+        <input type="email" id="wemail" name="email" placeholder="tu@correo.com" autocomplete="email" required>
+        <button class="wsend" id="wsend" type="submit">Quiero el resumen</button>
+      </div>
+      <label class="wok"><input type="checkbox" id="wconsent"><span>Acepto recibir el resumen diario por correo. <a href="/sobre/#privacidad" target="_blank" rel="noopener">Qué hacemos con tu correo</a></span></label>
+      <p class="wstatus" id="wstatus" role="status"></p>
+    </form>
     <small>Es una prueba. Al final de la página puedes decirnos qué te parece, y nos ayuda muchísimo.</small>
-    <button class="wgo" id="wgo" type="button">Vamos</button>
+    <button class="wgo" id="wgo" type="button">Vamos, a leer</button>
   </div>
 </div>
+
+<form name="suscripcion" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="suscripcion">
+  <input name="bot-field">
+  <input type="email" name="email">
+  <input name="consentimiento">
+</form>
 
 <form name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
   <input type="hidden" name="form-name" value="feedback">
@@ -670,6 +698,18 @@ h1.edtitle { font-size: 26px; }
   function openWelcome() { lastFocus = document.activeElement; welcome.hidden = false; document.getElementById("wgo").focus(); }
   function closeWelcome() { welcome.hidden = true; try { localStorage.setItem("aldia-welcome", "1"); } catch (e) {} if (lastFocus && lastFocus.focus) lastFocus.focus(); }
   document.getElementById("wgo").onclick = closeWelcome;
+  document.getElementById("wsub").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var em = document.getElementById("wemail"), ok = document.getElementById("wconsent"), stx = document.getElementById("wstatus"), btn = document.getElementById("wsend");
+    var v = (em.value || "").trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { stx.textContent = "Revisa el correo, parece que falta algo."; em.focus(); return; }
+    if (!ok.checked) { stx.textContent = "Marca la casilla para que podamos mandarte el resumen."; return; }
+    btn.disabled = true; stx.textContent = "Apuntándote…";
+    var body = new URLSearchParams({ "form-name": "suscripcion", email: v, consentimiento: "sí, " + new Date().toISOString() }).toString();
+    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); stx.textContent = "¡Hecho! Te avisaremos en cuanto empiece a llegar el resumen."; track("suscripcion", "Suscripción al resumen", true); try { localStorage.setItem("aldia-sub", "1"); } catch (x) {} })
+      .catch(function () { stx.textContent = "No se ha podido apuntar ahora. Inténtalo en un rato."; btn.disabled = false; });
+  });
   document.getElementById("about").onclick = openWelcome;
   welcome.addEventListener("click", function (e) { if (e.target === welcome) closeWelcome(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !welcome.hidden) closeWelcome(); });
