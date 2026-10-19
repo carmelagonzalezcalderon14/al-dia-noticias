@@ -315,20 +315,6 @@ h1.edtitle { font-size: 26px; }
     </div>
     <main id="feed"></main>
 
-    <section class="panel" id="panel">
-      <h2>Esto es una prueba. ¿Qué te ha parecido?</h2>
-      <label class="q" for="name">Tu nombre</label>
-      <input type="text" id="name" autocomplete="given-name">
-      <p class="q">¿A qué hora la leerías?</p>
-      <div class="row" id="hours"></div>
-      <p class="q">¿Por dónde te gustaría que te avisara?</p>
-      <div class="row" id="channels"></div>
-      <label class="q" for="notes">¿Qué cambiarías?</label>
-      <textarea id="notes" placeholder="Temas que faltan, lo que sobra, el tono, lo que sea"></textarea>
-      <button class="send" id="send" type="button">Enviar mis respuestas</button>
-      <p class="status">Guardamos tu nombre y respuestas solo para mejorar ¿Qué ha pasado?. Más en <a href="/sobre/#privacidad">Cómo hacemos ¿Qué ha pasado?</a>.</p>
-      <p class="status" id="sendstatus" role="status"></p>
-    </section>
   </div>
 
   <div id="detail" class="detail" hidden></div>
@@ -341,7 +327,6 @@ h1.edtitle { font-size: 26px; }
       <button type="button" data-go="elec">Elecciones 29-N</button>
       <a href="/sobre/">Cómo lo hacemos</a>
       <a href="/sobre/#privacidad">Privacidad</a>
-      <button type="button" data-go="opinion">Danos tu opinión</button>
     </nav>
     <p class="fsmall">Escrito por la redacción de ¿Qué ha pasado? con ayuda de IA, a partir de las fuentes que enlazamos en cada noticia. Sin cookies de seguimiento. © 2026</p>
   </footer>
@@ -358,52 +343,10 @@ h1.edtitle { font-size: 26px; }
       <li><b>?</b><span>Contexto cuando hace falta y ejemplos para entender los números. Nunca relleno.</span></li>
       <li><b>♥</b><span>Tú decides qué te interesa: marca “La leería” o “Paso” y el feed se adapta a ti.</span></li>
     </ul>
-    <form class="wsub" id="wsub" novalidate>
-      <p class="wsubt">¿Te molaría que te llegara un resumen del día?</p>
-      <p class="wsubd">Tú decides si lo lees o no. Y te das de baja cuando quieras.</p>
-      <p class="wq">¿Por dónde?</p>
-      <div class="row" role="group" aria-label="Canal">
-        <button type="button" class="chip g" data-canal="correo" aria-pressed="true">Correo</button>
-        <button type="button" class="chip g" data-canal="whatsapp" aria-pressed="false">WhatsApp</button>
-      </div>
-      <p class="wq">¿A qué hora?</p>
-      <div class="row" role="group" aria-label="Hora">
-        <button type="button" class="chip g" data-hora="7:00" aria-pressed="true">7:00</button>
-        <button type="button" class="chip g" data-hora="8:00" aria-pressed="false">8:00</button>
-        <button type="button" class="chip g" data-hora="9:00" aria-pressed="false">9:00</button>
-        <button type="button" class="chip g" data-hora="14:00" aria-pressed="false">14:00</button>
-        <button type="button" class="chip g" data-hora="20:00" aria-pressed="false">20:00</button>
-      </div>
-      <p class="wsubd">Si no eliges, te lo enviaremos a las 7:00.</p>
-      <div class="wrow">
-        <label class="sr" for="wemail" id="wlabel">Tu correo</label>
-        <input type="email" id="wemail" name="contacto" placeholder="tu@correo.com" autocomplete="email" required>
-      </div>
-      <label class="wok"><input type="checkbox" id="wconsent"><span><span id="wconsenttxt">Acepto recibir el resumen diario por correo.</span> <a href="/sobre/#privacidad" target="_blank" rel="noopener">Qué hacemos con tus datos</a></span></label>
-      <button class="wsend" id="wsend" type="submit">Apuntarme</button>
-      <p class="wsubd">Estamos empezando: de momento solo te apuntamos y te avisamos cuando arranque el envío.</p>
-      <p class="wstatus" id="wstatus" role="status"></p>
-    </form>
-    <small>Es una prueba. Al final de la página puedes decirnos qué te parece, y nos ayuda muchísimo.</small>
+    <p class="wsubd">Muy pronto podrás recibir el resumen del día. De momento, entra cuando quieras: cada mañana hay edición nueva.</p>
     <button class="wgo" id="wgo" type="button">Vamos, a leer</button>
   </div>
 </div>
-
-<form name="suscripcion" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-  <input type="hidden" name="form-name" value="suscripcion">
-  <input name="bot-field">
-  <input name="canal">
-  <input name="contacto">
-  <input name="hora">
-  <input name="consentimiento">
-</form>
-
-<form name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
-  <input type="hidden" name="form-name" value="feedback">
-  <input name="bot-field">
-  <input name="nombre">
-  <textarea name="respuestas"></textarea>
-</form>
 
 <script src="noticias.js"></script>
 <script>
@@ -697,97 +640,27 @@ h1.edtitle { font-size: 26px; }
     b.onclick = function () {
       var g = b.getAttribute("data-go");
       if (g === "elec" && DATA.elecciones) { openElec(); return; }
-      view.week = g === "semana" && WEEK.length > 0; view.elec = false; if (g === "hoy" || g === "opinion") view.day = HOY;
+      view.week = g === "semana" && WEEK.length > 0; view.elec = false; if (g === "hoy") view.day = HOY;
       paintNav(); showList();
-      if (g === "opinion") { var pn = document.getElementById("panel"); if (pn) pn.scrollIntoView({ block: "start" }); } else window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
     };
   });
   document.getElementById("foryou").onchange = function () { view.forYou = this.checked; renderList(); };
-
-  /* ---------- Panel de prueba ---------- */
-  function chipRow(host, opts, key) {
-    return opts.map(function (o) {
-      var b = el("button", "chip g", o); b.type = "button";
-      b.onclick = function () { state.prefs[key] = state.prefs[key] === o ? "" : o; save(); paintPrefs(); };
-      host.appendChild(b); return [b, o, key];
-    });
-  }
-  var prefBtns = chipRow(document.getElementById("hours"), HOURS, "hour").concat(chipRow(document.getElementById("channels"), CHANNELS, "channel"));
-  function paintPrefs() { prefBtns.forEach(function (x) { x[0].setAttribute("aria-pressed", state.prefs[x[2]] === x[1] ? "true" : "false"); }); }
-  var nameEl = document.getElementById("name"), notesEl = document.getElementById("notes"), st = document.getElementById("sendstatus");
-  nameEl.value = state.name; notesEl.value = state.notes;
-  nameEl.oninput = function () { state.name = nameEl.value; save(); };
-  notesEl.oninput = function () { state.notes = notesEl.value; save(); };
-
-  function summary() {
-    var lines = ["Nombre: " + (state.name || "-"), "Hora: " + (state.prefs.hour || "-"), "Canal: " + (state.prefs.channel || "-"), ""];
-    var labelR = {}; REASONS.forEach(function (r) { labelR[r[0]] = r[1]; });
-    var labelC = {}; CTX.forEach(function (c) { labelC[c[0]] = c[1]; });
-    Object.keys(state.items).forEach(function (id) {
-      var v = state.items[id], it = byId[id]; if (!it || !v.vote) return;
-      var l = (v.vote === "si" ? "SÍ  " : "NO  ") + it.title;
-      if (v.reasons && v.reasons.length) l += " · " + v.reasons.map(function (r) { return labelR[r]; }).join(", ");
-      if (v.ctx) l += " · contexto: " + labelC[v.ctx];
-      lines.push(l);
-    });
-    lines.push("", "Comentarios: " + (state.notes || "-"));
-    return lines.join("\n");
-  }
-  document.getElementById("send").onclick = function () {
-    var text = summary(); st.textContent = "Enviando…";
-    var body = new URLSearchParams({ "form-name": "feedback", nombre: state.name || "", respuestas: text }).toString();
-    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); st.textContent = "Enviado. ¡Gracias!"; })
-      .catch(function () {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(text).then(function () { st.textContent = "No se ha podido enviar, pero he copiado tus respuestas. Pégalas en WhatsApp."; }, function () { st.textContent = "No se ha podido enviar. Haz una captura y mándala por WhatsApp."; });
-        } else { st.textContent = "No se ha podido enviar. Haz una captura y mándala por WhatsApp."; }
-      });
-  };
 
   document.getElementById("fecha").textContent = (DATA.edicion && DATA.edicion.fecha) || "";
 
   /* ---------- Bienvenida ---------- */
   var welcome = document.getElementById("welcome"), lastFocus = null;
-  function openWelcome() { lastFocus = document.activeElement; welcome.hidden = false; document.getElementById("wgo").focus(); }
+  function openWelcome() { lastFocus = document.activeElement; welcome.hidden = false; document.getElementById("wgo").focus({ preventScroll: true }); }
   function closeWelcome() { welcome.hidden = true; try { localStorage.setItem("aldia-welcome", "1"); } catch (e) {} if (lastFocus && lastFocus.focus) lastFocus.focus(); }
   document.getElementById("wgo").onclick = closeWelcome;
-  var subCanal = "correo", subHora = "7:00";
-  var wsub = document.getElementById("wsub");
-  wsub.querySelectorAll("[data-canal]").forEach(function (b) {
-    b.onclick = function () {
-      subCanal = b.dataset.canal;
-      wsub.querySelectorAll("[data-canal]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-      var em = document.getElementById("wemail"), wa = subCanal === "whatsapp";
-      em.type = wa ? "tel" : "email"; em.placeholder = wa ? "Tu móvil, p. ej. 600 123 456" : "tu@correo.com"; em.autocomplete = wa ? "tel" : "email"; em.value = "";
-      document.getElementById("wlabel").textContent = wa ? "Tu móvil" : "Tu correo";
-      document.getElementById("wconsenttxt").textContent = wa ? "Acepto recibir el resumen diario por WhatsApp." : "Acepto recibir el resumen diario por correo.";
-      document.getElementById("wstatus").textContent = "";
-    };
-  });
-  wsub.querySelectorAll("[data-hora]").forEach(function (b) {
-    b.onclick = function () { subHora = b.dataset.hora; wsub.querySelectorAll("[data-hora]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); };
-  });
-  wsub.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var em = document.getElementById("wemail"), ok = document.getElementById("wconsent"), stx = document.getElementById("wstatus"), btn = document.getElementById("wsend");
-    var v = (em.value || "").trim();
-    if (subCanal === "correo" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) { stx.textContent = "Revisa el correo, parece que falta algo."; em.focus(); return; }
-    if (subCanal === "whatsapp" && v.replace(/[^\d]/g, "").length < 9) { stx.textContent = "Revisa el número, parece que faltan cifras."; em.focus(); return; }
-    if (!ok.checked) { stx.textContent = "Marca la casilla para que podamos mandarte el resumen."; return; }
-    btn.disabled = true; stx.textContent = "Apuntándote…";
-    var body = new URLSearchParams({ "form-name": "suscripcion", canal: subCanal, contacto: v, hora: subHora, consentimiento: "sí, " + new Date().toISOString() }).toString();
-    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); stx.textContent = "¡Hecho! Te avisaremos en cuanto empiece a llegar el resumen."; track("suscripcion", "Suscripción al resumen", true); try { localStorage.setItem("aldia-sub", "1"); } catch (x) {} })
-      .catch(function () { stx.textContent = "No se ha podido apuntar ahora. Inténtalo en un rato."; btn.disabled = false; });
-  });
   document.getElementById("about").onclick = openWelcome;
   welcome.addEventListener("click", function (e) { if (e.target === welcome) closeWelcome(); });
   document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !welcome.hidden) closeWelcome(); });
   var seen = false; try { seen = localStorage.getItem("aldia-welcome") === "1"; } catch (e) {}
   if (!seen) openWelcome();
 
-  paintNav(); paintPrefs(); route();
+  paintNav(); route();
 })();
 </script>
 </body>
