@@ -467,7 +467,7 @@ h1.edtitle { font-size: 26px; }
     document.getElementById("fywrap").hidden = view.week || view.elec;
     if (view.elec) { renderElec(edt, edm); return; }
     if (view.week) {
-      edt.textContent = "Esta semana"; edm.textContent = "Lo más importante del 12 al 18 de octubre, con más contexto";
+      edt.textContent = "Esta semana"; edm.textContent = DATA.semana || "Lo más importante de la semana, con más contexto";
       var w = el("section", "week");
       WEEK.forEach(function (b) {
         var s = el("div"); s.appendChild(el("h2", null, b.h)); s.appendChild(el("p", null, b.p));

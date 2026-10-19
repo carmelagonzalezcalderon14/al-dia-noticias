@@ -1772,5 +1772,6 @@ window.AL_DIA = {
     "https://www.cordobabn.com/nacional/29n-puente-aprovecha-visita-milei-espana-hacer-pedagogia-advierte-motosierra-solo-siega/20261019200733271833.html"
    ]
   ]
- }
+ },
+ "semana": "Lo más importante del 12 al 18 de octubre, con más contexto"
 };
