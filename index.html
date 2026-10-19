@@ -511,6 +511,7 @@ h1.edtitle { font-size: 26px; }
 
   var daysEl = document.getElementById("days"), dayBtns = [];
   DAYS.forEach(function (d) {
+    if (!d.items.length && d.key !== HOY) return;
     var b = el("button", "daybtn"); b.type = "button";
     b.appendChild(el("small", null, d.key === HOY ? (d.sub || "Hoy") : !d.items.length ? "sin edición" : d.items.length + (d.items.length === 1 ? " noticia" : " noticias")));
     b.appendChild(el("b", null, d.label));

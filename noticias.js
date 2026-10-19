@@ -2,7 +2,7 @@
 window.AL_DIA = {
  "edicion": {
   "fecha": "Lunes 19 de octubre",
-  "actualizado": "19 oct 2026, 16:45"
+  "actualizado": "19 oct 2026, 17:30"
  },
  "days": [
   {
@@ -216,6 +216,16 @@ window.AL_DIA = {
        "EFE, vía Infobae",
        "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
       ]
+     ],
+     "body": [
+      "Quedan 41 días para las elecciones generales del 29 de noviembre y hoy cada partido ha movido ficha. Te lo contamos uno a uno, sin valorarlo.",
+      "PSOE: Pedro Sánchez tiene esta tarde un acto en Valladolid con Óscar Puente, y Margarita Robles será su número dos.",
+      "PP: Alberto Núñez Feijóo ha presentado su “Contrato con España”. Incluye construir un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes.",
+      "Vox: su comité ha ratificado las candidaturas, con Montse Lluis de número dos por Madrid. Santiago Abascal ha ofrecido al PP “algún entendimiento” en las listas al Senado.",
+      "EH Bildu: Arnaldo Otegi ha presentado a sus candidatos y dice que bloqueará un gobierno al que llama “FeiVox”. A la izquierda del PSOE, el Frente Amplio, con Ada Colau al frente de su lista, y Podemos siguen sin acuerdo."
+     ],
+     "idea": [
+      "41 días es menos de lo que dura un verano. Y la campaña oficial, la de los mítines y los carteles, solo ocupa las dos últimas semanas."
      ]
     },
     {
@@ -304,8 +314,7 @@ window.AL_DIA = {
         "Dom 25 oct",
         "Clásico Barcelona–Real Madrid en el Spotify Camp Nou"
        ]
-      ],
-      "note": "Si gana el Barça, se pondría nueve puntos por encima del Madrid."
+      ]
      },
      "src": [
       [
@@ -316,6 +325,14 @@ window.AL_DIA = {
        "Infobae",
        "https://www.infobae.com/peru/deportes/2026/10/18/partidos-de-hoy-domingo-18-de-octubre-de-2026-programacion-canales-tv-y-resultados-en-vivo/"
       ]
+     ],
+     "body": [
+      "El Real Madrid goleó 4-1 al Sevilla el domingo y se coloca tercero con 21 puntos. Por delante están el Atlético, con 22, y el Barcelona, líder con 27.",
+      "En el resto de partidos del domingo, Osasuna ganó 2-0 al Racing, el Celta 2-1 al Alavés y la Real Sociedad goleó 2-5 en Málaga.",
+      "Lo gordo llega el domingo 25: Clásico en el Spotify Camp Nou. Antes, el Barça juega esta semana en Champions contra el PSG."
+     ],
+     "idea": [
+      "Si el Barça gana el Clásico, se pondría a nueve puntos del Madrid. Son tres partidos ganados de diferencia antes de llegar a noviembre."
      ]
     },
     {
@@ -392,8 +409,17 @@ window.AL_DIA = {
       ],
       [
        "La Ganzúa",
+       "https://www.laganzua.net/noticias/31959-trueno-que-da-conciertos-en-madrid-y-barcelona-en-2026-lanza-x-unas-llantas-single-del-disco-turr4zo"
+      ],
+      [
+       "La Ganzúa (Beny Jr)",
        "https://www.laganzua.net/conciertos/beny-jr-madrid-1015000"
       ]
+     ],
+     "body": [
+      "Madrid tiene una semana cargada de urbano. Beny Jr encadena tres fechas seguidas, del 19 al 21 de octubre.",
+      "El miércoles 21 llega Trueno al Movistar Arena. El argentino presenta “Turr4zo”, el disco que sacó en abril, con el single “X unas llantas”, que mezcla hip-hop con merengue urbano y que produjo con El Guincho. Viene de estrenarse en el Palau Sant Jordi el día 13, en el Cruïlla Tardor.",
+      "Y para cerrar el mes, el viernes 30, Nanpa Básico se sube a la plaza de toros de Las Ventas."
      ]
     },
     {
@@ -427,6 +453,10 @@ window.AL_DIA = {
        "La Ganzúa",
        "https://www.laganzua.net/noticias/32804-kidd-voodoo-actua-en-sevilla-madrid-y-barcelona-en-noviembre-de-2026-con-la-gira-ojitos-verdes"
       ]
+     ],
+     "body": [
+      "Kidd Voodoo, nombre artístico del cantante chileno David León, vuelve a España en solitario en noviembre con la gira “Ojitos Verdes”, que se llama igual que su próximo disco.",
+      "En esos conciertos también presentará “Euforia”, el álbum que sacó el 14 de mayo. Serán tres noches: Sevilla, Madrid y Barcelona. Las entradas salen hoy a las 18:00."
      ]
     },
     {
@@ -449,6 +479,11 @@ window.AL_DIA = {
        "La Ganzúa",
        "https://www.laganzua.net/noticias/32794-los-planetas-anuncian-un-nuevo-disco-y-lo-presentan-con-una-relectura-de-dos-cruces"
       ]
+     ],
+     "body": [
+      "Los Planetas, una de las bandas más influyentes del indie español, preparan disco nuevo. El primer adelanto sale este viernes 23: su versión de “Dos cruces”.",
+      "“Dos cruces” es un tema de Carmelo Larrea, el mismo autor de “Camino verde”. La banda granadina lleva un año tocándola en directo, en citas como el Festival de la Guitarra de Córdoba o el Atlantic Fest de Vilagarcía de Arousa.",
+      "Del disco todavía no hay título ni fecha. La Ganzúa da por hecho que pronto anunciarán sus conciertos de 2027."
      ]
     },
     {
@@ -480,23 +515,73 @@ window.AL_DIA = {
        "EFE, vía Infobae",
        "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
       ]
+     ],
+     "body": [
+      "El Gobierno destinará 45 millones de euros a crear unas 2.000 plazas públicas en residencias universitarias. Lo ha anunciado Pedro Sánchez en La Moncloa, durante la firma del estatuto del estudiante universitario.",
+      "Según EFE, el Consejo de Ministros lo aprueba mañana, martes 20.",
+      "Llega en plena precampaña y se suma a otras medidas de vivienda que el Gobierno ha aprobado este mes, como los dos decretos que se votan el 12 de noviembre."
+     ],
+     "idea": [
+      "45 millones entre 2.000 plazas salen a unos 22.500 euros por plaza."
      ]
     },
     {
      "id": "algeciras-mocion",
      "tag": "España · Política local",
-     "title": "El alcalde de Algeciras anuncia su dimisión antes de una moción de censura",
-     "desc": "PSOE y Vox habían presentado la moción contra el alcalde, que es del PP.",
-     "what": "El alcalde ha anunciado su dimisión para el domingo, tres días antes de que se vote la moción de censura.",
+     "title": "El alcalde de Algeciras dimitirá antes de que su propio partido lo eche",
+     "desc": "José Ignacio Landaluce (PP) se va tras dos denuncias por presunta agresión sexual que él niega. El PP ya había registrado una moción de censura contra él.",
+     "what": "El alcalde de Algeciras, José Ignacio Landaluce, del PP, ha anunciado que dimitirá el domingo, tres días antes de la moción de censura que había registrado su propio partido.",
      "next": {
       "rows": [
        [
-        "25 oct",
-        "Dimite el alcalde (domingo)"
+        "Dom 25 oct",
+        "Dimisión del alcalde"
        ],
        [
-        "28 oct",
-        "Fecha prevista de la moción, tres días después"
+        "Después",
+        "Pleno para elegir nuevo alcalde. Suena Jacinto Muñoz, número dos del PP en 2023"
+       ],
+       [
+        "Mayo 2027",
+        "Elecciones municipales"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "Moncloa.com",
+       "https://www.moncloa.com/2026/10/14/mocion-censura-algeciras-vox-3448501/"
+      ],
+      [
+       "Artículo 14",
+       "https://www.articulo14.es/politica/el-testimonio-de-dos-afiliadas-del-pp-precipita-la-caida-del-alcalde-de-algeciras-20261015.html"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
+      ]
+     ],
+     "body": [
+      "José Ignacio Landaluce, alcalde de Algeciras por el PP desde hace unos quince años, ha anunciado que dimitirá el domingo 25. Lo hace tres días antes de la moción de censura que su propio partido había registrado para apartarle.",
+      "El origen son dos denuncias por presunta agresión sexual presentadas por dos militantes del PP. Una se refiere a un episodio de julio en su despacho. La otra, a dos hechos de 2020 y 2021, cuando Landaluce, que es médico, era senador.",
+      "Landaluce niega las acusaciones. Dice que se enteró por la prensa y que tiene pruebas en el móvil de que son falsas. Por ahora son denuncias: no hay juicio y rige la presunción de inocencia.",
+      "El PP de Cádiz le dio 24 horas para dimitir. Como no lo hizo, 12 de sus 15 concejales dejaron el gobierno municipal el martes 13 y el partido registró la moción con el apoyo de Vox. El PSOE también ofreció sus firmas. Juanma Moreno había avisado de que la moción sería “inmediata”."
+     ],
+     "idea": [
+      "Para echar a un alcalde hacen falta 14 votos de los 27 concejales. Los 12 del PP que rompieron con él y los 4 de Vox ya sumaban 16."
+     ]
+    },
+    {
+     "id": "princesa-asturias",
+     "tag": "Cultura",
+     "title": "Llegan a Oviedo los Princesa de Asturias, con la astronauta que dio la vuelta a la Luna",
+     "desc": "Christina Koch, los inventores de la secuenciación rápida de ADN y Julian Barnes recogen el premio el viernes.",
+     "what": "Hoy llegan a Oviedo Christina Koch, los químicos David Klenerman y Shankar Balasubramanian, el biofísico Pascal Mayer y el escritor Julian Barnes.",
+     "next": {
+      "rows": [
+       [
+        "Vie 23 oct",
+        "Ceremonia de entrega en Oviedo"
        ]
       ]
      },
@@ -506,30 +591,21 @@ window.AL_DIA = {
        "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
       ],
       [
-       "El Español",
-       "https://www.elespanol.com/espana/20261019/elecciones-generales-directo-ultima-hora-pedro-sanchez-gobierno-actos-psoe-pp-vox-voto-correo-sondeos-encuestas-espana-2026-partidos/1003744425383_10.html"
-      ]
-     ]
-    },
-    {
-     "id": "princesa-asturias",
-     "tag": "Cultura",
-     "title": "Llegan a Oviedo los premiados de los Princesa de Asturias",
-     "desc": "Entre ellos la astronauta Christina Koch y el escritor Julian Barnes.",
-     "what": "Hoy llegan a Oviedo Christina Koch, los químicos David Klenerman y Shankar Balasubramanian, el biofísico Pascal Mayer y el escritor Julian Barnes.",
-     "next": {
-      "rows": [
-       [
-        "Vie 23 oct",
-        "Entrega de los premios"
-       ]
-      ]
-     },
-     "src": [
+       "El Financiero",
+       "https://www.elfinanciero.com.mx/mundo/2026/06/17/marco-un-hito-christina-koch-primera-mujer-en-viajar-a-la-luna-gana-el-premio-princesa-de-asturias/"
+      ],
       [
-       "EFE, vía Infobae",
-       "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
+       "El Español",
+       "https://www.elespanol.com/ciencia/20260513/klenerman-balasubramanian-mayer-premio-princesa-asturias-investigacion-pionera-secuenciacion-adn/1003744244105_0.html"
       ]
+     ],
+     "body": [
+      "Esta semana Oviedo se llena de premiados. Hoy llegan la astronauta Christina Koch, los científicos David Klenerman, Shankar Balasubramanian y Pascal Mayer, y el escritor británico Julian Barnes. Todos recogen el premio el viernes 23.",
+      "Koch gana el Premio de la Concordia por la misión Artemis II, que en abril llevó a cuatro astronautas alrededor de la Luna por primera vez desde 1972. Fueron diez días y batieron el récord de distancia recorrida por humanos: 406.771 kilómetros desde la Tierra.",
+      "Klenerman, Balasubramanian y Mayer se llevan el de Investigación Científica y Técnica por desarrollar la secuenciación rápida de ADN, la tecnología que permite leer un genoma entero de forma rápida y barata."
+     ],
+     "idea": [
+      "406.771 kilómetros son más de diez vueltas a la Tierra por el ecuador."
      ]
     }
    ],
@@ -588,6 +664,15 @@ window.AL_DIA = {
        "Moncloa.com",
        "https://www.moncloa.com/2026/10/17/decretos-vivienda-congreso-12n-3450016"
       ]
+     ],
+     "body": [
+      "El 6 de octubre el Gobierno aprobó dos decretos de vivienda, y ahora el Parlamento tiene que convalidarlos, es decir, darles el visto bueno para que sigan en vigor.",
+      "El primero prohíbe temporalmente los desahucios de personas vulnerables, da ventajas fiscales a inquilinos y a algunos propietarios y abre créditos ICO para comprar la primera vivienda. Ya está en vigor.",
+      "El segundo prorroga de forma automática y sin fecha final los contratos de alquiler, salvo en algunos casos. Entraría en vigor el 15 de noviembre.",
+      "Con las Cortes disueltas, los vota la Diputación Permanente el 12 de noviembre. Según Moncloa.com, el primero saldría adelante y el de los alquileres podría caer por empate a 34 si el PNV vota en contra."
+     ],
+     "idea": [
+      "Un empate no sirve: para convalidar un decreto hacen falta más votos a favor que en contra. Con 34 a 34, la prórroga de alquileres no llegaría a aplicarse."
      ]
     }
    ],
@@ -621,19 +706,32 @@ window.AL_DIA = {
        "Madrid24horas",
        "https://www.madrid24horas.com/articulo/comunidad-de-madrid/conciertos-madrid-octubre-morat-dani-fernandez-deep-purple-trueno-bunbury-mas-citas/20261002133715107917.html"
       ]
+     ],
+     "body": [
+      "El Bugg, artista granadino que lleva la agencia Polar, actuó el viernes 16 en la Sala Shôko, en la calle de Toledo, dentro de su “Culto al Código Tour”. Las entradas costaban desde 19,80 euros.",
+      "La gira ya había pasado por Razzmatazz, en Barcelona, en mayo, y por Bilbao en septiembre. La Shôko es la misma sala donde Spotify reunió a los nombres de su lista “Nuevo Urbano” a principios de mes."
      ]
     },
     {
      "id": "mango-turquia",
      "tag": "Moda",
      "title": "Mango abre diez tiendas en Turquía en menos de un año",
-     "desc": "Ya tiene 80 en el país, que se ha convertido en su tercer mercado.",
+     "desc": "Ya tiene 80 en el país, uno de sus mercados que mejor funcionan.",
      "what": "La marca catalana ha abierto diez tiendas en Turquía en menos de un año y ya suma 80. Turquía es ahora su tercer mercado por ventas, solo por detrás de España y Francia.",
      "src": [
       [
        "Modaes",
        "https://www.modaes.com/global/home"
+      ],
+      [
+       "CNBC-e",
+       "https://www.cnbce.com/sirket-haberleri/mango-istanbuldaki-uc-yeni-acilisla-turkiyede-80-magazaya-ulasti-h39030"
       ]
+     ],
+     "body": [
+      "Mango ha completado este año las diez aperturas que tenía previstas en Turquía y ya suma 80 tiendas en el país. Las tres últimas están en Estambul: una junto al aeropuerto, otra en el centro comercial Koru Florya y la más grande, de más de 1.200 metros cuadrados, en el distrito financiero.",
+      "Turquía, donde la marca está desde 1997, es uno de sus cinco mercados con mejor rendimiento. Según Modaes, ya es el tercero por ventas, solo por detrás de España y Francia.",
+      "A la empresa le va bien en general: facturó 3.800 millones de euros en 2025, un 13 % más, y en el primer semestre de 2026 creció otro 7,2 %."
      ]
     },
     {
@@ -647,6 +745,11 @@ window.AL_DIA = {
        "The Local",
        "https://www.thelocal.es/20261016/today-in-spain-a-roundup-of-the-latest-news-on-friday-99"
       ]
+     ],
+     "body": [
+      "La Policía Nacional ha expulsado de España a 21 extranjeros que vivían en Cataluña y acumulaban un historial delictivo amplio. Tras la autorización judicial, los trasladaron a Madrid y salieron en un vuelo fletado.",
+      "Según The Local, entre todos sumaban más de 80 intervenciones policiales, con robos violentos, agresiones sexuales y violencia doméstica. Entre ellos estaba el principal sospechoso de un apuñalamiento mortal en un negocio de Barcelona y un hombre acusado de agredir sexualmente a una menor.",
+      "La inmigración y la seguridad son dos de los temas que ya están presentes en la precampaña del 29 de noviembre."
      ]
     },
     {
@@ -660,6 +763,14 @@ window.AL_DIA = {
        "The Local",
        "https://www.thelocal.es/20261016/today-in-spain-a-roundup-of-the-latest-news-on-friday-99"
       ]
+     ],
+     "body": [
+      "1.775 personas murieron en las carreteras y calles españolas en 2025, un 1 % menos que el año anterior. Pero los heridos graves subieron un 3 % y casi 9.900 personas tuvieron que ingresar en un hospital.",
+      "La mayoría de los accidentes, el 65 %, fueron en ciudad. Ahí, peatones, motoristas y ciclistas son el 81 % de los muertos.",
+      "Y un dato que duele: el 30 % de los fallecidos en ciudad no llevaba casco o cinturón."
+     ],
+     "idea": [
+      "1.775 muertos al año son casi cinco cada día."
      ]
     }
    ],
@@ -688,6 +799,14 @@ window.AL_DIA = {
        "The Local",
        "https://www.thelocal.es/20261016/today-in-spain-a-roundup-of-the-latest-news-on-friday-99"
       ]
+     ],
+     "idea": [
+      "105.000 personas en un estadio son más de las que viven en toda Ponferrada."
+     ],
+     "body": [
+      "La Federación Española de Rugby ha entregado a World Rugby su candidatura para organizar el Mundial masculino de 2035. Su objetivo, dicen, es hacer “el mejor Mundial de la historia”.",
+      "La idea es aprovechar los estadios que se preparan para el Mundial de fútbol de 2030: el Spotify Camp Nou, el Santiago Bernabéu, el Metropolitano o San Mamés, entre otros.",
+      "La final sería en el Camp Nou, con capacidad para 105.000 personas. Sería la primera final de un Mundial de rugby con más de 100.000 espectadores."
      ]
     },
     {
@@ -701,6 +820,10 @@ window.AL_DIA = {
        "La Ganzúa",
        "https://www.laganzua.net/"
       ]
+     ],
+     "body": [
+      "Lucho RK ha duplicado las fechas de su “Sordo de un pie tour” de 2027. Hará tres conciertos en Valencia y otros tres en Barcelona, y dos en Bilbao, Murcia, Granada y Canarias.",
+      "Ese mismo día, el festival Mar de Jávea 2027 adelantó sus primeros nombres: Lori Meyers y Walls."
      ]
     }
    ],
@@ -739,6 +862,10 @@ window.AL_DIA = {
        "Reuters, vía ThePrint",
        "https://theprint.in/world/missile-hits-headquarters-of-saudi-aramco-source-says-as-houthi-conflict-escalates/3071003/"
       ]
+     ],
+     "body": [
+      "Un misil alcanzó el martes por la noche la sede de Aramco, la petrolera estatal de Arabia Saudí, en Dhahran. Según una fuente de la empresa citada por Reuters, las tres plantas superiores de una torre de oficinas quedaron dañadas y en llamas. No se informó de víctimas.",
+      "La coalición liderada por Arabia Saudí dice que interceptó un misil y que sus restos cayeron en una zona residencial. Aramco no ha hecho comentarios."
      ]
     },
     {
@@ -766,6 +893,13 @@ window.AL_DIA = {
        "Fox News",
        "https://www.foxnews.com/live-news/us-iran-war-donald-trump-oil-nuclear-sites-hormuz-strait-october-14"
       ]
+     ],
+     "body": [
+      "La Guardia Revolucionaria de Irán ha reivindicado el impacto de un proyectil en un petrolero que salía del estrecho de Ormuz. Según el centro británico de seguimiento marítimo UKMTO, toda la tripulación está a salvo.",
+      "Irán dice que es el tercer barco que golpea en dos días. Otro medio cuenta que el día 14 Irán atribuyó a una mina el daño a un barco comercial, y los detalles todavía no están claros."
+     ],
+     "idea": [
+      "Por el estrecho de Ormuz, de unos 33 kilómetros en su punto más estrecho, pasa buena parte del petróleo que se mueve por mar en el mundo. Si se complica, se nota en el precio de la gasolina."
      ]
     },
     {
@@ -795,6 +929,11 @@ window.AL_DIA = {
        "Artículo 14",
        "https://www.articulo14.es/economia/los-sindicatos-convocan-la-huelga-general-por-la-vivienda-el-11-de-noviembre-20261007.html"
       ]
+     ],
+     "body": [
+      "UGT y CCOO, junto a organizaciones de inquilinas, han registrado la huelga general del 11 de noviembre. La convocan por la vivienda y por los salarios.",
+      "Piden subir sueldos, reducir la jornada, frenar la precariedad y controlar los precios de la vivienda. “Hoy trabajar no garantiza poder acceder a una vivienda”, resumió Alicia del Río, portavoz del Sindicato de Inquilinas.",
+      "La patronal CEOE estudia si la huelga tiene base legal y, si la considera ilegal o abusiva, podría recurrir a la Audiencia Nacional. UGT responde que es constitucional y que vivienda y salarios están directamente relacionados."
      ]
     },
     {
@@ -814,6 +953,11 @@ window.AL_DIA = {
        "FashionUnited",
        "https://fashionunited.es/noticias/moda/louis-vuitton-renueva-sus-equipaciones-para-el-real-madrid/2026101350909"
       ]
+     ],
+     "body": [
+      "Louis Vuitton empieza su segunda temporada como “sastre oficial” del Real Madrid. Diseña la ropa formal y de viaje de los equipos de fútbol masculino y femenino y del de baloncesto.",
+      "Repite el traje de la temporada pasada, ahora con camisa de rayas azul y polo beige, y añade un abrigo de cachemir con bufanda de monograma. En la ropa de viaje hay una chaqueta de nailon reversible, un jersey azul marino con “Vuitton” bordado en piel y una gorra con el logo LV.",
+      "Cada prenda lleva el escudo del club y las iniciales del jugador. La colección la ha hecho el estudio de hombre de la marca, que dirige Pharrell Williams."
      ]
     },
     {
@@ -824,9 +968,19 @@ window.AL_DIA = {
      "what": "Byan, firma de moda de mujer con sede en Madrid, ha abierto su primera tienda permanente fuera de España en King's Road, en Londres. Los mercados internacionales ya suponen el 60 % de sus ventas online.",
      "src": [
       [
+       "FashionUnited",
+       "https://fashionunited.es/noticias/retail/byan-gana-escala-internacional-y-abre-en-londres-su-primera-tienda-permanente-fuera-de-espana/2026101450928"
+      ],
+      [
        "Modaes",
-       "https://www.modaes.com/global/home"
+       "https://www.modaes.com/empresas/byan-se-estrena-en-londres-con-su-primer-flagship-fuera-de-espana"
       ]
+     ],
+     "body": [
+      "Byan, la marca de moda de mujer que Andrea Moragues fundó en Madrid hacia 2018, ha abierto su primera tienda permanente fuera de España: en el número 149 de King's Road, en el barrio londinense de Chelsea. Son 74 metros cuadrados en dos plantas.",
+      "No es su primera vez en Londres: el año pasado tuvo durante unos tres meses una tienda temporal en Covent Garden. En Madrid tiene tienda propia desde 2024, en la calle Claudio Coello.",
+      "La marca vendió más de 3 millones de euros en 2025. El 60 % de lo que vende online va a otros países, sobre todo a Estados Unidos, Reino Unido e Italia. También se vende en grandes almacenes como Liberty, en Londres, y Le Bon Marché, en París.",
+      "“Ofrecemos moda atemporal, que no entiende de edades”, dice su fundadora."
      ]
     }
    ],
@@ -880,6 +1034,11 @@ window.AL_DIA = {
        "La Ganzúa",
        "https://www.laganzua.net/noticias/32775-micropena-lanzan-desde-torrelavega-un-primer-disco-con-ecos-de-los-planetas-y-yo-la-tengo"
       ]
+     ],
+     "body": [
+      "Micropena es una banda de dreampop de Torrelavega (Cantabria) que acaba de sacar su primer EP, de cuatro canciones, también editado en casete por Ediciones Subterranias.",
+      "Recuperan el indie-pop de los noventa: melodías cuidadas, guitarras que pasan de etéreas a ruidosas y letras costumbristas. Su sello los compara con The Pastels, Yo La Tengo y los primeros Los Planetas.",
+      "Lo grabó y produjo Álex Pis. Trabajan de forma colectiva, dejando que las canciones salgan solas, y el EP es el paso previo a un primer disco largo."
      ]
     }
    ],
