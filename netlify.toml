@@ -1,0 +1,4 @@
+# Al Día · Netlify publica la carpeta tal cual y antes genera las páginas de cada noticia.
+[build]
+  command = "node scripts/build-pages.js"
+  publish = "."
