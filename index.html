@@ -213,6 +213,14 @@ textarea { min-height: 90px; resize: vertical; }
 .weekcta .wchips span { background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 500; }
 .weekcta .wgoarrow { background: var(--accent); color: #fff; font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 999px; margin-top: 2px; }
 @media (prefers-reduced-motion: reduce) { .weekcta, .weekcta:hover { transition: none; transform: none; } }
+/* Índice "En 30 segundos": número centrado con su titular, toda la fila clicable */
+.brief li { grid-template-columns: 34px 1fr; column-gap: 12px; row-gap: 2px; align-items: center; padding: 10px 0; position: relative; }
+.brief li::before { grid-row: 1 / span 2; align-self: center; padding-top: 0; font-family: var(--f-display); font-size: 22px; font-weight: 700; line-height: 1; text-align: right; }
+.brief li .btag { grid-column: 2; line-height: 1.2; }
+.brief li a { grid-column: 2; }
+.brief li a::after { content: ""; position: absolute; inset: 0; }
+.brief li:hover a { color: var(--pop); }
+@media (hover: none) { .brief a:hover, .brief li:hover a { color: #fff; } }
 .elcta { border-color: var(--ink); }
 .elcta .wkey { background: var(--ink); color: var(--bg); }
 .elcta .wgoarrow { background: var(--ink); color: var(--bg); }
