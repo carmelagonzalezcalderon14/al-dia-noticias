@@ -51,6 +51,19 @@ a { color: inherit; }
 .daybtn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .daybtn[aria-pressed="true"] small { color: inherit; opacity: .75; }
 .daybtn:disabled { opacity: .45; cursor: default; }
+#days { flex-wrap: wrap; overflow: visible; }
+.pastsel { position: relative; flex: 0 0 auto; display: flex; }
+.pastsel select { appearance: none; -webkit-appearance: none; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 6px 34px 6px 12px; min-height: 44px; cursor: pointer; }
+.pastsel::after { content: "▾"; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 12px; color: var(--muted); pointer-events: none; }
+.pastsel.on select { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.pastsel.on::after { color: var(--bg); }
+.foot { margin: 40px 0 0; padding: 26px 0 8px; border-top: 1px solid var(--line); display: grid; gap: 16px; }
+.foot .fbrand { font-family: var(--f-display); font-weight: 700; font-size: 22px; margin: 0; }
+.foot .fbrand span { color: var(--accent); }
+.foot .ftag { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+.foot nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.foot nav a, .foot nav button { font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: none; border: 0; padding: 6px 0; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; cursor: pointer; }
+.foot .fsmall { font-size: 12px; color: var(--muted); margin: 0; line-height: 1.5; }
 .fchip { flex: 0 0 auto; border: 1px solid var(--line); background: transparent; border-radius: 8px; padding: 5px 12px; font-size: 13px; font-weight: 500; min-height: 34px; }
 .fchip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .ed { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin: 18px 0 10px; }
@@ -301,7 +314,6 @@ h1.edtitle { font-size: 26px; }
       <label class="sw" id="fywrap"><input type="checkbox" id="foryou" checked> Ordenar para mí</label>
     </div>
     <main id="feed"></main>
-    <p class="status" style="text-align:center;margin-top:18px">Redacción de ¿Qué ha pasado?, con ayuda de IA y a partir de fuentes enlazadas en cada noticia · <a href="/sobre/">Cómo hacemos ¿Qué ha pasado?</a></p>
 
     <section class="panel" id="panel">
       <h2>Esto es una prueba. ¿Qué te ha parecido?</h2>
@@ -320,6 +332,19 @@ h1.edtitle { font-size: 26px; }
   </div>
 
   <div id="detail" class="detail" hidden></div>
+
+  <footer class="foot">
+    <div><p class="fbrand">¿Qué ha pasado<span>?</span></p><p class="ftag">Las noticias del día, claras y sin tono de partido.</p></div>
+    <nav aria-label="Pie de página">
+      <button type="button" data-go="hoy">Hoy</button>
+      <button type="button" data-go="semana">Esta semana</button>
+      <button type="button" data-go="elec">Elecciones 29-N</button>
+      <a href="/sobre/">Cómo lo hacemos</a>
+      <a href="/sobre/#privacidad">Privacidad</a>
+      <button type="button" data-go="opinion">Danos tu opinión</button>
+    </nav>
+    <p class="fsmall">Escrito por la redacción de ¿Qué ha pasado? con ayuda de IA, a partir de las fuentes que enlazamos en cada noticia. Sin cookies de seguimiento. © 2026</p>
+  </footer>
 </div>
 
 <div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="wtitle" hidden>
@@ -415,7 +440,7 @@ h1.edtitle { font-size: 26px; }
 
   /* ---------- Utilidades ---------- */
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
-  function ext(label, href) { var a = el("a", null, label); a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer"; return a; }
+  function ext(label, href) { var a = el("a", null, label); var m = /^\/noticias\/([a-z0-9-]+)\/?$/.exec(href); if (m) { a.href = "#n-" + m[1]; return a; } a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer"; return a; }
   function topic(it) { return it.tag.split(" · ")[0]; }
   function sub(it) { return it.tag.split(" · ")[1] || topic(it); }
   function words(it) { return [it.title, it.desc].concat(it.body || [it.what]).concat((it.how || []).map(String)).concat((it.next && it.next.note) ? [it.next.note] : []).join(" ").split(/\s+/).length; }
@@ -499,7 +524,7 @@ h1.edtitle { font-size: 26px; }
     document.getElementById("fywrap").hidden = view.week || view.elec;
     if (view.elec) { renderElec(edt, edm); return; }
     if (view.week) {
-      edt.textContent = "Resumen de la semana"; edm.textContent = "Del 12 al 18 de octubre, en cuatro bloques";
+      edt.textContent = "Esta semana"; edm.textContent = "Lo más importante del 12 al 18 de octubre, con más contexto";
       var w = el("section", "week");
       WEEK.forEach(function (b) {
         var s = el("div"); s.appendChild(el("h2", null, b.h)); s.appendChild(el("p", null, b.p));
@@ -514,7 +539,7 @@ h1.edtitle { font-size: 26px; }
     var total = items.reduce(function (n, it) { return n + mins(it); }, 0);
     edt.textContent = day.title;
     edm.textContent = items.length ? items.length + " noticias · " + total + " min de lectura" : "";
-    if (!day.items.length) { feed.appendChild(el("p", "empty", "Este día no lo he rellenado en la prueba. En la versión real habría edición todos los días.")); return; }
+    if (!day.items.length) { feed.appendChild(el("p", "empty", "Este día no hay noticias.")); return; }
     if (!items.length) { feed.appendChild(el("p", "empty", "No hay noticias de " + view.topic + " este día.")); return; }
     if (view.day === HOY && items.length > 2) {
       var b = el("section", "brief"); b.appendChild(el("h2", null, "En 30 segundos"));
@@ -525,7 +550,7 @@ h1.edtitle { font-size: 26px; }
     if (view.day === HOY && WEEK.length) {
       var wk = el("button", "weekcta"); wk.type = "button";
       wk.appendChild(el("span", "wkey", "¿Te has perdido algo?"));
-      wk.appendChild(el("span", "wtit", "Resumen de la semana en 2 minutos"));
+      wk.appendChild(el("span", "wtit", "Esta semana, contada con más contexto"));
       var chips = el("span", "wchips"); WEEK.forEach(function (bk) { chips.appendChild(el("span", null, bk.h)); }); wk.appendChild(chips);
       wk.appendChild(el("span", "wgoarrow", "Leer el resumen →"));
       wk.onclick = function () { track("/resumen-semana", "Resumen de la semana", true); view.week = true; paintNav(); go(); };
@@ -543,7 +568,7 @@ h1.edtitle { font-size: 26px; }
     items.forEach(function (it, i) { feed.appendChild(card(it, view.day === HOY && i === 0)); });
     if (view.day === HOY) {
       var end = el("div", "end"); end.appendChild(el("h2", null, "Ya estás al día"));
-      end.appendChild(el("p", null, "Mañana, otra edición. Lo de días anteriores está arriba, en la tira de fechas."));
+      end.appendChild(el("p", null, "Mañana, otra edición. ¿Te perdiste algo? Lo tienes arriba, en Esta semana y en Días anteriores."));
       feed.appendChild(end);
     }
   }
@@ -600,18 +625,17 @@ h1.edtitle { font-size: 26px; }
   window.addEventListener("popstate", function () { pushed = false; route(); });
 
   var daysEl = document.getElementById("days"), dayBtns = [];
-  DAYS.forEach(function (d) {
-    if (!d.items.length && d.key !== HOY) return;
-    var b = el("button", "daybtn"); b.type = "button";
-    b.appendChild(el("small", null, d.key === HOY ? (d.sub || "Hoy") : !d.items.length ? "sin edición" : d.items.length + (d.items.length === 1 ? " noticia" : " noticias")));
-    b.appendChild(el("b", null, d.label));
-    b.disabled = !d.items.length;
-    b.onclick = function () { view.day = d.key; view.week = false; view.elec = false; paintNav(); go(); };
-    daysEl.appendChild(b); dayBtns.push([b, d.key]);
-  });
-  var wb = el("button", "daybtn"); wb.type = "button"; wb.appendChild(el("small", null, "12–18 oct")); wb.appendChild(el("b", null, "Resumen semana"));
-  wb.onclick = function () { view.week = true; view.elec = false; paintNav(); go(); };
-  daysEl.appendChild(wb);
+  var hb = el("button", "daybtn"); hb.type = "button"; hb.appendChild(el("small", null, DAYS[0].sub || "")); hb.appendChild(el("b", null, "Hoy"));
+  hb.onclick = function () { view.day = HOY; view.week = false; view.elec = false; paintNav(); go(); };
+  daysEl.appendChild(hb); dayBtns.push([hb, HOY]);
+  var wb = el("button", "daybtn"); wb.type = "button"; wb.appendChild(el("small", null, "Resumen")); wb.appendChild(el("b", null, "Esta semana"));
+  wb.onclick = function () { track("/resumen-semana", "Resumen de la semana", true); view.week = true; view.elec = false; paintNav(); go(); };
+  if (WEEK.length) daysEl.appendChild(wb);
+  var past = el("label", "pastsel"); var sel = el("select"); sel.setAttribute("aria-label", "Días anteriores");
+  var o0 = el("option", null, "Días anteriores"); o0.value = ""; sel.appendChild(o0);
+  DAYS.slice(1).forEach(function (d) { if (!d.items.length) return; var o = el("option", null, d.title + " (" + d.items.length + ")"); o.value = d.key; sel.appendChild(o); });
+  sel.onchange = function () { if (!sel.value) return; view.day = sel.value; view.week = false; view.elec = false; paintNav(); go(); };
+  past.appendChild(sel); if (sel.options.length > 1) daysEl.appendChild(past);
   function diasElec() { var E = DATA.elecciones; if (!E) return 0; return Math.round((new Date(E.fecha) - new Date((DATA.edicion && DATA.edicion.iso) || E.fecha)) / 86400000); }
   function openElec() { track("/elecciones", "Elecciones 29-N", true); view.elec = true; view.week = false; paintNav(); go(); }
   var eb = null;
@@ -619,7 +643,7 @@ h1.edtitle { font-size: 26px; }
     eb = el("button", "daybtn elecbtn"); eb.type = "button";
     eb.appendChild(el("small", null, "Faltan " + diasElec() + " días")); eb.appendChild(el("b", null, "Elecciones 29-N"));
     eb.onclick = openElec;
-    daysEl.insertBefore(eb, daysEl.children[1] || null);
+    daysEl.insertBefore(eb, past.parentNode ? past : null);
   }
 
   function renderElec(edt, edm) {
@@ -661,6 +685,7 @@ h1.edtitle { font-size: 26px; }
 
   function paintNav() {
     dayBtns.forEach(function (x) { x[0].setAttribute("aria-pressed", !view.week && !view.elec && view.day === x[1] ? "true" : "false"); });
+    var onPast = !view.week && !view.elec && view.day !== HOY; past.classList.toggle("on", onPast); sel.value = onPast ? view.day : "";
     wb.setAttribute("aria-pressed", view.week && !view.elec ? "true" : "false");
     if (eb) eb.setAttribute("aria-pressed", view.elec ? "true" : "false");
     fbtns.forEach(function (x) { x[0].setAttribute("aria-pressed", view.topic === x[1] ? "true" : "false"); });
@@ -668,6 +693,15 @@ h1.edtitle { font-size: 26px; }
   }
   function go() { showList(); window.scrollTo(0, 0); }
   document.getElementById("home").onclick = function () { view.day = HOY; view.week = false; view.elec = false; view.topic = "Todo"; paintNav(); go(); };
+  Array.prototype.forEach.call(document.querySelectorAll(".foot [data-go]"), function (b) {
+    b.onclick = function () {
+      var g = b.getAttribute("data-go");
+      if (g === "elec" && DATA.elecciones) { openElec(); return; }
+      view.week = g === "semana" && WEEK.length > 0; view.elec = false; if (g === "hoy" || g === "opinion") view.day = HOY;
+      paintNav(); showList();
+      if (g === "opinion") { var pn = document.getElementById("panel"); if (pn) pn.scrollIntoView({ block: "start" }); } else window.scrollTo(0, 0);
+    };
+  });
   document.getElementById("foryou").onchange = function () { view.forYou = this.checked; renderList(); };
 
   /* ---------- Panel de prueba ---------- */

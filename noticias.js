@@ -613,6 +613,42 @@ window.AL_DIA = {
      ],
      "q": "¿Qué pasa con los decretos de vivienda?",
      "q2": "¿Qué dicen los decretos de vivienda y cuándo se votan?"
+    },
+    {
+     "id": "psoe-listas",
+     "tag": "España · Elecciones",
+     "title": "El PSOE ratifica sus listas: Robles será la número dos de Sánchez en Madrid",
+     "desc": "Bolaños va de tres y Marlaska de cinco. Hay ministros en las listas de media España.",
+     "what": "El Comité Federal del PSOE aprueba las candidaturas al 29-N, con Margarita Robles detrás de Pedro Sánchez en Madrid.",
+     "body": [
+      "El Comité Federal del PSOE, reunido en Fuenlabrada, ha ratificado las listas para el 29 de noviembre y a Pedro Sánchez como candidato.",
+      "Por Madrid: Sánchez, Margarita Robles (Defensa), Félix Bolaños (Presidencia), Pilar Sánchez Acera, Fernando Grande-Marlaska (Interior), Manuela Villa, Rafael Simancas, Aránzazu Figueroa (líder de Juventudes Socialistas) y Borja Cabezón.",
+      "Otros ministros encabezan o van arriba en las listas de Cádiz, Valladolid, Toledo, Ciudad Real, Barcelona y Valencia. Ese mismo sábado estaba prevista en Madrid la presentación de la candidatura del Frente Amplio, y Podemos reunía a su dirección tras elegir a Irene Montero en primarias."
+     ],
+     "next": {
+      "rows": [
+       [
+        "21–26 oct",
+        "Registro oficial de candidaturas"
+       ],
+       [
+        "13 nov",
+        "Empieza la campaña"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "Orain (EITB)",
+       "https://orain.eus/es/politica/2026/10/14/margarita-robles-sera-la-numero-dos-en-la-lista-electoral-del-psoe-tras-pedro-sanchez/"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/16/temas-del-dia-de-efe-espana-del-sabado-17-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Quién va en las listas del PSOE por Madrid?",
+     "q2": "¿Quién es el número dos de Pedro Sánchez?"
     }
    ],
    "iso": "2026-10-17"
@@ -665,6 +701,68 @@ window.AL_DIA = {
      ],
      "q": "¿Cuánta gente murió en la carretera en 2025?",
      "q2": "¿Cuántas personas murieron en accidentes de tráfico en España en 2025?"
+    },
+    {
+     "id": "podemos-frente-amplio-plazo",
+     "tag": "España · Elecciones",
+     "title": "La izquierda irá dividida: vence el plazo sin pacto entre Podemos y el Frente Amplio",
+     "desc": "No habrá lista conjunta ni en Madrid ni en Barcelona. Sí hay acuerdos en algunas comunidades.",
+     "what": "Termina el plazo para registrar coaliciones al 29-N sin acuerdo entre Podemos y el Frente Amplio en Madrid y Barcelona.",
+     "body": [
+      "A medianoche terminó el plazo para registrar coaliciones electorales y Podemos y el Frente Amplio no han llegado a un acuerdo para ir juntos en Madrid y Barcelona, las dos provincias que más diputados reparten.",
+      "El Frente Amplio ofrecía a Podemos un puesto “prioritario” en Madrid y Cataluña. Podemos cree que ir por separado en Madrid no le resta votos y en Cataluña ya tiene su pacto con ERC.",
+      "En otras comunidades sí hay acuerdos. En Canarias, Podemos va con Nueva Canarias y Sumar. En la Comunitat Valenciana se presenta Compromís con EUPV y Podem. Y en Aragón y Andalucía hay listas del Frente Amplio con partidos de allí."
+     ],
+     "idea": [
+      "Madrid reparte 37 diputados y Barcelona 32: entre las dos, casi uno de cada cinco de los 350 del Congreso."
+     ],
+     "next": {
+      "rows": [
+       [
+        "21–26 oct",
+        "Se presentan las candidaturas al Congreso y al Senado"
+       ],
+       [
+        "3 nov",
+        "El BOE publica las candidaturas definitivas"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "Orain (EITB)",
+       "https://orain.eus/es/politica/2026/10/16/esta-medianoche-finaliza-el-plazo-los-partidos-registren-sus-coaliciones-electorales/"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/16/temas-del-dia-de-efe-espana-del-viernes-16-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Van juntos Podemos y el Frente Amplio?",
+     "q2": "¿Por qué la izquierda va dividida el 29-N?"
+    },
+    {
+     "id": "prefijo-400",
+     "tag": "España · Consumo",
+     "title": "Desde este sábado, las llamadas comerciales tienen que empezar por 400",
+     "desc": "Si te llama un número que empieza por 400, es para venderte algo. Pero las llamadas desde el extranjero se escapan.",
+     "what": "A partir del 17 de octubre las empresas que hagan llamadas comerciales desde España deben usar números que empiezan por 400.",
+     "body": [
+      "Desde el sábado 17 de octubre, las empresas que te llamen para venderte algo desde España tienen que hacerlo con un número de nueve cifras que empiece por 400. Así sabrás que es una llamada comercial antes de cogerla. Esos números no se pueden usar para atención al cliente.",
+      "Tiene trampas. No afecta a las llamadas desde centros en el extranjero, que quedan fuera de la ley española. Además, hay técnicas para disfrazar el número real que se ve en pantalla. Las asociaciones de consumidores piden más controles y multas."
+     ],
+     "src": [
+      [
+       "Xataka Móvil",
+       "https://www.xatakamovil.com/conectividad/faltan-pocos-dias-empieces-a-recibir-llamadas-prefijo-400-hay-dudas-que-certezas"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/16/temas-del-dia-de-efe-espana-del-viernes-16-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Qué es el prefijo 400?",
+     "q2": "¿Desde cuándo las llamadas comerciales empiezan por 400?"
     }
    ],
    "iso": "2026-10-16"
@@ -712,7 +810,108 @@ window.AL_DIA = {
    "label": "Mié 14",
    "sub": "Miércoles",
    "title": "Miércoles 14 de octubre",
-   "items": [],
+   "items": [
+    {
+     "id": "cis-octubre",
+     "tag": "España · Elecciones",
+     "title": "El primer CIS tras la convocatoria da casi 12 puntos de ventaja al PSOE",
+     "desc": "PSOE 34 %, PP 22,2 %, Vox 17,1 %. Las encuestas privadas, en cambio, dan ventaja a PP y Vox.",
+     "what": "El barómetro de octubre del CIS, el primero desde que se convocaron las elecciones, sitúa al PSOE primero con el 34 % de los votos.",
+     "body": [
+      "El Centro de Investigaciones Sociológicas (CIS) ha publicado su barómetro de octubre, el primero desde la convocatoria del 29-N. Hizo 5.025 entrevistas entre el 1 y el 6 de octubre.",
+      "Estimación de voto: PSOE 34 % (+3 puntos), PP 22,2 % (−3,3), Vox 17,1 % (+0,5), Frente Amplio 6,1 %, Podemos 3,1 %, ERC 3 %, SALF 1,8 %, EH Bildu 1,6 %, Junts 1,1 %, BNG 0,9 % y PNV 0,6 %.",
+      "Para que lo tengas todo: las encuestas privadas publicadas estos días dibujan otro escenario, con el PP primero y una posible mayoría de PP y Vox. La oposición critica a menudo el método del CIS, y el CIS lo defiende."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Noviembre",
+        "Nuevo barómetro del CIS antes de las elecciones"
+       ]
+      ]
+     },
+     "terms": [
+      [
+       "Estimación de voto",
+       "El cálculo de cuántos votos sacaría cada partido. No es lo que responde la gente tal cual: cada instituto lo ajusta con su propio método, y por eso los resultados cambian tanto de una encuesta a otra."
+      ]
+     ],
+     "src": [
+      [
+       "Orain (EITB)",
+       "https://orain.eus/es/politica/2026/10/14/el-cis-vuelve-colocar-al-psoe-en-cabeza-35-puntos-mas-manteniendo-una-ventaja-53-puntos-el-pp/"
+      ],
+      [
+       "Artículo 14",
+       "https://www.articulo14.es/politica/oscar-puente-sobre-el-barometro-del-cis-y-podria-ser-peor-de-hecho-va-a-ser-peor-20261015.html"
+      ]
+     ],
+     "q": "¿Qué dice el CIS de octubre?",
+     "q2": "¿Quién gana las elecciones según el CIS?"
+    },
+    {
+     "id": "huelga-educacion-madrid",
+     "tag": "España · Educación",
+     "title": "Arranca la huelga indefinida de profesores en Madrid",
+     "desc": "Piden menos horas de clase, menos alumnos por aula y cobrar como en otras comunidades. Los sindicatos hablan de un 70 % de seguimiento y la Comunidad, de un 44 %.",
+     "what": "Los docentes de la enseñanza pública no universitaria de Madrid empiezan una huelga indefinida.",
+     "body": [
+      "Los profesores de la enseñanza pública de Madrid, de infantil a bachillerato y FP, han empezado una huelga indefinida. Piden menos horas lectivas, menos alumnos por clase, más apoyo para el alumnado con necesidades especiales y subir sus sueldos al nivel de otras comunidades.",
+      "Las cifras chocan: el comité de huelga habla de un 70 % de seguimiento y la consejera de Educación, Mercedes Zarzalejo, de un 44 %.",
+      "Hubo cortes en la Castellana y en la avenida de la Albufera, y una manifestación que acabó en Sol, donde sigue la acampada por la vivienda. En la Complutense la policía cargó contra unos piquetes de estudiantes: al menos seis heridos y cinco detenidos. El delegado del Gobierno, Francisco Marín, calificó las imágenes de “muy duras” y pidió una investigación."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Sin fecha",
+        "La huelga sigue hasta que haya acuerdo"
+       ]
+      ],
+      "note": "Los docentes esperan que la consejería se siente a negociar; de momento no hay fecha."
+     },
+     "terms": [
+      [
+       "Horas lectivas",
+       "Las horas que un profesor pasa dando clase. No incluyen preparar clases, corregir o reuniones."
+      ]
+     ],
+     "src": [
+      [
+       "El Salto",
+       "https://www.elsaltodiario.com/comunidad-madrid/comite-huelga-estima-un-70-seguimiento-del-paro-educativo-madrid"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/13/temas-del-dia-de-efe-espana-del-miercoles-14-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Por qué hay huelga de profesores en Madrid?",
+     "q2": "¿Cuánto dura la huelga educativa de Madrid?"
+    },
+    {
+     "id": "roma-madrid",
+     "tag": "Deporte · Fútbol",
+     "title": "El Madrid remonta en Roma en siete minutos y gana 3-4",
+     "desc": "Perdía 2-0 y luego 3-1 en el 83. Espí, Endrick y Rüdiger, en el 90, le dieron la vuelta.",
+     "what": "El Real Madrid gana 3-4 a la Roma en la Liga de Campeones tras ir perdiendo hasta el minuto 83.",
+     "body": [
+      "El Real Madrid ha ganado 3-4 a la Roma en la Champions en una remontada casi imposible. Marten de Roon adelantó a la Roma, Mbappé empató y Donyell Malen marcó dos goles seguidos (51 y 57) para el 3-1.",
+      "En el minuto 83 el Madrid seguía perdiendo. Entonces marcaron Carlos Espí (83), Endrick (85) y Antonio Rüdiger en el 90. Lleva dos victorias en dos partidos de Champions."
+     ],
+     "src": [
+      [
+       "CRHoy",
+       "https://crhoy.com/deportes/real-madrid-conquisto-roma-con-una-espectacular-remontada/"
+      ],
+      [
+       "Vavel",
+       "https://vavel.com/en-us/soccer/2026/10/14/1275169-as-roma-vs-real-madrid-live-score-uefa-champions-league.html"
+      ]
+     ],
+     "q": "¿Cómo quedó el Roma-Real Madrid?",
+     "q2": "¿Quién marcó en el Roma 3-4 Real Madrid?"
+    }
+   ],
    "iso": "2026-10-14"
   },
   {
@@ -819,6 +1018,66 @@ window.AL_DIA = {
      ],
      "q": "¿Por qué hay huelga general el 11 de noviembre?",
      "q2": ""
+    },
+    {
+     "id": "papa-operado",
+     "tag": "Mundo · Internacional",
+     "title": "Operan al papa León XIV de un cáncer de pulmón",
+     "desc": "Le han extirpado el lóbulo inferior del pulmón derecho. El Vaticano dice que la operación “ha concluido positivamente”.",
+     "what": "El papa León XIV es operado con éxito de un adenocarcinoma pulmonar en el hospital Gemelli de Roma.",
+     "body": [
+      "El papa León XIV, de 71 años, ha sido operado en el hospital Gemelli de Roma para extirparle un nódulo en el pulmón. El Vaticano ha confirmado que era un adenocarcinoma, un tipo de cáncer de pulmón, detectado en una fase muy temprana.",
+      "Los cirujanos le quitaron el lóbulo inferior del pulmón derecho. La operación duró hora y media y, según la Santa Sede, “ha concluido positivamente”.",
+      "Se quedará unos días ingresado en observación y ha cancelado las audiencias hasta el 20 de octubre. Su recuperación decidirá si mantiene el viaje a Uruguay, Argentina y Perú del 6 al 17 de noviembre, que de momento sigue en pie."
+     ],
+     "next": {
+      "rows": [
+       [
+        "20 oct",
+        "Fin de las audiencias canceladas"
+       ],
+       [
+        "6–17 nov",
+        "Viaje previsto a Uruguay, Argentina y Perú"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "Vanguardia",
+       "https://www.vanguardia.com/mundo/2026/10/13/papa-leon-xiv-fue-operado-con-exito-de-un-adenocarcinoma-pulmonar-un-tipo-maligno-de-cancer/"
+      ],
+      [
+       "Telemundo (AP)",
+       "https://www.telemundo.com/noticias/noticias-telemundo/internacional/el-papa-ingresa-a-un-hospital-de-roma-para-su-cirugia-de-pulmon-que-se-rcna603169"
+      ]
+     ],
+     "q": "¿Qué le pasa al papa León XIV?",
+     "q2": "¿De qué han operado al papa?"
+    },
+    {
+     "id": "fmi-espana",
+     "tag": "España · Economía",
+     "title": "El FMI sube al 2,5 % lo que crecerá España en 2026, más del doble que la eurozona",
+     "desc": "Pero también prevé más inflación: un 3,7 % de media este año, por la guerra en Oriente Medio.",
+     "what": "El Fondo Monetario Internacional eleva cuatro décimas su previsión de crecimiento para España en 2026.",
+     "body": [
+      "El Fondo Monetario Internacional calcula que la economía española crecerá un 2,5 % en 2026, cuatro décimas más de lo que preveía. Es más del doble que la media de la eurozona (1,1 %) y muy por encima de Alemania (1,3 %), Italia (0,8 %) y Francia (0,4 %).",
+      "La parte menos buena: espera una inflación media del 3,7 % este año, siete décimas más que en primavera, y un paro del 9,8 %. Para 2027 prevé que España crezca un 1,8 %, menos que el 2,2 % que calcula el Gobierno.",
+      "El FMI explica que la economía mundial aguanta pese a la guerra en Oriente Medio, que encarece la energía, gracias en parte a la inversión en inteligencia artificial."
+     ],
+     "idea": [
+      "Una inflación del 3,7 % significa que una compra de 100 € el año pasado cuesta de media unos 103,70 € este."
+     ],
+     "src": [
+      [
+       "Artículo 14",
+       "https://www.articulo14.es/economia/el-fmi-eleva-al-25-su-prevision-de-crecimiento-para-espana-en-2026-y-al-37-la-de-inflacion-20261013.html"
+      ]
+     ],
+     "single": true,
+     "q": "¿Cuánto va a crecer la economía española según el FMI?",
+     "q2": "¿Qué inflación prevé el FMI para España en 2026?"
     }
    ],
    "iso": "2026-10-13"
@@ -828,8 +1087,517 @@ window.AL_DIA = {
    "label": "Lun 12",
    "sub": "Lunes",
    "title": "Lunes 12 de octubre",
-   "items": [],
+   "items": [
+    {
+     "id": "ley-nietos-voto",
+     "tag": "España · Elecciones",
+     "title": "Unos 163.000 nietos de españoles no podrán votar el 29-N, salvo que demuestren el exilio",
+     "desc": "El Supremo mantiene suspendida su inscripción en el censo. El PSOE no lo comparte y el PP mandará interventores a todas las mesas.",
+     "what": "El Tribunal Supremo rechaza levantar la suspensión cautelar del voto de los nacionalizados por la ley de nietos.",
+     "body": [
+      "El Tribunal Supremo ha rechazado el recurso del Gobierno y mantiene suspendida la inscripción en el censo de los españoles que obtuvieron la nacionalidad gracias a la ley de nietos, conocida como ley de memoria democrática. Son unas 163.000 personas.",
+      "En la práctica, no podrán votar el 29 de noviembre, salvo que demuestren que sus antepasados sufrieron el exilio.",
+      "El PSOE dice que no lo comparte pero lo acata, y que a esta gente se le quita “una cosa fundamental”. El PP celebra la decisión, cree que la inscripción no se ajustaba a la ley y mandará interventores a “todas las mesas”. Vox también la aplaude. EH Bildu la llama “aberrante” y el PNV pide aclararlo “cuanto antes”."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Esta semana",
+        "El Constitucional decide si admite el recurso del Defensor del Pueblo"
+       ],
+       [
+        "29 nov",
+        "Elecciones generales"
+       ]
+      ]
+     },
+     "terms": [
+      [
+       "Suspensión cautelar",
+       "Una medida provisional del juez mientras se decide el fondo del asunto. No es la sentencia final."
+      ]
+     ],
+     "src": [
+      [
+       "Orain (EITB)",
+       "https://orain.eus/es/politica/2026/10/13/reacciones-la-decision-del-supremo-la-ley-nietos/"
+      ],
+      [
+       "Demócrata",
+       "https://www.democrata.es/elecciones-generales-espana/supremo-frena-voto-por-ley-nietos-en-precampana-29n/"
+      ]
+     ],
+     "q": "¿Pueden votar los de la ley de nietos?",
+     "q2": "¿Por qué el Supremo ha suspendido el voto de la ley de nietos?"
+    },
+    {
+     "id": "frente-amplio-colau",
+     "tag": "España · Elecciones",
+     "title": "El Frente Amplio elige a Ada Colau como candidata a la Presidencia",
+     "desc": "IU, Más Madrid, Sumar y los Comuns la designan y dejan la puerta abierta a Podemos, que se ha aliado con ERC en Cataluña.",
+     "what": "Los cuatro partidos del Frente Amplio designan a Ada Colau candidata a presidir el Gobierno.",
+     "body": [
+      "Los cuatro partidos del Frente Amplio (IU, Más Madrid, Movimiento Sumar y los Comuns) han elegido a Ada Colau como su candidata a la Presidencia del Gobierno. En un comunicado conjunto dicen que es “la figura que mejor puede asumir el liderazgo en la situación política actual”.",
+      "Invitan a Podemos a unirse, pero Podemos ha cerrado un acuerdo con ERC: no se presentará en Cataluña, irá en las listas de Gabriel Rufián como independientes, y Rufián e Irene Montero harán campaña juntos en el resto de España. El pacto ha molestado sobre todo a los Comuns.",
+      "Irene Montero lo dejó claro: “No. Nosotras tenemos un acuerdo con ERC y vamos a hacer equipo con Gabriel”. Colau, por su parte, se ofreció a retirarse e incluso a cambiar el nombre de la coalición si eso ayudaba a sumar a Podemos: “Por mí no será”."
+     ],
+     "next": {
+      "rows": [
+       [
+        "16 oct",
+        "Último día para registrar coaliciones"
+       ],
+       [
+        "17 oct",
+        "El Frente Amplio presenta su candidatura en Madrid"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "RTVC (EFE)",
+       "https://rtvc.es/frente-amplio-acuerda-designar-a-ada-colau-como-cabeza-de-lista-12-octubre-2026/"
+      ],
+      [
+       "Diari de Tarragona (EFE)",
+       "https://www.diaridetarragona.com/espana/272992/irene-montero-asegura-integrara-frente-amplio.html"
+      ],
+      [
+       "Artículo 14",
+       "https://www.articulo14.es/politica/colau-se-ofrece-a-retirar-su-candidatura-y-renombrar-el-frente-amplio-para-sumar-a-podemos-20261014.html"
+      ]
+     ],
+     "q": "¿Ada Colau es la candidata del Frente Amplio?",
+     "q2": "¿Por qué Podemos no va con el Frente Amplio?"
+    }
+   ],
    "iso": "2026-10-12"
+  },
+  {
+   "key": "11",
+   "label": "Dom 11",
+   "sub": "Domingo",
+   "title": "Domingo 11 de octubre",
+   "iso": "2026-10-11",
+   "items": [
+    {
+     "id": "f1-singapur",
+     "tag": "Deporte · Motor",
+     "title": "Verstappen gana en Singapur; Sainz y Alonso, fuera de los puntos",
+     "desc": "Leclerc fue segundo y Antonelli tercero. Sainz acabó 14.º y Alonso 16.º, los dos a una vuelta.",
+     "what": "Max Verstappen gana el Gran Premio de Singapur de Fórmula 1.",
+     "body": [
+      "Max Verstappen (Red Bull) ha ganado el Gran Premio de Singapur, con 7,3 segundos de ventaja sobre Charles Leclerc (Ferrari). Completó el podio Kimi Antonelli (Mercedes). Los McLaren de Norris y Piastri fueron cuarto y quinto.",
+      "Mala carrera para los españoles: Carlos Sainz (Williams) terminó 14.º y Fernando Alonso (Aston Martin) 16.º, los dos con una vuelta perdida. Solo puntúan los diez primeros."
+     ],
+     "src": [
+      [
+       "The Race",
+       "https://www.the-race.com/formula-1/f1-2026-singapore-grand-prix-race-result/"
+      ],
+      [
+       "Motor.es",
+       "https://www.motor.es/formula-1/f1-sprint-singapur-lluvia-verstappen-alonso-sainz-2026116937.html"
+      ]
+     ],
+     "q": "¿Quién ha ganado en Singapur de Fórmula 1?",
+     "q2": "¿Cómo quedaron Alonso y Sainz en Singapur?"
+    }
+   ]
+  },
+  {
+   "key": "10",
+   "label": "Sáb 10",
+   "sub": "Sábado",
+   "title": "Sábado 10 de octubre",
+   "iso": "2026-10-10",
+   "items": [
+    {
+     "id": "gaza-un-ano-alto-fuego",
+     "tag": "Mundo · Oriente Medio",
+     "title": "Un año de alto el fuego en Gaza y casi 1.500 muertos más",
+     "desc": "Desde la tregua, el Ejército israelí ha matado a casi 1.500 gazatíes, 300 de ellos niños, según las cifras recogidas por EFE.",
+     "what": "Se cumple un año del alto el fuego en Gaza, que no ha frenado del todo los ataques.",
+     "body": [
+      "Se cumple un año del alto el fuego en Gaza. Desde entonces el Ejército israelí ha matado a casi 1.500 gazatíes, 300 de ellos niños, según las cifras que recoge la agencia EFE. El total de muertos desde el inicio de la guerra en 2023 supera los 74.000.",
+      "Mientras tanto, en Israel empieza la campaña de sus elecciones legislativas, las primeras desde los ataques de Hamás del 7 de octubre de 2023."
+     ],
+     "idea": [
+      "1.500 muertos en un año son unos cuatro al día, en plena tregua."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Finales de oct",
+        "Elecciones legislativas en Israel"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "EFE Internacional, vía Infobae",
+       "https://www.infobae.com/america/agencias/2026/10/10/temas-del-dia-de-efe-internacional-del-sabado-10-de-octubre-1200-gmt/"
+      ],
+      [
+       "EFE Internacional (13 oct), vía Infobae",
+       "https://www.infobae.com/america/agencias/2026/10/13/temas-del-dia-de-efe-internacional-del-martes-13-de-octubre-0200-gmt/"
+      ]
+     ],
+     "single": true,
+     "q": "¿Cómo está Gaza un año después del alto el fuego?",
+     "q2": "¿Cuántos muertos ha habido en Gaza desde la tregua?"
+    }
+   ]
+  },
+  {
+   "key": "9",
+   "label": "Vie 9",
+   "sub": "Viernes",
+   "title": "Viernes 9 de octubre",
+   "iso": "2026-10-09",
+   "items": [
+    {
+     "id": "terremoto-panama",
+     "tag": "Mundo · América",
+     "title": "Un terremoto de magnitud 7,7 sacude Panamá y daña más de 400 edificios",
+     "desc": "Hay al menos 27 heridos leves y ningún muerto. Se derrumbó una torre de la catedral de Penonomé.",
+     "what": "Un terremoto de magnitud 7,7 con epicentro cerca de Tonosí, en la provincia de Los Santos, causa daños en nueve provincias de Panamá.",
+     "body": [
+      "Panamá ha sufrido un terremoto de magnitud 7,7, según el Servicio Geológico de EE. UU. (el instituto panameño lo dejó en 7,5). El epicentro estuvo cerca de Tonosí, en la provincia de Los Santos, y le siguieron más de cien réplicas.",
+      "Según las autoridades, hay al menos 27 heridos leves y ningún muerto ni desaparecido. Los daños llegan a más de 400 edificios en nueve provincias, entre ellos 142 viviendas, 188 colegios, 20 centros sanitarios y nueve puentes. En Penonomé se derrumbó una de las dos torres de la catedral.",
+      "Unas 300 personas de la costa de Los Santos fueron evacuadas por la subida del nivel del mar, y cinco comunidades se quedaron aisladas por puentes y carreteras dañados."
+     ],
+     "src": [
+      [
+       "El Diario (EFE)",
+       "https://eldiario.com/2026/10/10/heridos-leves-edificaciones-afectadas-terremoto-panama/"
+      ],
+      [
+       "El Comercio",
+       "https://www.elcomercio.com/actualidad/mundo/como-evito-panama-tragedia-terremoto/"
+      ]
+     ],
+     "q": "¿Qué ha pasado con el terremoto de Panamá?",
+     "q2": "¿Cuántos heridos ha dejado el terremoto de Panamá?"
+    },
+    {
+     "id": "nobel-paz-pillay",
+     "tag": "Mundo · Internacional",
+     "title": "El Nobel de la Paz es para Navi Pillay, exjefa de derechos humanos de la ONU",
+     "desc": "La jurista sudafricana, que creció bajo el apartheid, lo gana por reforzar la justicia internacional.",
+     "what": "El Comité Noruego del Nobel concede el Premio Nobel de la Paz 2026 a la jurista sudafricana Navi Pillay.",
+     "body": [
+      "El Nobel de la Paz de 2026 es para Navanethem ‘Navi’ Pillay, jurista sudafricana nacida en Durban. El Comité Noruego reconoce su trabajo para reforzar el derecho internacional, sobre todo los mecanismos que permiten juzgar los peores crímenes cometidos en las guerras.",
+      "Pillay creció bajo el apartheid. Fue jueza del Tribunal Penal Internacional para Ruanda y de la Corte Penal Internacional, y alta comisionada de la ONU para los Derechos Humanos. Más recientemente presidió la comisión de investigación de la ONU sobre los territorios palestinos ocupados.",
+      "El premio son 12 millones de coronas suecas, alrededor de un millón de euros. Donald Trump criticó la decisión."
+     ],
+     "next": {
+      "rows": [
+       [
+        "10 dic",
+        "Entrega del premio en Oslo"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "Publimetro",
+       "https://www.publimetro.com.mx/noticias/2026/10/09/nobel-de-la-paz-2026-quien-es-navi-pillay-y-por-que-gano-el-reconocimiento/"
+      ],
+      [
+       "Emol",
+       "https://www.emol.com/noticias/Internacional/2026/10/10/1213815/trump-critica-premio-nobel-paz.html"
+      ]
+     ],
+     "q": "¿Quién ha ganado el Nobel de la Paz 2026?",
+     "q2": "¿Quién es Navi Pillay?"
+    }
+   ]
+  },
+  {
+   "key": "8",
+   "label": "Jue 8",
+   "sub": "Jueves",
+   "title": "Jueves 8 de octubre",
+   "iso": "2026-10-08",
+   "items": [
+    {
+     "id": "italia-ley-electoral",
+     "tag": "Mundo · Europa",
+     "title": "Italia aprueba la reforma electoral de Meloni: mayoría garantizada a quien pase del 42 %",
+     "desc": "Salió por 227 votos a 164. La oposición dice que se hace a medida antes de las elecciones de 2027.",
+     "what": "El Parlamento italiano da la aprobación final a la reforma electoral del Gobierno de Giorgia Meloni.",
+     "body": [
+      "La Cámara de Diputados de Italia ha aprobado definitivamente la reforma electoral de Giorgia Meloni, por 227 votos a favor y 164 en contra, en votación secreta.",
+      "Qué cambia: el sistema pasa a ser totalmente proporcional, pero con un premio de escaños que garantiza la mayoría en el Parlamento a la coalición que supere el 42 % de los votos. Además, cada coalición tendrá que decir antes de votar quién es su candidato a primer ministro.",
+      "Meloni lo defiende así: “Quien gana tiene que poder gobernar”. El centroizquierda le acusa de cambiar las reglas a pocos meses de las elecciones para ganarlas. Aun así, las encuestas dan ventaja al centroizquierda, así que el premio podría acabar beneficiándole a él."
+     ],
+     "next": {
+      "rows": [
+       [
+        "2027",
+        "Elecciones generales en Italia, ya con las nuevas reglas"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "The Star (Reuters)",
+       "https://www.thestar.com.my/news/world/2026/10/08/italy039s-meloni-secures-final-approval-for-contested-electoral-reform"
+      ],
+      [
+       "Euronews",
+       "https://es.euronews.com/2026/10/08/la-oposicion-italiana-se-lanza-en-tromba-contra-la-reforma-de-la-ley-electoral"
+      ]
+     ],
+     "q": "¿Qué ha cambiado Meloni en la ley electoral italiana?",
+     "q2": "¿Qué es el premio de mayoría de la ley electoral de Italia?"
+    }
+   ]
+  },
+  {
+   "key": "7",
+   "label": "Mié 7",
+   "sub": "Miércoles",
+   "title": "Miércoles 7 de octubre",
+   "iso": "2026-10-07",
+   "items": [
+    {
+     "id": "muere-maricarmen",
+     "tag": "España · Vivienda",
+     "title": "Muere Maricarmen, la mujer de 87 años cuyo desahucio llevó a la acampada de Sol",
+     "desc": "La desahuciaron el 23 de septiembre de la casa en la que vivía desde hacía 71 años. Ha muerto tras 15 días en el hospital.",
+     "what": "Maricarmen Abascal, desahuciada a los 87 años en Madrid, ha muerto tras quince días ingresada.",
+     "body": [
+      "Ha muerto Maricarmen Abascal, de 87 años. El 23 de septiembre la desahuciaron del piso de alquiler del barrio de Retiro, en Madrid, en el que llevaba viviendo 71 años. Llevaba quince días ingresada en el hospital, según el Sindicato de Inquilinas, que la acompañó durante todo el proceso.",
+      "Su caso se convirtió en símbolo de la crisis de vivienda. Ayudó a encender las protestas que acabaron en la acampada de la Puerta del Sol y está detrás de los dos decretos de vivienda que el Gobierno aprobó y que el Congreso tumbó después.",
+      "El sindicato asegura que se había llegado a un acuerdo para que pudiera volver a su casa, pero que llegó tarde. Pedro Sánchez dio el pésame a su familia y dijo sentir su pérdida como propia. Alberto Núñez Feijóo pidió respeto y que el caso no se use en la campaña.",
+      "Tras conocerse la noticia, la gente de la acampada de Sol salió en marcha hacia el Congreso."
+     ],
+     "next": {
+      "rows": [
+       [
+        "11 nov",
+        "Huelga general por la vivienda convocada por los sindicatos"
+       ]
+      ]
+     },
+     "ctx": [
+      [
+       "13 oct: registran la huelga general del 11 de noviembre",
+       "/noticias/huelga-11n/"
+      ]
+     ],
+     "src": [
+      [
+       "RTVC (EFE)",
+       "https://rtvc.es/muere-maricarmen-mujer-87-anos-desahuciada-madrid-avivo-protestas-7-octubre-2026/"
+      ],
+      [
+       "Diario de León",
+       "https://www.diariodeleon.es/nacional/261008/2099656/indignacion-muerte-maricarmen-madrugada-triste-acampada-sol.html"
+      ]
+     ],
+     "q": "¿Quién era Maricarmen y qué le pasó?",
+     "q2": "¿Por qué hay una acampada en Sol por la vivienda?"
+    },
+    {
+     "id": "colau-frente-amplio",
+     "tag": "España · Elecciones",
+     "title": "Mónica García se aparta y Más Madrid propone a Ada Colau para liderar el Frente Amplio",
+     "desc": "La ministra de Sanidad irá de número uno por Madrid, pero no como candidata a presidenta. Podemos sigue fuera.",
+     "what": "Más Madrid propone a Ada Colau como candidata del Frente Amplio a la Presidencia del Gobierno.",
+     "body": [
+      "Mónica García, ministra de Sanidad y líder de Más Madrid, ha decidido no ser la candidata del Frente Amplio a la Presidencia. Encabezará la lista por Madrid y su partido propone a la exalcaldesa de Barcelona Ada Colau para liderar la coalición.",
+      "El Frente Amplio es el nuevo nombre del espacio de Sumar: reúne a IU, Más Madrid, Movimiento Sumar y los Comuns. Colau, según fuentes de la coalición, solo aceptaría si la candidatura es muy amplia, es decir, si entra también Podemos.",
+      "Podemos quiere primarias abiertas y propone a Irene Montero. Critica que el Frente Amplio todavía no tenga candidato, logo ni estructura."
+     ],
+     "next": {
+      "rows": [
+       [
+        "16 oct",
+        "Último día para registrar coaliciones electorales"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "El Salto",
+       "https://www.elsaltodiario.com/elecciones/monica-garcia-ira-al-congreso-deja-puerta-abierta-candidata-del-frente-sea-colau"
+      ],
+      [
+       "Euronews",
+       "https://es.euronews.com/2026/10/07/mas-madrid-despeja-la-via-ada-colau-para-liderar-el-frente-amplio"
+      ]
+     ],
+     "q": "¿Quién va a ser la candidata del Frente Amplio?",
+     "q2": "¿Por qué Mónica García no es la candidata del Frente Amplio?"
+    },
+    {
+     "id": "pedro-retirada",
+     "tag": "Deporte · Fútbol",
+     "title": "Pedro Rodríguez, campeón del mundo en 2010, se retira a los 39 años",
+     "desc": "Lo ganó todo con el Barça. Su último club fue la Lazio.",
+     "what": "El exjugador del Barcelona y de la selección Pedro Rodríguez anuncia su retirada del fútbol profesional.",
+     "body": [
+      "Pedro Rodríguez, ‘Pedrito’, deja el fútbol a los 39 años. “Hoy vuelvo donde empezó todo, para cerrar una etapa maravillosa. Siento que es el momento”, escribió al anunciarlo. Su último equipo fue la Lazio, donde llegó en 2021.",
+      "Con el Barcelona ganó cinco Ligas, tres Champions, tres Copas del Rey, cuatro Supercopas de España, tres Supercopas de Europa y dos Mundiales de Clubes. Con España fue titular en la final del Mundial de 2010 contra Países Bajos y ganó también la Eurocopa de 2012."
+     ],
+     "src": [
+      [
+       "El Universal",
+       "https://www.eluniversal.com.co/deportes/2026/10/07/campeon-del-mundo-con-espana-y-ganador-de-todo-con-barcelona-anuncio-su-retiro/"
+      ],
+      [
+       "Telesur",
+       "https://www.telesurtv.net/pedro-rodriguez-anuncia-retiro-futbol/"
+      ]
+     ],
+     "q": "¿Se ha retirado Pedro, el del Barça?",
+     "q2": "¿Qué títulos ganó Pedro Rodríguez?"
+    }
+   ]
+  },
+  {
+   "key": "6",
+   "label": "Mar 6",
+   "sub": "Martes",
+   "title": "Martes 6 de octubre",
+   "iso": "2026-10-06",
+   "items": [
+    {
+     "id": "tc-amnistia-malversacion",
+     "tag": "España · Justicia",
+     "title": "El Constitucional dice que la malversación del procés sí entra en la amnistía",
+     "desc": "Por 7 votos a 5. Ese mismo día el juez Llarena deja sin efecto la orden de detención contra Puigdemont.",
+     "what": "El Tribunal Constitucional da la razón a Dolors Bassa y Jordi Turull y abre la puerta a amnistiar la malversación de los líderes del procés.",
+     "body": [
+      "El Tribunal Constitucional ha decidido, por 7 votos a 5, que el delito de malversación de los líderes del procés sí puede amnistiarse. Da así la razón a los exconsejeros Dolors Bassa y Jordi Turull, que habían recurrido.",
+      "El Supremo se negaba a aplicar la amnistía a la malversación porque entendía que el dinero público gastado en el referéndum de 2017 había supuesto un beneficio personal para sus organizadores, y la ley de amnistía excluye esos casos. El Constitucional rechaza esa interpretación y le pide al Supremo que vuelva a decidir.",
+      "La consecuencia más visible: el juez del Supremo Pablo Llarena dejó sin efecto la orden de detención nacional contra Carles Puigdemont, que vive fuera de España desde octubre de 2017.",
+      "Pedro Sánchez celebró la decisión: “Con ello ayudamos a la sociedad catalana”. Los críticos de la amnistía, con PP y Vox a la cabeza, sostienen que la ley se aprobó a cambio de los votos de Junts para la investidura."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Pendiente",
+        "El Supremo tiene que dictar una nueva resolución siguiendo el criterio del Constitucional"
+       ]
+      ],
+      "note": "El caso de Puigdemont sigue en la noticia de hoy."
+     },
+     "terms": [
+      [
+       "Malversación",
+       "Usar dinero público para un fin distinto del permitido."
+      ]
+     ],
+     "ctx": [
+      [
+       "19 oct: Puigdemont ya no tiene orden de detención",
+       "/noticias/puigdemont-amnistia/"
+      ]
+     ],
+     "src": [
+      [
+       "Euronews",
+       "https://es.euronews.com/2026/10/06/el-constitucional-avala-la-amnistia-por-malversacion-y-abre-la-puerta-al-regreso-de-puigde"
+      ],
+      [
+       "El Diario de Tarragona",
+       "https://www.diaridetarragona.com/catalunya/270346/llarena-abre-puerta-aplicar-amnistia-puigdemont-cuanto-tc-sentencie-sobre-recurso.html"
+      ]
+     ],
+     "q": "¿Qué ha decidido el Constitucional sobre la amnistía?",
+     "q2": "¿Se puede amnistiar la malversación del procés?"
+    },
+    {
+     "id": "messi-despedida",
+     "tag": "Deporte · Fútbol",
+     "title": "Messi se despide de Argentina con un gol y dos asistencias",
+     "desc": "3-0 a Benín ante más de 80.000 personas en el Monumental. Cierra con 208 partidos y 126 goles.",
+     "what": "Lionel Messi juega su último partido con la selección argentina: 3-0 contra Benín en Buenos Aires.",
+     "body": [
+      "Lionel Messi ha jugado su último partido con Argentina. Fue un amistoso contra Benín en el estadio Monumental de Buenos Aires, con más de 80.000 personas en la grada. Ganó Argentina 3-0.",
+      "Messi dio el pase del primer gol a Nicolás Otamendi y el del segundo a Nico Paz, y marcó el tercero de penalti en el minuto 71. Fue su último gol con la selección. En el minuto 10 el partido se paró para aplaudirle.",
+      "Se va con 208 partidos, 126 goles y 70 asistencias con Argentina, y cuatro títulos: el Mundial de 2022, las Copas América de 2021 y 2024 y la Finalissima de 2022."
+     ],
+     "idea": [
+      "126 goles en 208 partidos es más de un gol cada dos partidos durante unos veinte años."
+     ],
+     "src": [
+      [
+       "Emisoras Unidas",
+       "https://emisorasunidas.com/deportes/2026/10/06/lionel-messi-se-despide-de-argentina-con-una-noche-inolvidable-en-el-monumental/"
+      ],
+      [
+       "El Gráfico",
+       "https://www.elgrafico.com.ar/articulo/seleccion-argentina/103205/ad10s-leyenda-messi-se-despidio-de-la-seleccion-argentina-con-una-fiesta-monumental"
+      ]
+     ],
+     "q": "¿Cómo fue el último partido de Messi con Argentina?",
+     "q2": "¿Cuántos goles ha marcado Messi con Argentina?"
+    }
+   ]
+  },
+  {
+   "key": "5",
+   "label": "Lun 5",
+   "sub": "Lunes",
+   "title": "Lunes 5 de octubre",
+   "iso": "2026-10-05",
+   "items": [
+    {
+     "id": "sanchez-convoca-29n",
+     "tag": "España · Elecciones",
+     "title": "Sánchez adelanta las elecciones generales al 29 de noviembre",
+     "desc": "Lo anuncia tres días después de que el Congreso tumbara sus dos decretos de vivienda. Quedan 55 días.",
+     "what": "Pedro Sánchez convoca elecciones generales anticipadas para el 29 de noviembre de 2026.",
+     "body": [
+      "Pedro Sánchez ha anunciado elecciones generales anticipadas para el domingo 29 de noviembre. Lo hizo en una comparecencia de unos nueve minutos en La Moncloa, sin preguntas de los periodistas.",
+      "El detonante fue el viernes 2 de octubre, cuando el Congreso tumbó los dos decretos de vivienda del Gobierno. Sánchez lo resumió así: “Para hacer más necesitamos renovar y ampliar el apoyo de la gente”. Reconoció “insatisfacción” en parte de sus votantes y pidió una mayoría “mucho más amplia”.",
+      "Traducido: la legislatura debía durar hasta 2027, pero el Gobierno no tenía apoyos suficientes para sacar adelante sus leyes, y Sánchez prefiere volver a las urnas antes.",
+      "Las encuestas privadas de estos días dan ventaja a PP y Vox. Por ejemplo, la de Winston para Artículo 14 les da juntos 204 escaños, por encima de los 176 de la mayoría absoluta."
+     ],
+     "idea": [
+      "55 días de margen es menos de dos meses: menos de lo que dura un cuatrimestre de la universidad."
+     ],
+     "next": {
+      "rows": [
+       [
+        "6 oct",
+        "El BOE publica la disolución de las Cortes y la convocatoria"
+       ],
+       [
+        "13 nov",
+        "Empieza la campaña oficial"
+       ],
+       [
+        "29 nov",
+        "Elecciones generales"
+       ]
+      ]
+     },
+     "terms": [
+      [
+       "Diputación Permanente",
+       "Grupo reducido de diputados que sigue funcionando cuando las Cortes están disueltas. Puede, por ejemplo, convalidar decretos."
+      ]
+     ],
+     "src": [
+      [
+       "Artículo 14",
+       "https://www.articulo14.es/politica/pedro-sanchez-convoca-elecciones-generales-anticipadas-el-29-de-noviembre-20261005.html"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/05/temas-del-dia-de-efe-espana-del-martes-6-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Por qué hay elecciones el 29 de noviembre?",
+     "q2": "¿Por qué ha adelantado Pedro Sánchez las elecciones?"
+    }
+   ]
   }
  ],
  "week": [
@@ -979,7 +1747,12 @@ window.AL_DIA = {
    "precampana-29n",
    "vivienda-decretos",
    "huelga-11n",
-   "residencias-universitarias"
+   "residencias-universitarias",
+   "podemos-frente-amplio-plazo",
+   "cis-octubre",
+   "psoe-listas",
+   "ley-nietos-voto",
+   "sanchez-convoca-29n"
   ],
   "src": [
    [
