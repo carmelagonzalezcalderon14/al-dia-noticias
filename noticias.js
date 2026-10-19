@@ -457,118 +457,6 @@ window.AL_DIA = {
      "q2": "¿Quién va ganando el Mundial de MotoGP 2026, Martín o Márquez?"
     },
     {
-     "id": "urbano-semana-madrid",
-     "tag": "Música · Urbano",
-     "title": "Semana grande del urbano en Madrid: Beny Jr tres noches y Trueno en el Movistar Arena",
-     "desc": "Y para cerrar el mes, Nanpa Básico en Las Ventas.",
-     "what": "Beny Jr encadena tres conciertos en Madrid entre el 19 y el 21 de octubre. El miércoles 21 toca Trueno en el Movistar Arena, y el viernes 30 Nanpa Básico se sube a la plaza de toros de Las Ventas.",
-     "next": {
-      "rows": [
-       [
-        "19–21 oct",
-        "Beny Jr, tres fechas en Madrid"
-       ],
-       [
-        "Mié 21 oct",
-        "Trueno, Movistar Arena"
-       ],
-       [
-        "Vie 30 oct",
-        "Nanpa Básico, Las Ventas"
-       ]
-      ]
-     },
-     "src": [
-      [
-       "Madrid24horas",
-       "https://www.madrid24horas.com/articulo/comunidad-de-madrid/conciertos-madrid-octubre-morat-dani-fernandez-deep-purple-trueno-bunbury-mas-citas/20261002133715107917.html"
-      ],
-      [
-       "La Ganzúa",
-       "https://www.laganzua.net/noticias/31959-trueno-que-da-conciertos-en-madrid-y-barcelona-en-2026-lanza-x-unas-llantas-single-del-disco-turr4zo"
-      ],
-      [
-       "La Ganzúa (Beny Jr)",
-       "https://www.laganzua.net/conciertos/beny-jr-madrid-1015000"
-      ]
-     ],
-     "body": [
-      "Madrid tiene una semana cargada de urbano. Beny Jr encadena tres fechas seguidas, del 19 al 21 de octubre.",
-      "El miércoles 21 llega Trueno al Movistar Arena. El argentino presenta “Turr4zo”, el disco que sacó en abril, con el single “X unas llantas”, que mezcla hip-hop con merengue urbano y que produjo con El Guincho. Viene de estrenarse en el Palau Sant Jordi el día 13, en el Cruïlla Tardor.",
-      "Y para cerrar el mes, el viernes 30, Nanpa Básico se sube a la plaza de toros de Las Ventas."
-     ],
-     "q": "¿Qué conciertos de urbano hay en Madrid esta semana?",
-     "q2": "¿Qué conciertos de música urbana hay en Madrid esta semana?"
-    },
-    {
-     "id": "kidd-voodoo-gira",
-     "tag": "Música · Urbano",
-     "title": "Kidd Voodoo vuelve en noviembre y las entradas salen hoy a las 18:00",
-     "desc": "El chileno trae la gira “Ojitos Verdes” a Sevilla, Madrid y Barcelona.",
-     "what": "Kidd Voodoo, nombre artístico del cantante chileno David León, vuelve a España en solitario con la gira “Ojitos Verdes”, que se llama igual que su próximo disco. También presentará “Euforia”, el álbum que sacó en mayo.",
-     "next": {
-      "rows": [
-       [
-        "Hoy 18:00",
-        "Salen las entradas"
-       ],
-       [
-        "15 nov",
-        "Sala Pandora, Sevilla"
-       ],
-       [
-        "16 nov",
-        "Sala BUT, Madrid"
-       ],
-       [
-        "17 nov",
-        "Razzmatazz 2, Barcelona"
-       ]
-      ]
-     },
-     "src": [
-      [
-       "La Ganzúa",
-       "https://www.laganzua.net/noticias/32804-kidd-voodoo-actua-en-sevilla-madrid-y-barcelona-en-noviembre-de-2026-con-la-gira-ojitos-verdes"
-      ]
-     ],
-     "body": [
-      "Kidd Voodoo, nombre artístico del cantante chileno David León, vuelve a España en solitario en noviembre con la gira “Ojitos Verdes”, que se llama igual que su próximo disco.",
-      "En esos conciertos también presentará “Euforia”, el álbum que sacó el 14 de mayo. Serán tres noches: Sevilla, Madrid y Barcelona. Las entradas salen hoy a las 18:00."
-     ],
-     "q": "¿Cuándo viene Kidd Voodoo a España?",
-     "q2": "¿Cuándo toca Kidd Voodoo en España y cuándo salen las entradas?"
-    },
-    {
-     "id": "planetas-dos-cruces",
-     "tag": "Música · Indie",
-     "title": "Los Planetas anuncian disco nuevo y lo adelantan el viernes con “Dos cruces”",
-     "desc": "Una versión de un clásico de Carmelo Larrea que ya venían tocando en directo.",
-     "what": "La banda granadina publica el 23 de octubre su relectura de “Dos cruces”, un tema de Carmelo Larrea (autor también de “Camino verde”), como primer adelanto de un disco del que aún no hay título. Llevan un año tocándola en conciertos, como en el Festival de la Guitarra de Córdoba o en el Atlantic Fest.",
-     "next": {
-      "rows": [
-       [
-        "Vie 23 oct",
-        "Sale el single"
-       ]
-      ],
-      "note": "La Ganzúa da por hecho que anunciarán pronto sus conciertos de 2027."
-     },
-     "src": [
-      [
-       "La Ganzúa",
-       "https://www.laganzua.net/noticias/32794-los-planetas-anuncian-un-nuevo-disco-y-lo-presentan-con-una-relectura-de-dos-cruces"
-      ]
-     ],
-     "body": [
-      "Los Planetas, una de las bandas más influyentes del indie español, preparan disco nuevo. El primer adelanto sale este viernes 23: su versión de “Dos cruces”.",
-      "“Dos cruces” es un tema de Carmelo Larrea, el mismo autor de “Camino verde”. La banda granadina lleva un año tocándola en directo, en citas como el Festival de la Guitarra de Córdoba o el Atlantic Fest de Vilagarcía de Arousa.",
-      "Del disco todavía no hay título ni fecha. La Ganzúa da por hecho que pronto anunciarán sus conciertos de 2027."
-     ],
-     "q": "¿Qué pasa con el disco nuevo de Los Planetas?",
-     "q2": "¿Cuándo sale el nuevo disco de Los Planetas?"
-    },
-    {
      "id": "residencias-universitarias",
      "tag": "España · Vivienda",
      "title": "El Gobierno destina 45 millones a unas 2.000 plazas de residencia universitaria",
@@ -656,45 +544,6 @@ window.AL_DIA = {
      ],
      "q": "¿Qué ha pasado con el alcalde de Algeciras?",
      "q2": "¿Por qué dimite el alcalde de Algeciras?"
-    },
-    {
-     "id": "princesa-asturias",
-     "tag": "Cultura",
-     "title": "Llegan a Oviedo los Princesa de Asturias, con la astronauta que dio la vuelta a la Luna",
-     "desc": "Christina Koch, los inventores de la secuenciación rápida de ADN y Julian Barnes recogen el premio el viernes.",
-     "what": "Hoy llegan a Oviedo Christina Koch, los químicos David Klenerman y Shankar Balasubramanian, el biofísico Pascal Mayer y el escritor Julian Barnes.",
-     "next": {
-      "rows": [
-       [
-        "Vie 23 oct",
-        "Ceremonia de entrega en Oviedo"
-       ]
-      ]
-     },
-     "src": [
-      [
-       "EFE, vía Infobae",
-       "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
-      ],
-      [
-       "El Financiero",
-       "https://www.elfinanciero.com.mx/mundo/2026/06/17/marco-un-hito-christina-koch-primera-mujer-en-viajar-a-la-luna-gana-el-premio-princesa-de-asturias/"
-      ],
-      [
-       "El Español",
-       "https://www.elespanol.com/ciencia/20260513/klenerman-balasubramanian-mayer-premio-princesa-asturias-investigacion-pionera-secuenciacion-adn/1003744244105_0.html"
-      ]
-     ],
-     "body": [
-      "Esta semana Oviedo se llena de premiados. Hoy llegan la astronauta Christina Koch, los científicos David Klenerman, Shankar Balasubramanian y Pascal Mayer, y el escritor británico Julian Barnes. Todos recogen el premio el viernes 23.",
-      "Koch gana el Premio de la Concordia por la misión Artemis II, que en abril llevó a cuatro astronautas alrededor de la Luna por primera vez desde 1972. Fueron diez días y batieron el récord de distancia recorrida por humanos: 406.771 kilómetros desde la Tierra.",
-      "Klenerman, Balasubramanian y Mayer se llevan el de Investigación Científica y Técnica por desarrollar la secuenciación rápida de ADN, la tecnología que permite leer un genoma entero de forma rápida y barata."
-     ],
-     "idea": [
-      "406.771 kilómetros son más de diez vueltas a la Tierra por el ecuador."
-     ],
-     "q": "¿Quién gana los Princesa de Asturias este año?",
-     "q2": "¿Quién gana los Premios Princesa de Asturias 2026 y por qué?"
     }
    ],
    "iso": "2026-10-19"
@@ -775,60 +624,6 @@ window.AL_DIA = {
    "title": "Viernes 16 de octubre",
    "items": [
     {
-     "id": "el-bugg-shoko",
-     "tag": "Música · Urbano",
-     "title": "El Bugg lleva su “Culto al Código Tour” a la Shôko",
-     "desc": "El granadino tocó el viernes en Madrid, en la misma sala donde Spotify presentó este mes su “Nuevo Urbano”.",
-     "what": "El Bugg, artista de Granada que lleva la agencia Polar, actuó el viernes 16 en la Sala Shôko, en la calle de Toledo, con su “Culto al Código Tour”. Las entradas costaban desde 19,80 €. Antes había pasado por Razzmatazz, en Barcelona, en mayo, y por Bilbao en septiembre.",
-     "next": {
-      "note": "Todavía no he encontrado crónicas del concierto. Si sale alguna, la enlazo aquí."
-     },
-     "src": [
-      [
-       "La Ganzúa",
-       "https://www.laganzua.net/conciertos/el-bugg-madrid-1016474"
-      ],
-      [
-       "Polar",
-       "https://polaragency.net/artistas/el-bugg/"
-      ],
-      [
-       "Madrid24horas",
-       "https://www.madrid24horas.com/articulo/comunidad-de-madrid/conciertos-madrid-octubre-morat-dani-fernandez-deep-purple-trueno-bunbury-mas-citas/20261002133715107917.html"
-      ]
-     ],
-     "body": [
-      "El Bugg, artista granadino que lleva la agencia Polar, actuó el viernes 16 en la Sala Shôko, en la calle de Toledo, dentro de su “Culto al Código Tour”. Las entradas costaban desde 19,80 euros.",
-      "La gira ya había pasado por Razzmatazz, en Barcelona, en mayo, y por Bilbao en septiembre. La Shôko es la misma sala donde Spotify reunió a los nombres de su lista “Nuevo Urbano” a principios de mes."
-     ],
-     "q": "¿Quién es El Bugg?",
-     "q2": "¿Quién es El Bugg y dónde ha tocado en Madrid?"
-    },
-    {
-     "id": "mango-turquia",
-     "tag": "Moda",
-     "title": "Mango abre diez tiendas en Turquía en menos de un año",
-     "desc": "Ya tiene 80 en el país, uno de sus mercados que mejor funcionan.",
-     "what": "La marca catalana ha abierto diez tiendas en Turquía en menos de un año y ya suma 80. Turquía es ahora su tercer mercado por ventas, solo por detrás de España y Francia.",
-     "src": [
-      [
-       "Modaes",
-       "https://www.modaes.com/global/home"
-      ],
-      [
-       "CNBC-e",
-       "https://www.cnbce.com/sirket-haberleri/mango-istanbuldaki-uc-yeni-acilisla-turkiyede-80-magazaya-ulasti-h39030"
-      ]
-     ],
-     "body": [
-      "Mango ha completado este año las diez aperturas que tenía previstas en Turquía y ya suma 80 tiendas en el país. Las tres últimas están en Estambul: una junto al aeropuerto, otra en el centro comercial Koru Florya y la más grande, de más de 1.200 metros cuadrados, en el distrito financiero.",
-      "Turquía, donde la marca está desde 1997, es uno de sus cinco mercados con mejor rendimiento. Según Modaes, ya es el tercero por ventas, solo por detrás de España y Francia.",
-      "A la empresa le va bien en general: facturó 3.800 millones de euros en 2025, un 13 % más, y en el primer semestre de 2026 creció otro 7,2 %."
-     ],
-     "q": "¿Qué está haciendo Mango en Turquía?",
-     "q2": "¿Cuántas tiendas tiene Mango en Turquía?"
-    },
-    {
      "id": "expulsiones-cataluna",
      "tag": "España · Sucesos",
      "title": "La Policía expulsa a 21 extranjeros con muchos antecedentes desde Cataluña",
@@ -908,25 +703,6 @@ window.AL_DIA = {
      ],
      "q": "¿España va a organizar el Mundial de rugby?",
      "q2": "¿Va a organizar España el Mundial de rugby de 2035?"
-    },
-    {
-     "id": "lucho-rk-gira",
-     "tag": "Música · Urbano",
-     "title": "Lucho RK duplica su gira de 2027 y Mar de Jávea suelta sus primeros nombres",
-     "desc": "Triples fechas en Valencia y Barcelona para el “Sordo de un pie tour”.",
-     "what": "Lucho RK ha ampliado su gira de 2027 con tres conciertos en Valencia y otros tres en Barcelona, y dos fechas en Bilbao, Murcia, Granada y Canarias. El mismo día, el festival Mar de Jávea 2027 anunció su primer avance de cartel, con Lori Meyers y Walls.",
-     "src": [
-      [
-       "La Ganzúa",
-       "https://www.laganzua.net/"
-      ]
-     ],
-     "body": [
-      "Lucho RK ha duplicado las fechas de su “Sordo de un pie tour” de 2027. Hará tres conciertos en Valencia y otros tres en Barcelona, y dos en Bilbao, Murcia, Granada y Canarias.",
-      "Ese mismo día, el festival Mar de Jávea 2027 adelantó sus primeros nombres: Lori Meyers y Walls."
-     ],
-     "q": "¿Cuándo es la gira de Lucho RK?",
-     "q2": "¿Cuáles son las fechas de la gira de Lucho RK en 2027?"
     }
    ],
    "iso": "2026-10-15"
@@ -1043,57 +819,6 @@ window.AL_DIA = {
      ],
      "q": "¿Por qué hay huelga general el 11 de noviembre?",
      "q2": ""
-    },
-    {
-     "id": "lv-real-madrid",
-     "tag": "Moda",
-     "title": "Louis Vuitton vuelve a vestir al Real Madrid, ahora con abrigo de cachemir y gorra",
-     "desc": "Segunda temporada de la marca como “sastre oficial” del club, con diseño del estudio de Pharrell Williams.",
-     "what": "La marca francesa diseña la ropa formal y de viaje de los equipos de fútbol masculino y femenino y del de baloncesto. Repite el traje de la temporada pasada con camisa de rayas azul y polo beige, y añade un abrigo de cachemir con bufanda de monograma, una chaqueta de nailon reversible y una gorra con el logo LV. Cada prenda lleva el escudo del club y las iniciales del jugador.",
-     "how": [
-      "Louis Vuitton se convirtió en sastre oficial del Madrid en junio de 2025. La colección parte de la línea Trunk que la marca lanzó en febrero."
-     ],
-     "next": {
-      "note": "Esta ropa no se vende, pero sí las prendas de Louis Vuitton en las que se inspira."
-     },
-     "src": [
-      [
-       "FashionUnited",
-       "https://fashionunited.es/noticias/moda/louis-vuitton-renueva-sus-equipaciones-para-el-real-madrid/2026101350909"
-      ]
-     ],
-     "body": [
-      "Louis Vuitton empieza su segunda temporada como “sastre oficial” del Real Madrid. Diseña la ropa formal y de viaje de los equipos de fútbol masculino y femenino y del de baloncesto.",
-      "Repite el traje de la temporada pasada, ahora con camisa de rayas azul y polo beige, y añade un abrigo de cachemir con bufanda de monograma. En la ropa de viaje hay una chaqueta de nailon reversible, un jersey azul marino con “Vuitton” bordado en piel y una gorra con el logo LV.",
-      "Cada prenda lleva el escudo del club y las iniciales del jugador. La colección la ha hecho el estudio de hombre de la marca, que dirige Pharrell Williams."
-     ],
-     "q": "¿Qué ha hecho Louis Vuitton con el Real Madrid?",
-     "q2": "¿Qué ropa ha diseñado Louis Vuitton para el Real Madrid?"
-    },
-    {
-     "id": "byan-londres",
-     "tag": "Moda",
-     "title": "Byan, la marca madrileña, abre su primera tienda fuera de España en King's Road",
-     "desc": "Londres, en una de las calles de moda más conocidas de la ciudad.",
-     "what": "Byan, firma de moda de mujer con sede en Madrid, ha abierto su primera tienda permanente fuera de España en King's Road, en Londres. Los mercados internacionales ya suponen el 60 % de sus ventas online.",
-     "src": [
-      [
-       "FashionUnited",
-       "https://fashionunited.es/noticias/retail/byan-gana-escala-internacional-y-abre-en-londres-su-primera-tienda-permanente-fuera-de-espana/2026101450928"
-      ],
-      [
-       "Modaes",
-       "https://www.modaes.com/empresas/byan-se-estrena-en-londres-con-su-primer-flagship-fuera-de-espana"
-      ]
-     ],
-     "body": [
-      "Byan, la marca de moda de mujer que Andrea Moragues fundó en Madrid hacia 2018, ha abierto su primera tienda permanente fuera de España: en el número 149 de King's Road, en el barrio londinense de Chelsea. Son 74 metros cuadrados en dos plantas.",
-      "No es su primera vez en Londres: el año pasado tuvo durante unos tres meses una tienda temporal en Covent Garden. En Madrid tiene tienda propia desde 2024, en la calle Claudio Coello.",
-      "La marca vendió más de 3 millones de euros en 2025. El 60 % de lo que vende online va a otros países, sobre todo a Estados Unidos, Reino Unido e Italia. También se vende en grandes almacenes como Liberty, en Londres, y Le Bon Marché, en París.",
-      "“Ofrecemos moda atemporal, que no entiende de edades”, dice su fundadora."
-     ],
-     "q": "¿Qué es Byan?",
-     "q2": "¿Qué es Byan y dónde ha abierto tienda en Londres?"
     }
    ],
    "iso": "2026-10-13"
@@ -1103,61 +828,7 @@ window.AL_DIA = {
    "label": "Lun 12",
    "sub": "Lunes",
    "title": "Lunes 12 de octubre",
-   "items": [
-    {
-     "id": "zara-santa-eulalia",
-     "tag": "Moda",
-     "title": "Zara se alía con Santa Eulalia, una sastrería de Barcelona que abrió en 1843",
-     "desc": "Seis camisas de edición limitada a 59,95 euros. Y la historia detrás es más curiosa de lo que parece.",
-     "what": "Son seis camisas de hombre de corte sastre, con distintos colores, tejidos y cuellos, para la temporada otoño-invierno. Se venden en la web de Zara y en algunas tiendas de España, Francia, Reino Unido, Alemania e Italia.",
-     "how": null,
-     "src": [
-      [
-       "FashionUnited",
-       "https://fashionunited.es/noticias/moda/santa-eulalia-x-zara-o-como-inditex-tambien-exporta-marca-espana/2026101250903"
-      ],
-      [
-       "FashionUnited (EN)",
-       "https://fashionunited.com/news/fashion/santa-eulalia-x-zara-how-inditex-is-exporting-brand-spain/2026101375137"
-      ]
-     ],
-     "body": [
-      "Zara ha sacado una colección cápsula de camisas de hombre con Santa Eulalia, una de las casas de moda más antiguas de Europa. Edición limitada, temporada otoño-invierno y 59,95 euros cada una.",
-      "Son camisas de corte sastre: una slim de algodón azul cielo con cuello spread, otra de rayas con el cuello blanco, una regular blanca con cuello puntiagudo, otra de chambray índigo con button-down en tono oscuro y claro, y una rosa con button-down oculto.",
-      "Están en la web de Zara y en algunas tiendas de España, Francia, Reino Unido, Alemania e Italia.",
-      "Santa Eulalia está en el Passeig de Gràcia, la dirige Luis Sans y tiene el que él define como el taller de sastrería a medida más grande de España. Este año celebra el centenario de su primer desfile, de 1926.",
-      "Lo interesante es que la jugada va al revés de lo normal. Lo habitual es que una marca de lujo preste su nombre a una cadena. Aquí es una sastrería centenaria la que lleva su oficio a Zara. Inditex ya hizo algo parecido con la firma madrileña de calzado Castellano 1920, y esta temporada Zara también ha colaborado con Martin Parr, Aaron Levine o Fruit of the Loom."
-     ],
-     "idea": [
-      "Santa Eulalia abrió cinco años antes de que hubiera tren en la península: el primero, el Barcelona–Mataró, es de 1848."
-     ],
-     "q": "¿Qué ha sacado Zara con Santa Eulalia?",
-     "q2": "¿Qué es la colaboración de Zara con Santa Eulalia?"
-    },
-    {
-     "id": "micropena-ep",
-     "tag": "Música · Indie",
-     "title": "Micropena, dreampop desde Torrelavega con ecos de los primeros Planetas",
-     "desc": "Primer EP de cuatro canciones, editado también en casete.",
-     "what": "Micropena es una banda de Torrelavega (Cantabria). Su EP homónimo recupera el indie-pop de los noventa: melodías cuidadas, guitarras que pasan de etéreas a ruidosas y letras costumbristas. Su sello, Ediciones Subterranias, los compara con The Pastels, Yo La Tengo y los primeros Los Planetas. Lo grabó y produjo Álex Pis.",
-     "next": {
-      "note": "El EP es el paso previo a un primer disco largo."
-     },
-     "src": [
-      [
-       "La Ganzúa",
-       "https://www.laganzua.net/noticias/32775-micropena-lanzan-desde-torrelavega-un-primer-disco-con-ecos-de-los-planetas-y-yo-la-tengo"
-      ]
-     ],
-     "body": [
-      "Micropena es una banda de dreampop de Torrelavega (Cantabria) que acaba de sacar su primer EP, de cuatro canciones, también editado en casete por Ediciones Subterranias.",
-      "Recuperan el indie-pop de los noventa: melodías cuidadas, guitarras que pasan de etéreas a ruidosas y letras costumbristas. Su sello los compara con The Pastels, Yo La Tengo y los primeros Los Planetas.",
-      "Lo grabó y produjo Álex Pis. Trabajan de forma colectiva, dejando que las canciones salgan solas, y el EP es el paso previo a un primer disco largo."
-     ],
-     "q": "¿Quiénes son Micropena?",
-     "q2": ""
-    }
-   ],
+   "items": [],
    "iso": "2026-10-12"
   }
  ],
@@ -1186,16 +857,6 @@ window.AL_DIA = {
     "liga-clasico",
     "motogp-australia",
     "rugby-2035"
-   ]
-  },
-  {
-   "h": "Moda y música",
-   "p": "Zara y Santa Eulalia, Louis Vuitton y el Madrid, disco nuevo de Los Planetas y un grupo de Torrelavega al que merece la pena escuchar.",
-   "ids": [
-    "zara-santa-eulalia",
-    "lv-real-madrid",
-    "planetas-dos-cruces",
-    "micropena-ep"
    ]
   }
  ],
