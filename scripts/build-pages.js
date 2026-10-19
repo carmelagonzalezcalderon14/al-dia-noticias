@@ -41,6 +41,8 @@ section h2::before{content:"";display:inline-block;width:10px;height:10px;border
 .tl{list-style:none;margin:0;padding:0}.tl li{display:grid;grid-template-columns:82px 1fr;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
 .tl li:last-child{border-bottom:0}.tl b{font-family:var(--f-mono);font-size:12px;font-weight:500;color:var(--accent);text-transform:uppercase}
 .note{color:var(--muted);font-size:15px}.links{font-size:13px;color:var(--muted)}.links a{color:var(--muted);margin-right:12px}
+h2.q{font-family:var(--f-display);font-size:22px;line-height:1.25;margin:6px 0 0}
+.faq h3{font-size:16px;margin:12px 0 4px}.faq p{margin:0}
 .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:999px;align-self:flex-start}
 @media (max-width:420px){h1{font-size:27px}.tl li{grid-template-columns:1fr;gap:0}}`;
 
@@ -48,26 +50,38 @@ function page(it, day) {
   const url = `/noticias/${it.id}/`;
   const parts = [];
   const body = it.body && it.body.length ? it.body : [it.what];
+  if (it.q) parts.push(`<h2 class="q">${esc(it.q)}</h2>`);
   parts.push(`<div class="body">${body.map((p) => `<p>${esc(p)}</p>`).join("")}</div>`);
   if (it.idea && it.idea.length) parts.push(`<aside class="idea"><h2>Para que te hagas una idea</h2>${it.idea.map((p) => `<p>${esc(p)}</p>`).join("")}</aside>`);
   if (it.how && it.how.length) {
     const inner = Array.isArray(it.how[0])
       ? `<ul class="tl">${it.how.map((r) => `<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join("")}</ul>`
       : it.how.map((p) => `<p>${esc(p)}</p>`).join("");
-    parts.push(`<section><h2>Cómo se ha llegado hasta aquí</h2>${inner}</section>`);
+    parts.push(`<section><h2>¿Cómo se ha llegado hasta aquí?</h2>${inner}</section>`);
   }
   if (it.next && ((it.next.rows && it.next.rows.length) || it.next.note)) {
     let inner = "";
     if (it.next.rows && it.next.rows.length) inner += `<ul class="tl">${it.next.rows.map((r) => `<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join("")}</ul>`;
     if (it.next.note) inner += `<p class="note">${esc(it.next.note)}</p>`;
-    parts.push(`<section><h2>Qué viene ahora</h2>${inner}</section>`);
+    parts.push(`<section><h2>¿Qué va a pasar ahora?</h2>${inner}</section>`);
   }
-  if (it.terms && it.terms.length) parts.push(`<section><h2>Claves</h2>${it.terms.map((t) => `<p><b>${esc(t[0])}:</b> ${esc(t[1])}</p>`).join("")}</section>`);
+  if (it.terms && it.terms.length) parts.push(`<section><h2>Claves para entenderlo</h2>${it.terms.map((t) => `<p><b>${esc(t[0])}:</b> ${esc(t[1])}</p>`).join("")}</section>`);
   if (it.ctx && it.ctx.length) parts.push(`<p class="links"><b>Antes:</b> ${it.ctx.map((c) => `<a href="${esc(c[1])}" rel="noopener">${esc(c[0])}</a>`).join("")}</p>`);
   parts.push(`<p class="links"><b>Fuentes:</b> ${it.src.map((c) => `<a href="${esc(c[1])}" rel="noopener">${esc(c[0])}</a>`).join("")}</p>`);
 
-  const ld = { "@context": "https://schema.org", "@type": "NewsArticle", headline: it.title, description: it.desc, datePublished: day.iso, inLanguage: "es-ES", publisher: { "@type": "Organization", name: "Al Día" } };
-  if (SITE) ld.mainEntityOfPage = SITE + url;
+  // Preguntas y respuestas: lo que más fácil extraen ChatGPT, Perplexity y los resúmenes con IA de Google.
+  const faq = [];
+  if (it.q) faq.push([it.q, body.slice(0, 2).join(" ")]);
+  if (it.q2) faq.push([it.q2, it.desc]);
+  if (it.next && ((it.next.rows && it.next.rows.length) || it.next.note)) {
+    const ans = (it.next.rows || []).map((r) => `${r[0]}: ${r[1]}.`).join(" ") + (it.next.note ? " " + it.next.note : "");
+    faq.push(["¿Qué va a pasar ahora?", ans.trim()]);
+  }
+  if (faq.length > 1) parts.push(`<section class="faq"><h2>Preguntas rápidas</h2>${faq.slice(1).map((f) => `<h3>${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join("")}</section>`);
+
+  const ld = [{ "@context": "https://schema.org", "@type": "NewsArticle", headline: it.title, description: it.desc, datePublished: day.iso, dateModified: (DATA.edicion && DATA.edicion.iso) || day.iso, inLanguage: "es-ES", articleSection: it.tag, publisher: { "@type": "Organization", name: "Al Día" }, isBasedOn: it.src.map((s) => s[1]) }];
+  if (SITE) ld[0].mainEntityOfPage = SITE + url;
+  if (faq.length) ld.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) });
 
   return `<!doctype html>
 <html lang="es">
@@ -120,4 +134,19 @@ if (SITE) {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE + u}</loc></url>`).join("\n")}\n</urlset>\n`;
   fs.writeFileSync(path.join(root, "sitemap.xml"), xml);
 }
-console.log(`Al Día: ${n} páginas de noticia generadas${SITE ? " + sitemap.xml" : ""}.`);
+// robots.txt: dejamos entrar a buscadores y a los robots de las IAs (ChatGPT, Perplexity, Claude, Google).
+const bots = ["Googlebot", "Google-Extended", "Bingbot", "OAI-SearchBot", "ChatGPT-User", "GPTBot", "PerplexityBot", "Claude-SearchBot", "Claude-User", "ClaudeBot", "Applebot"];
+fs.writeFileSync(path.join(root, "robots.txt"),
+  bots.map((b) => `User-agent: ${b}\nAllow: /\n`).join("\n") + `\nUser-agent: *\nAllow: /\n` + (SITE ? `\nSitemap: ${SITE}/sitemap.xml\n` : ""));
+
+// llms.txt: índice en texto plano pensado para asistentes de IA.
+const llms = [
+  "# Al Día",
+  "",
+  "> Las noticias del día contadas claras y sin tono de partido: qué ha pasado, por qué importa y qué viene después. En español, para gente joven. Cada noticia cita sus fuentes.",
+  "",
+  ...DATA.days.filter((d) => d.items.length).map((d) => [`## ${d.title}`, "", ...d.items.map((it) => `- [${it.q || it.title}](${SITE}/noticias/${it.id}/): ${it.desc}`), ""].join("\n")),
+].join("\n");
+fs.writeFileSync(path.join(root, "llms.txt"), llms + "\n");
+
+console.log(`Al Día: ${n} páginas de noticia generadas${SITE ? " + sitemap.xml" : ""} + robots.txt + llms.txt.`);

@@ -1,4 +1,6 @@
 noticias/
 sitemap.xml
+robots.txt
+llms.txt
 node_modules/
 .DS_Store

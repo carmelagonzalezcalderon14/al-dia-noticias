@@ -2,7 +2,8 @@
 window.AL_DIA = {
  "edicion": {
   "fecha": "Lunes 19 de octubre",
-  "actualizado": "19 oct 2026, 17:30"
+  "actualizado": "19 oct 2026, 17:30",
+  "iso": "2026-10-19"
  },
  "days": [
   {
@@ -60,7 +61,9 @@ window.AL_DIA = {
       "Un litro por metro cuadrado es un milímetro de agua. 600 litros son 60 centímetros: si el agua no se escurriera, en una calle llana te llegaría por encima de la rodilla.",
       "En Madrid caen algo más de 400 litros en todo un año. En Pego ha caído más que eso en un día.",
       "100.000 alumnos sin clase son más personas de las que viven en toda la ciudad de Palencia."
-     ]
+     ],
+     "q": "¿Qué ha pasado con la DANA en Valencia?",
+     "q2": "¿Qué está pasando con la DANA Adam en Valencia y Alicante?"
     },
     {
      "id": "puigdemont-amnistia",
@@ -158,7 +161,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "Piensa en ello como dos pasos. El de hoy quita la orden de detención: ya no lo detendrían al cruzar la frontera. El segundo, que todavía falta, es archivar el caso, y es el que su abogado está esperando para que vuelva."
-     ]
+     ],
+     "q": "¿Qué ha pasado con Puigdemont?",
+     "q2": "¿Por qué Puigdemont ya no tiene orden de detención?"
     },
     {
      "id": "precampana-29n",
@@ -226,7 +231,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "41 días es menos de lo que dura un verano. Y la campaña oficial, la de los mítines y los carteles, solo ocupa las dos últimas semanas."
-     ]
+     ],
+     "q": "¿Qué está pasando con las elecciones del 29N?",
+     "q2": "¿Qué propone cada partido para las elecciones del 29 de noviembre?"
     },
     {
      "id": "francia-toque-queda",
@@ -262,7 +269,9 @@ window.AL_DIA = {
        "EFE, vía Infobae",
        "https://www.infobae.com/america/agencias/2026/10/19/temas-del-dia-de-efe-internacional-del-lunes-19-de-octubre-1200-gmt/"
       ]
-     ]
+     ],
+     "q": "¿Qué está pasando en Francia?",
+     "q2": "¿Por qué hay toques de queda en Francia?"
     },
     {
      "id": "brasil-segunda-vuelta",
@@ -296,7 +305,9 @@ window.AL_DIA = {
        "EFE, vía Infobae",
        "https://www.infobae.com/america/agencias/2026/10/19/temas-del-dia-de-efe-internacional-del-lunes-19-de-octubre-1200-gmt/"
       ]
-     ]
+     ],
+     "q": "¿Qué pasa con las elecciones de Brasil?",
+     "q2": "¿Quién va ganando en las elecciones de Brasil entre Lula y Flávio Bolsonaro?"
     },
     {
      "id": "liga-clasico",
@@ -333,7 +344,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "Si el Barça gana el Clásico, se pondría a nueve puntos del Madrid. Son tres partidos ganados de diferencia antes de llegar a noviembre."
-     ]
+     ],
+     "q": "¿Cómo va la Liga antes del Clásico?",
+     "q2": "¿Cómo llegan el Barça y el Madrid al Clásico del 25 de octubre?"
     },
     {
      "id": "motogp-australia",
@@ -378,7 +391,9 @@ window.AL_DIA = {
      "idea": [
       "Dos puntos es lo que te da quedar octavo en una carrera al sprint. O sea, casi nada: un mal adelantamiento y cambia el líder.",
       "Quedan 185 puntos en juego. Con esta diferencia, cualquiera de los dos puede llevárselo."
-     ]
+     ],
+     "q": "¿Cómo va el Mundial de MotoGP?",
+     "q2": "¿Quién va ganando el Mundial de MotoGP 2026, Martín o Márquez?"
     },
     {
      "id": "urbano-semana-madrid",
@@ -420,7 +435,9 @@ window.AL_DIA = {
       "Madrid tiene una semana cargada de urbano. Beny Jr encadena tres fechas seguidas, del 19 al 21 de octubre.",
       "El miércoles 21 llega Trueno al Movistar Arena. El argentino presenta “Turr4zo”, el disco que sacó en abril, con el single “X unas llantas”, que mezcla hip-hop con merengue urbano y que produjo con El Guincho. Viene de estrenarse en el Palau Sant Jordi el día 13, en el Cruïlla Tardor.",
       "Y para cerrar el mes, el viernes 30, Nanpa Básico se sube a la plaza de toros de Las Ventas."
-     ]
+     ],
+     "q": "¿Qué conciertos de urbano hay en Madrid esta semana?",
+     "q2": "¿Qué conciertos de música urbana hay en Madrid esta semana?"
     },
     {
      "id": "kidd-voodoo-gira",
@@ -457,7 +474,9 @@ window.AL_DIA = {
      "body": [
       "Kidd Voodoo, nombre artístico del cantante chileno David León, vuelve a España en solitario en noviembre con la gira “Ojitos Verdes”, que se llama igual que su próximo disco.",
       "En esos conciertos también presentará “Euforia”, el álbum que sacó el 14 de mayo. Serán tres noches: Sevilla, Madrid y Barcelona. Las entradas salen hoy a las 18:00."
-     ]
+     ],
+     "q": "¿Cuándo viene Kidd Voodoo a España?",
+     "q2": "¿Cuándo toca Kidd Voodoo en España y cuándo salen las entradas?"
     },
     {
      "id": "planetas-dos-cruces",
@@ -484,7 +503,9 @@ window.AL_DIA = {
       "Los Planetas, una de las bandas más influyentes del indie español, preparan disco nuevo. El primer adelanto sale este viernes 23: su versión de “Dos cruces”.",
       "“Dos cruces” es un tema de Carmelo Larrea, el mismo autor de “Camino verde”. La banda granadina lleva un año tocándola en directo, en citas como el Festival de la Guitarra de Córdoba o el Atlantic Fest de Vilagarcía de Arousa.",
       "Del disco todavía no hay título ni fecha. La Ganzúa da por hecho que pronto anunciarán sus conciertos de 2027."
-     ]
+     ],
+     "q": "¿Qué pasa con el disco nuevo de Los Planetas?",
+     "q2": "¿Cuándo sale el nuevo disco de Los Planetas?"
     },
     {
      "id": "residencias-universitarias",
@@ -523,7 +544,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "45 millones entre 2.000 plazas salen a unos 22.500 euros por plaza."
-     ]
+     ],
+     "q": "¿Qué ha pasado con las residencias universitarias?",
+     "q2": "¿Qué son las 2.000 plazas de residencia universitaria que ha anunciado el Gobierno?"
     },
     {
      "id": "algeciras-mocion",
@@ -569,7 +592,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "Para echar a un alcalde hacen falta 14 votos de los 27 concejales. Los 12 del PP que rompieron con él y los 4 de Vox ya sumaban 16."
-     ]
+     ],
+     "q": "¿Qué ha pasado con el alcalde de Algeciras?",
+     "q2": "¿Por qué dimite el alcalde de Algeciras?"
     },
     {
      "id": "princesa-asturias",
@@ -606,7 +631,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "406.771 kilómetros son más de diez vueltas a la Tierra por el ecuador."
-     ]
+     ],
+     "q": "¿Quién gana los Princesa de Asturias este año?",
+     "q2": "¿Quién gana los Premios Princesa de Asturias 2026 y por qué?"
     }
    ],
    "iso": "2026-10-19"
@@ -673,7 +700,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "Un empate no sirve: para convalidar un decreto hacen falta más votos a favor que en contra. Con 34 a 34, la prórroga de alquileres no llegaría a aplicarse."
-     ]
+     ],
+     "q": "¿Qué pasa con los decretos de vivienda?",
+     "q2": "¿Qué dicen los decretos de vivienda y cuándo se votan?"
     }
    ],
    "iso": "2026-10-17"
@@ -710,7 +739,9 @@ window.AL_DIA = {
      "body": [
       "El Bugg, artista granadino que lleva la agencia Polar, actuó el viernes 16 en la Sala Shôko, en la calle de Toledo, dentro de su “Culto al Código Tour”. Las entradas costaban desde 19,80 euros.",
       "La gira ya había pasado por Razzmatazz, en Barcelona, en mayo, y por Bilbao en septiembre. La Shôko es la misma sala donde Spotify reunió a los nombres de su lista “Nuevo Urbano” a principios de mes."
-     ]
+     ],
+     "q": "¿Quién es El Bugg?",
+     "q2": "¿Quién es El Bugg y dónde ha tocado en Madrid?"
     },
     {
      "id": "mango-turquia",
@@ -732,7 +763,9 @@ window.AL_DIA = {
       "Mango ha completado este año las diez aperturas que tenía previstas en Turquía y ya suma 80 tiendas en el país. Las tres últimas están en Estambul: una junto al aeropuerto, otra en el centro comercial Koru Florya y la más grande, de más de 1.200 metros cuadrados, en el distrito financiero.",
       "Turquía, donde la marca está desde 1997, es uno de sus cinco mercados con mejor rendimiento. Según Modaes, ya es el tercero por ventas, solo por detrás de España y Francia.",
       "A la empresa le va bien en general: facturó 3.800 millones de euros en 2025, un 13 % más, y en el primer semestre de 2026 creció otro 7,2 %."
-     ]
+     ],
+     "q": "¿Qué está haciendo Mango en Turquía?",
+     "q2": "¿Cuántas tiendas tiene Mango en Turquía?"
     },
     {
      "id": "expulsiones-cataluna",
@@ -750,7 +783,9 @@ window.AL_DIA = {
       "La Policía Nacional ha expulsado de España a 21 extranjeros que vivían en Cataluña y acumulaban un historial delictivo amplio. Tras la autorización judicial, los trasladaron a Madrid y salieron en un vuelo fletado.",
       "Según The Local, entre todos sumaban más de 80 intervenciones policiales, con robos violentos, agresiones sexuales y violencia doméstica. Entre ellos estaba el principal sospechoso de un apuñalamiento mortal en un negocio de Barcelona y un hombre acusado de agredir sexualmente a una menor.",
       "La inmigración y la seguridad son dos de los temas que ya están presentes en la precampaña del 29 de noviembre."
-     ]
+     ],
+     "q": "¿Qué ha pasado con las expulsiones en Cataluña?",
+     "q2": "¿Por qué ha expulsado la Policía a 21 extranjeros desde Cataluña?"
     },
     {
      "id": "trafico-2025",
@@ -771,7 +806,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "1.775 muertos al año son casi cinco cada día."
-     ]
+     ],
+     "q": "¿Cuánta gente murió en la carretera en 2025?",
+     "q2": "¿Cuántas personas murieron en accidentes de tráfico en España en 2025?"
     }
    ],
    "iso": "2026-10-16"
@@ -807,7 +844,9 @@ window.AL_DIA = {
       "La Federación Española de Rugby ha entregado a World Rugby su candidatura para organizar el Mundial masculino de 2035. Su objetivo, dicen, es hacer “el mejor Mundial de la historia”.",
       "La idea es aprovechar los estadios que se preparan para el Mundial de fútbol de 2030: el Spotify Camp Nou, el Santiago Bernabéu, el Metropolitano o San Mamés, entre otros.",
       "La final sería en el Camp Nou, con capacidad para 105.000 personas. Sería la primera final de un Mundial de rugby con más de 100.000 espectadores."
-     ]
+     ],
+     "q": "¿España va a organizar el Mundial de rugby?",
+     "q2": "¿Va a organizar España el Mundial de rugby de 2035?"
     },
     {
      "id": "lucho-rk-gira",
@@ -824,7 +863,9 @@ window.AL_DIA = {
      "body": [
       "Lucho RK ha duplicado las fechas de su “Sordo de un pie tour” de 2027. Hará tres conciertos en Valencia y otros tres en Barcelona, y dos en Bilbao, Murcia, Granada y Canarias.",
       "Ese mismo día, el festival Mar de Jávea 2027 adelantó sus primeros nombres: Lori Meyers y Walls."
-     ]
+     ],
+     "q": "¿Cuándo es la gira de Lucho RK?",
+     "q2": "¿Cuáles son las fechas de la gira de Lucho RK en 2027?"
     }
    ],
    "iso": "2026-10-15"
@@ -866,7 +907,9 @@ window.AL_DIA = {
      "body": [
       "Un misil alcanzó el martes por la noche la sede de Aramco, la petrolera estatal de Arabia Saudí, en Dhahran. Según una fuente de la empresa citada por Reuters, las tres plantas superiores de una torre de oficinas quedaron dañadas y en llamas. No se informó de víctimas.",
       "La coalición liderada por Arabia Saudí dice que interceptó un misil y que sus restos cayeron en una zona residencial. Aramco no ha hecho comentarios."
-     ]
+     ],
+     "q": "¿Qué ha pasado en Arabia Saudí con Aramco?",
+     "q2": "¿Qué ha pasado con el ataque a la sede de Aramco en Arabia Saudí?"
     },
     {
      "id": "ormuz-barcos",
@@ -900,7 +943,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "Por el estrecho de Ormuz, de unos 33 kilómetros en su punto más estrecho, pasa buena parte del petróleo que se mueve por mar en el mundo. Si se complica, se nota en el precio de la gasolina."
-     ]
+     ],
+     "q": "¿Qué está pasando en el estrecho de Ormuz?",
+     "q2": ""
     },
     {
      "id": "huelga-11n",
@@ -934,7 +979,9 @@ window.AL_DIA = {
       "UGT y CCOO, junto a organizaciones de inquilinas, han registrado la huelga general del 11 de noviembre. La convocan por la vivienda y por los salarios.",
       "Piden subir sueldos, reducir la jornada, frenar la precariedad y controlar los precios de la vivienda. “Hoy trabajar no garantiza poder acceder a una vivienda”, resumió Alicia del Río, portavoz del Sindicato de Inquilinas.",
       "La patronal CEOE estudia si la huelga tiene base legal y, si la considera ilegal o abusiva, podría recurrir a la Audiencia Nacional. UGT responde que es constitucional y que vivienda y salarios están directamente relacionados."
-     ]
+     ],
+     "q": "¿Por qué hay huelga general el 11 de noviembre?",
+     "q2": ""
     },
     {
      "id": "lv-real-madrid",
@@ -958,7 +1005,9 @@ window.AL_DIA = {
       "Louis Vuitton empieza su segunda temporada como “sastre oficial” del Real Madrid. Diseña la ropa formal y de viaje de los equipos de fútbol masculino y femenino y del de baloncesto.",
       "Repite el traje de la temporada pasada, ahora con camisa de rayas azul y polo beige, y añade un abrigo de cachemir con bufanda de monograma. En la ropa de viaje hay una chaqueta de nailon reversible, un jersey azul marino con “Vuitton” bordado en piel y una gorra con el logo LV.",
       "Cada prenda lleva el escudo del club y las iniciales del jugador. La colección la ha hecho el estudio de hombre de la marca, que dirige Pharrell Williams."
-     ]
+     ],
+     "q": "¿Qué ha hecho Louis Vuitton con el Real Madrid?",
+     "q2": "¿Qué ropa ha diseñado Louis Vuitton para el Real Madrid?"
     },
     {
      "id": "byan-londres",
@@ -981,7 +1030,9 @@ window.AL_DIA = {
       "No es su primera vez en Londres: el año pasado tuvo durante unos tres meses una tienda temporal en Covent Garden. En Madrid tiene tienda propia desde 2024, en la calle Claudio Coello.",
       "La marca vendió más de 3 millones de euros en 2025. El 60 % de lo que vende online va a otros países, sobre todo a Estados Unidos, Reino Unido e Italia. También se vende en grandes almacenes como Liberty, en Londres, y Le Bon Marché, en París.",
       "“Ofrecemos moda atemporal, que no entiende de edades”, dice su fundadora."
-     ]
+     ],
+     "q": "¿Qué es Byan?",
+     "q2": "¿Qué es Byan y dónde ha abierto tienda en Londres?"
     }
    ],
    "iso": "2026-10-13"
@@ -1018,7 +1069,9 @@ window.AL_DIA = {
      ],
      "idea": [
       "Santa Eulalia abrió cinco años antes de que hubiera tren en la península: el primero, el Barcelona–Mataró, es de 1848."
-     ]
+     ],
+     "q": "¿Qué ha sacado Zara con Santa Eulalia?",
+     "q2": "¿Qué es la colaboración de Zara con Santa Eulalia?"
     },
     {
      "id": "micropena-ep",
@@ -1039,7 +1092,9 @@ window.AL_DIA = {
       "Micropena es una banda de dreampop de Torrelavega (Cantabria) que acaba de sacar su primer EP, de cuatro canciones, también editado en casete por Ediciones Subterranias.",
       "Recuperan el indie-pop de los noventa: melodías cuidadas, guitarras que pasan de etéreas a ruidosas y letras costumbristas. Su sello los compara con The Pastels, Yo La Tengo y los primeros Los Planetas.",
       "Lo grabó y produjo Álex Pis. Trabajan de forma colectiva, dejando que las canciones salgan solas, y el EP es el paso previo a un primer disco largo."
-     ]
+     ],
+     "q": "¿Quiénes son Micropena?",
+     "q2": ""
     }
    ],
    "iso": "2026-10-12"
