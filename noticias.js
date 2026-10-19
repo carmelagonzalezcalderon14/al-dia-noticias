@@ -553,7 +553,48 @@ window.AL_DIA = {
    "label": "Dom 18",
    "sub": "Domingo",
    "title": "Domingo 18 de octubre",
-   "items": [],
+   "items": [
+    {
+     "id": "shanghai-davidovich-jodar",
+     "tag": "Deporte · Tenis",
+     "title": "Final española en Shanghái: Davidovich remonta a Jódar y gana su primer Masters 1000",
+     "desc": "1-6, 7-6 y 6-4 tras ir un set y un break abajo. Jódar, de 20 años, se queda a un partido del top 10.",
+     "what": "Alejandro Davidovich Fokina gana el Masters 1000 de Shanghái al remontar a Rafael Jódar en una final entre españoles.",
+     "body": [
+      "Alejandro Davidovich Fokina ha ganado el Masters 1000 de Shanghái, el título más importante de su carrera. En la final remontó a otro español, Rafael Jódar: 1-6, 7-6 (5) y 6-4 en dos horas y media.",
+      "Davidovich, de 27 años, llegó a ir perdiendo 1-6 y 2-3 con el saque en contra. Había perdido sus cinco primeras finales, entre ellas la de Montecarlo en 2022, pero ahora encadena tres títulos seguidos este año: Mallorca, Chengdu y Shanghái. “No tengo palabras”, dijo al acabar.",
+      "Jódar, de 20 años, habría entrado en el top 10 si ganaba. Aun así, sube al número 11 del mundo, y Davidovich al 13, el mejor puesto de su carrera."
+     ],
+     "idea": [
+      "Un Masters 1000 es la categoría de torneos que va justo por debajo de los cuatro Grand Slam y de la Copa de Maestros: solo hay nueve al año."
+     ],
+     "next": {
+      "rows": [
+       [
+        "2–8 nov",
+        "Masters 1000 de París"
+       ],
+       [
+        "15–22 nov",
+        "ATP Finals en Turín, con los ocho mejores del año"
+       ]
+      ],
+      "note": "Jódar está noveno en la carrera hacia Turín, justo en el límite para clasificarse."
+     },
+     "src": [
+      [
+       "ATP Tour",
+       "https://www.atptour.com/en/news/jodar-davidovich-fokina-shanghai-2026-final"
+      ],
+      [
+       "ESPN",
+       "https://www.espn.com/tennis/story/_/id/50209382/davidovich-fokina-wins-shanghai-biggest-title-career"
+      ]
+     ],
+     "q": "¿Quién ha ganado el Masters de Shanghái?",
+     "q2": "¿Cómo quedó la final entre Davidovich y Jódar?"
+    }
+   ],
    "iso": "2026-10-18"
   },
   {
@@ -1537,6 +1578,42 @@ window.AL_DIA = {
      ],
      "q": "¿Cómo fue el último partido de Messi con Argentina?",
      "q2": "¿Cuántos goles ha marcado Messi con Argentina?"
+    },
+    {
+     "id": "alcaraz-tokio",
+     "tag": "Deporte · Tenis",
+     "title": "Alcaraz gana en Tokio su primer título desde la lesión de muñeca",
+     "desc": "7-6 y 6-4 a Lehecka. Es su tercer torneo tras cuatro meses parado.",
+     "what": "Carlos Alcaraz gana el Abierto de Japón al vencer en la final a Jiri Lehecka.",
+     "body": [
+      "Carlos Alcaraz ha ganado el Abierto de Japón, en Tokio, tras vencer en la final al checo Jiri Lehecka, número 19 del mundo, por 7-6 (4) y 6-4. Repite el título del año pasado.",
+      "Es su primer título desde febrero. Una tenosinovitis en la muñeca derecha le tuvo unos cuatro meses fuera y le hizo perderse Roland Garros y Wimbledon. Volvió en el US Open, donde llegó a cuartos.",
+      "Con este, suma tres títulos en 2026 (Open de Australia, Qatar y Tokio) y 27 en su carrera."
+     ],
+     "next": {
+      "rows": [
+       [
+        "7–18 oct",
+        "Masters 1000 de Shanghái"
+       ],
+       [
+        "15–22 nov",
+        "ATP Finals en Turín"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "ARY News (AFP)",
+       "https://arynews.tv/alcaraz-wins-japan-open-for-first-title-since-return-from-injury"
+      ],
+      [
+       "Wikipedia: temporada 2026 de Alcaraz",
+       "https://en.wikipedia.org/wiki/2026_Carlos_Alcaraz_tennis_season"
+      ]
+     ],
+     "q": "¿Ha ganado Alcaraz en Tokio?",
+     "q2": "¿Cuántos títulos lleva Alcaraz en 2026?"
     }
    ]
   },
@@ -1620,11 +1697,12 @@ window.AL_DIA = {
   },
   {
    "h": "Deporte",
-   "p": "El Madrid llega al Clásico del domingo a seis puntos del Barça, Martín y Márquez se juegan MotoGP por dos puntos, y España quiere el Mundial de rugby de 2035.",
+   "p": "El Madrid llega al Clásico del domingo a seis puntos del Barça, Martín y Márquez se juegan MotoGP por dos puntos, y España quiere el Mundial de rugby de 2035. Y en Shanghái, final española: Davidovich remontó a Jódar y ganó su primer Masters 1000.",
    "ids": [
     "liga-clasico",
     "motogp-australia",
-    "rugby-2035"
+    "rugby-2035",
+    "shanghai-davidovich-jodar"
    ]
   }
  ],
