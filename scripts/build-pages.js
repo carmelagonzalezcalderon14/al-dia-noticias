@@ -1,5 +1,5 @@
 /*
-  Al Día · genera una página propia para cada noticia (/noticias/<id>/) y el sitemap.xml.
+  ¿Qué ha pasado? · genera una página propia para cada noticia (/noticias/<id>/) y el sitemap.xml.
   Netlify lo ejecuta solo en cada publicación (ver netlify.toml). No necesita instalar nada.
   Lee el contenido de noticias.js, que es el único archivo que cambia en cada edición.
 */
@@ -79,7 +79,7 @@ function page(it, day) {
   }
   if (faq.length > 1) parts.push(`<section class="faq"><h2>Preguntas rápidas</h2>${faq.slice(1).map((f) => `<h3>${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join("")}</section>`);
 
-  const ld = [{ "@context": "https://schema.org", "@type": "NewsArticle", headline: it.title, description: it.desc, datePublished: day.iso, dateModified: (DATA.edicion && DATA.edicion.iso) || day.iso, inLanguage: "es-ES", articleSection: it.tag, publisher: { "@type": "Organization", name: "Al Día", url: SITE || undefined }, publishingPrinciples: SITE ? SITE + "/sobre/" : undefined, author: { "@type": "Organization", name: "Redacción de Al Día" }, isBasedOn: it.src.map((s) => s[1]) }];
+  const ld = [{ "@context": "https://schema.org", "@type": "NewsArticle", headline: it.title, description: it.desc, datePublished: day.iso, dateModified: (DATA.edicion && DATA.edicion.iso) || day.iso, inLanguage: "es-ES", articleSection: it.tag, publisher: { "@type": "Organization", name: "¿Qué ha pasado?", url: SITE || undefined }, publishingPrinciples: SITE ? SITE + "/sobre/" : undefined, author: { "@type": "Organization", name: "Redacción de ¿Qué ha pasado?" }, isBasedOn: it.src.map((s) => s[1]) }];
   if (SITE) ld[0].mainEntityOfPage = SITE + url;
   if (faq.length) ld.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) });
 
@@ -88,13 +88,13 @@ function page(it, day) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>${esc(it.title)} · Al Día</title>
+<title>${esc(it.title)} · ¿Qué ha pasado?</title>
 <meta name="description" content="${esc(it.desc)}">
 ${INDEXAR ? "" : '<meta name="robots" content="noindex">'}
 ${SITE ? `<link rel="canonical" href="${SITE + url}">` : ""}
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
-<meta property="og:site_name" content="Al Día">
+<meta property="og:site_name" content="¿Qué ha pasado?">
 <meta property="og:title" content="${esc(it.title)}">
 <meta property="og:description" content="${esc(it.desc)}">
 ${SITE ? `<meta property="og:url" content="${SITE + url}">` : ""}
@@ -105,14 +105,14 @@ ${SITE ? `<meta property="og:url" content="${SITE + url}">` : ""}
 <style>${CSS}</style>
 </head>
 <body data-topic="${esc(topic(it))}">
-<header><a class="brand" href="/">Al D<span>í</span>a</a><a href="/">Ver todas las noticias de hoy →</a></header>
+<header><a class="brand" href="/">¿Qué ha pasado<span>?</span></a><a href="/">Ver todas las noticias de hoy →</a></header>
 <main>
 <div class="meta"><span class="tag">${esc(it.tag)}</span><span>${esc(day.title)}</span></div>
 <h1>${esc(it.title)}</h1>
 <p class="desc">${esc(it.desc)}</p>
 ${parts.join("\n")}
-<a class="cta" href="/#n-${esc(it.id)}">Abrir en Al Día y votar</a>
-<p class="links">Redacción de Al Día, con ayuda de IA y a partir de las fuentes enlazadas. <a href="/sobre/">Cómo hacemos Al Día</a> · ¿Ves un error? <a href="/sobre/#correcciones">Avísanos</a></p>
+<a class="cta" href="/#n-${esc(it.id)}">Abrir y votar</a>
+<p class="links">Redacción de ¿Qué ha pasado?, con ayuda de IA y a partir de las fuentes enlazadas. <a href="/sobre/">Cómo hacemos ¿Qué ha pasado?</a> · ¿Ves un error? <a href="/sobre/#correcciones">Avísanos</a></p>
 </main>
 </body>
 </html>
@@ -142,7 +142,7 @@ fs.writeFileSync(path.join(root, "robots.txt"),
 
 // llms.txt: índice en texto plano pensado para asistentes de IA.
 const llms = [
-  "# Al Día",
+  "# ¿Qué ha pasado?",
   "",
   "> Las noticias del día contadas claras y sin tono de partido: qué ha pasado, por qué importa y qué viene después. En español, para gente joven. Cada noticia cita sus fuentes. Cómo trabajamos: " + SITE + "/sobre/",
   "",
@@ -150,7 +150,7 @@ const llms = [
 ].join("\n");
 fs.writeFileSync(path.join(root, "llms.txt"), llms + "\n");
 
-console.log(`Al Día: ${n} páginas de noticia generadas${SITE ? " + sitemap.xml" : ""} + robots.txt + llms.txt.`);
+console.log(`¿Qué ha pasado?: ${n} páginas de noticia generadas${SITE ? " + sitemap.xml" : ""} + robots.txt + llms.txt.`);
 
 // Página propia del apartado de elecciones (para buscadores y asistentes de IA).
 if (DATA.elecciones) {
@@ -162,15 +162,15 @@ if (DATA.elecciones) {
     { "@type": "Question", name: "¿Cuándo son las elecciones generales y cuándo empieza la campaña?", acceptedAnswer: { "@type": "Answer", text: E.calendario.map((r) => `${r[0]}: ${r[1]}.`).join(" ") } }];
   const html = `<!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Elecciones 29-N: así va la campaña · Al Día</title>
+<title>Elecciones 29-N: así va la campaña · ¿Qué ha pasado?</title>
 <meta name="description" content="${esc(E.intro)}">
 ${INDEXAR ? "" : '<meta name="robots" content="noindex">'}
 ${SITE ? `<link rel="canonical" href="${SITE}/elecciones/">` : ""}
-<meta property="og:title" content="Elecciones 29-N: así va la campaña · Al Día"><meta property="og:description" content="${esc(E.intro)}">
+<meta property="og:title" content="Elecciones 29-N: así va la campaña · ¿Qué ha pasado?"><meta property="og:description" content="${esc(E.intro)}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">
 <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq }).replace(/</g, "\\u003c")}</script>
 <style>${CSS}</style></head>
-<body data-topic="España"><header><a class="brand" href="/">Al D<span>í</span>a</a><a href="/">Ver todas las noticias →</a></header>
+<body data-topic="España"><header><a class="brand" href="/">¿Qué ha pasado<span>?</span></a><a href="/">Ver todas las noticias →</a></header>
 <main>
 <h1>${esc(E.titulo)}</h1>
 <p class="desc">${esc(E.intro)}</p>
@@ -180,7 +180,7 @@ ${E.hoy.map((x) => `<p><b>${esc(x.p)}:</b> ${esc(x.t)}</p>`).join("\n")}
 <section><h2>Quién ha dicho qué de quién</h2>${E.dardos.map((d) => `<p><b>${esc(d.de)}</b> sobre ${esc(d.a)}: ${esc(d.q)}</p>`).join("")}</section>
 <section><h2>¿Cuándo es cada cosa?</h2><ul class="tl">${E.calendario.map((r) => `<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join("")}</ul></section>
 <p class="links"><b>Fuentes:</b> ${E.src.map((c) => `<a href="${esc(c[1])}" rel="noopener">${esc(c[0])}</a>`).join("")}</p>
-<a class="cta" href="/">Abrir Al Día</a>
+<a class="cta" href="/">Abrir ¿Qué ha pasado?</a>
 </main></body></html>
 `;
   fs.writeFileSync(path.join(dir, "index.html"), html);
@@ -188,5 +188,5 @@ ${E.hoy.map((x) => `<p><b>${esc(x.p)}:</b> ${esc(x.t)}</p>`).join("\n")}
     fs.writeFileSync(path.join(root, "sitemap.xml"), fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").replace("</urlset>", `  <url><loc>${SITE}/elecciones/</loc></url>\n</urlset>`));
   }
   fs.appendFileSync(path.join(root, "llms.txt"), `\n## Elecciones 29-N\n\n- [${q}](${SITE}/elecciones/): ${E.intro}\n`);
-  console.log("Al Día: página de elecciones generada.");
+  console.log("¿Qué ha pasado?: página de elecciones generada.");
 }

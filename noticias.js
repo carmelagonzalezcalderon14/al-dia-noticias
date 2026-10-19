@@ -1,4 +1,4 @@
-/* Al Día · contenido. Este es el único archivo que cambia en cada edición. */
+/* ¿Qué ha pasado? · contenido. Este es el único archivo que cambia en cada edición. */
 window.AL_DIA = {
  "edicion": {
   "fecha": "Lunes 19 de octubre",

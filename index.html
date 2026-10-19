@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Al Día</title>
+<title>¿Qué ha pasado?</title>
 <meta name="description" content="Las noticias del día contadas claras y sin tono de partido: qué ha pasado, por qué importa y qué viene después. En cinco minutos estás al día.">
 <meta name="theme-color" content="#2b3dff">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
-<meta property="og:site_name" content="Al Día">
-<meta property="og:title" content="Al Día · Las noticias, sin rollo y sin bandos">
+<meta property="og:site_name" content="¿Qué ha pasado?">
+<meta property="og:title" content="¿Qué ha pasado? · Las noticias, sin rollo y sin bandos">
 <meta property="og:description" content="Qué ha pasado, por qué importa y qué viene después. En cinco minutos estás al día.">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b3dff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23fff'%3E%C3%AD%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b3dff'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23fff'%3E%3F%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">
 <style>
-/* Al Día · prototipo. Serio pero moderno: titulares en serif de prensa, texto en sans geométrica, un acento cobalto.
+/* ¿Qué ha pasado? · prototipo. Serio pero moderno: titulares en serif de prensa, texto en sans geométrica, un acento cobalto.
    Portada = feed de hoy (resumen de 30 s + tarjetas). Tira de días para los 7 anteriores y resumen semanal. Cada noticia se abre en una vista de detalle. */
 :root {
   --bg: #f4f5f8; --surface: #ffffff; --ink: #0d1321; --muted: #5b6475; --line: #e1e5ec;
@@ -285,7 +285,7 @@ h1.edtitle { font-size: 26px; }
 <div class="wrap">
   <div class="top">
     <div class="bar1">
-      <button class="brand" id="home" type="button" aria-label="Ir a hoy">Al D<span>í</span>a</button>
+      <button class="brand" id="home" type="button" aria-label="Ir a hoy">¿Qué ha pasado<span>?</span></button>
       <span class="today"><span id="fecha"></span> · <button class="about" id="about" type="button">¿Qué es esto?</button></span>
     </div>
     <div class="scroller" id="days" role="group" aria-label="Elegir día"></div>
@@ -298,7 +298,7 @@ h1.edtitle { font-size: 26px; }
       <label class="sw" id="fywrap"><input type="checkbox" id="foryou" checked> Ordenar para mí</label>
     </div>
     <main id="feed"></main>
-    <p class="status" style="text-align:center;margin-top:18px">Redacción de Al Día, con ayuda de IA y a partir de fuentes enlazadas en cada noticia · <a href="/sobre/">Cómo hacemos Al Día</a></p>
+    <p class="status" style="text-align:center;margin-top:18px">Redacción de ¿Qué ha pasado?, con ayuda de IA y a partir de fuentes enlazadas en cada noticia · <a href="/sobre/">Cómo hacemos ¿Qué ha pasado?</a></p>
 
     <section class="panel" id="panel">
       <h2>Esto es una prueba. ¿Qué te ha parecido?</h2>
@@ -311,7 +311,7 @@ h1.edtitle { font-size: 26px; }
       <label class="q" for="notes">¿Qué cambiarías?</label>
       <textarea id="notes" placeholder="Temas que faltan, lo que sobra, el tono, lo que sea"></textarea>
       <button class="send" id="send" type="button">Enviar mis respuestas</button>
-      <p class="status">Guardamos tu nombre y respuestas solo para mejorar Al Día. Más en <a href="/sobre/#privacidad">Cómo hacemos Al Día</a>.</p>
+      <p class="status">Guardamos tu nombre y respuestas solo para mejorar ¿Qué ha pasado?. Más en <a href="/sobre/#privacidad">Cómo hacemos ¿Qué ha pasado?</a>.</p>
       <p class="status" id="sendstatus" role="status"></p>
     </section>
   </div>
@@ -322,7 +322,7 @@ h1.edtitle { font-size: 26px; }
 <div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="wtitle" hidden>
   <div class="wbox">
     <span class="sticker">Nuevo · en pruebas</span>
-    <h2 id="wtitle">Hola. Esto es Al Día.</h2>
+    <h2 id="wtitle">Hola. Esto es ¿Qué ha pasado?</h2>
     <p>Nació de algo muy simple: queríamos estar al día, pero leer el periódico nos aburría, y nunca sabíamos si lo que leíamos venía con el tono de un lado o del otro.</p>
     <p>Aquí tienes las noticias contadas como se las contarías a un amigo: qué ha pasado, por qué importa y qué viene después. Sin opinar y con las fuentes siempre a la vista.</p>
     <ul>

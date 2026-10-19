@@ -1,4 +1,4 @@
-# Al Día
+# ¿Qué ha pasado?
 
 Las noticias del día contadas claras y sin tono de partido. Prototipo en pruebas.
 
