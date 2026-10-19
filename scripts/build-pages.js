@@ -14,6 +14,11 @@ const root = path.join(__dirname, "..");
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, "noticias.js"), "utf8"), sandbox);
 const DATA = sandbox.window.AL_DIA;
+// archivo.json: días que ya no salen en la portada. Nunca se borran, para no perder las páginas que Google ya conoce.
+const ARCH_FILE = path.join(root, "archivo.json");
+const ARCHIVO = fs.existsSync(ARCH_FILE) ? JSON.parse(fs.readFileSync(ARCH_FILE, "utf8")) : [];
+const seen = new Set();
+const ALL_DAYS = DATA.days.concat(ARCHIVO).map((d) => ({ ...d, items: d.items.filter((it) => !seen.has(it.id) && seen.add(it.id)) })).filter((d) => d.items.length);
 const SITE = (process.env.URL || "").replace(/\/$/, "");
 
 const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -112,7 +117,7 @@ ${SITE ? `<meta property="og:url" content="${SITE + url}">` : ""}
 <p class="desc">${esc(it.desc)}</p>
 ${parts.join("\n")}
 <a class="cta" href="/#n-${esc(it.id)}">Abrir y votar</a>
-<p class="links">Redacción de ¿Qué ha pasado?, con ayuda de IA y a partir de las fuentes enlazadas. <a href="/sobre/">Cómo hacemos ¿Qué ha pasado?</a> · ¿Ves un error? <a href="/sobre/#correcciones">Avísanos</a></p>
+<p class="links">Redacción de ¿Qué ha pasado?, con ayuda de IA y a partir de las fuentes enlazadas. <a href="/sobre/">Cómo hacemos ¿Qué ha pasado?</a> · <a href="/archivo/">Archivo</a> · ¿Ves un error? <a href="/sobre/#correcciones">Avísanos</a></p>
 </main>
 </body>
 </html>
@@ -121,18 +126,39 @@ ${parts.join("\n")}
 
 const outDir = path.join(root, "noticias");
 fs.rmSync(outDir, { recursive: true, force: true });
-const urls = ["/", "/sobre/"];
+const urls = [["/", DATA.edicion && DATA.edicion.iso], ["/sobre/"], ["/archivo/", DATA.edicion && DATA.edicion.iso]];
 let n = 0;
-DATA.days.forEach((day) => day.items.forEach((it) => {
+ALL_DAYS.forEach((day) => day.items.forEach((it) => {
   const dir = path.join(outDir, it.id);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), page(it, day));
-  urls.push(`/noticias/${it.id}/`);
+  urls.push([`/noticias/${it.id}/`, day.iso]);
   n++;
 }));
 
+// Página /archivo/: todas las noticias publicadas, por días (enlaces internos para buscadores).
+const archDir = path.join(root, "archivo");
+fs.rmSync(archDir, { recursive: true, force: true }); fs.mkdirSync(archDir, { recursive: true });
+const archTitle = (d) => d.title.replace(/^Noticias de hoy, /, "").replace(/^./, (c) => c.toUpperCase());
+fs.writeFileSync(path.join(archDir, "index.html"), `<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Archivo de noticias · ¿Qué ha pasado?</title>
+<meta name="description" content="Todas las noticias publicadas en ¿Qué ha pasado?, ordenadas por días.">
+${INDEXAR ? "" : '<meta name="robots" content="noindex">'}
+${SITE ? `<link rel="canonical" href="${SITE}/archivo/">` : ""}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Geist:wght@400;500;600&display=swap">
+<style>${CSS}
+.day h2{font-family:var(--f-display);font-size:22px;text-transform:none;letter-spacing:0;margin:0 0 6px}.day h2::before{display:none}
+.day ul{margin:0;padding-left:18px}.day li{margin:6px 0}</style></head>
+<body><header><a class="brand" href="/">¿Qué ha pasado<span>?</span></a><a href="/">Ver las noticias de hoy →</a></header>
+<main><h1>Archivo de noticias</h1><p class="desc">Todo lo que hemos contado, día a día.</p>
+${ALL_DAYS.map((d) => `<section class="day"><h2>${esc(archTitle(d))}</h2><ul>${d.items.map((it) => `<li><a href="/noticias/${esc(it.id)}/">${esc(it.title)}</a></li>`).join("")}</ul></section>`).join("\n")}
+<p class="links"><a href="/sobre/">Cómo hacemos ¿Qué ha pasado?</a></p></main></body></html>
+`);
+
 if (SITE) {
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE + u}</loc></url>`).join("\n")}\n</urlset>\n`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE + u[0]}</loc>${u[1] ? `<lastmod>${u[1]}</lastmod>` : ""}</url>`).join("\n")}\n</urlset>\n`;
   fs.writeFileSync(path.join(root, "sitemap.xml"), xml);
 }
 // robots.txt: dejamos entrar a buscadores y a los robots de las IAs (ChatGPT, Perplexity, Claude, Google).
@@ -146,7 +172,7 @@ const llms = [
   "",
   "> Las noticias del día contadas claras y sin tono de partido: qué ha pasado, por qué importa y qué viene después. En español, para gente joven. Cada noticia cita sus fuentes. Cómo trabajamos: " + SITE + "/sobre/",
   "",
-  ...DATA.days.filter((d) => d.items.length).map((d) => [`## ${d.title}`, "", ...d.items.map((it) => `- [${it.q || it.title}](${SITE}/noticias/${it.id}/): ${it.desc}`), ""].join("\n")),
+  ...ALL_DAYS.map((d) => [`## ${d.title}`, "", ...d.items.map((it) => `- [${it.q || it.title}](${SITE}/noticias/${it.id}/): ${it.desc}`), ""].join("\n")),
 ].join("\n");
 fs.writeFileSync(path.join(root, "llms.txt"), llms + "\n");
 

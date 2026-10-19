@@ -326,6 +326,7 @@ h1.edtitle { font-size: 26px; }
       <button type="button" data-go="semana">Esta semana</button>
       <button type="button" data-go="elec">Elecciones 29-N</button>
       <a href="/sobre/">Cómo lo hacemos</a>
+      <a href="/archivo/">Archivo</a>
       <a href="/sobre/#privacidad">Privacidad</a>
     </nav>
     <p class="fsmall">Escrito por la redacción de ¿Qué ha pasado? con ayuda de IA, a partir de las fuentes que enlazamos en cada noticia. Sin cookies de seguimiento. © 2026</p>
@@ -383,7 +384,7 @@ h1.edtitle { font-size: 26px; }
 
   /* ---------- Utilidades ---------- */
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
-  function ext(label, href) { var a = el("a", null, label); var m = /^\/noticias\/([a-z0-9-]+)\/?$/.exec(href); if (m) { a.href = "#n-" + m[1]; return a; } a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer"; return a; }
+  function ext(label, href) { var a = el("a", null, label); var m = /^\/noticias\/([a-z0-9-]+)\/?$/.exec(href); if (m && byId[m[1]]) { a.href = "#n-" + m[1]; return a; } a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer"; return a; }
   function topic(it) { return it.tag.split(" · ")[0]; }
   function sub(it) { return it.tag.split(" · ")[1] || topic(it); }
   function words(it) { return [it.title, it.desc].concat(it.body || [it.what]).concat((it.how || []).map(String)).concat((it.next && it.next.note) ? [it.next.note] : []).join(" ").split(/\s+/).length; }
