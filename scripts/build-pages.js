@@ -150,3 +150,42 @@ const llms = [
 fs.writeFileSync(path.join(root, "llms.txt"), llms + "\n");
 
 console.log(`Al Día: ${n} páginas de noticia generadas${SITE ? " + sitemap.xml" : ""} + robots.txt + llms.txt.`);
+
+// Página propia del apartado de elecciones (para buscadores y asistentes de IA).
+if (DATA.elecciones) {
+  const E = DATA.elecciones;
+  const dir = path.join(root, "elecciones");
+  fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
+  const q = "¿Qué está pasando hoy en la campaña del 29N?";
+  const faq = [{ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: E.hoy.filter((x) => !/^Sin novedades/.test(x.t)).map((x) => `${x.p}: ${x.t}`).join(" ") } },
+    { "@type": "Question", name: "¿Cuándo son las elecciones generales y cuándo empieza la campaña?", acceptedAnswer: { "@type": "Answer", text: E.calendario.map((r) => `${r[0]}: ${r[1]}.`).join(" ") } }];
+  const html = `<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Elecciones 29-N: así va la campaña · Al Día</title>
+<meta name="description" content="${esc(E.intro)}">
+${INDEXAR ? "" : '<meta name="robots" content="noindex">'}
+${SITE ? `<link rel="canonical" href="${SITE}/elecciones/">` : ""}
+<meta property="og:title" content="Elecciones 29-N: así va la campaña · Al Día"><meta property="og:description" content="${esc(E.intro)}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">
+<script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq }).replace(/</g, "\\u003c")}</script>
+<style>${CSS}</style></head>
+<body data-topic="España"><header><a class="brand" href="/">Al D<span>í</span>a</a><a href="/">Ver todas las noticias →</a></header>
+<main>
+<h1>${esc(E.titulo)}</h1>
+<p class="desc">${esc(E.intro)}</p>
+<h2 class="q">${q}</h2>
+<p class="note">${esc(E.orden)}</p>
+${E.hoy.map((x) => `<p><b>${esc(x.p)}:</b> ${esc(x.t)}</p>`).join("\n")}
+<section><h2>Quién ha dicho qué de quién</h2>${E.dardos.map((d) => `<p><b>${esc(d.de)}</b> sobre ${esc(d.a)}: ${esc(d.q)}</p>`).join("")}</section>
+<section><h2>¿Cuándo es cada cosa?</h2><ul class="tl">${E.calendario.map((r) => `<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join("")}</ul></section>
+<p class="links"><b>Fuentes:</b> ${E.src.map((c) => `<a href="${esc(c[1])}" rel="noopener">${esc(c[0])}</a>`).join("")}</p>
+<a class="cta" href="/">Abrir Al Día</a>
+</main></body></html>
+`;
+  fs.writeFileSync(path.join(dir, "index.html"), html);
+  if (SITE && fs.existsSync(path.join(root, "sitemap.xml"))) {
+    fs.writeFileSync(path.join(root, "sitemap.xml"), fs.readFileSync(path.join(root, "sitemap.xml"), "utf8").replace("</urlset>", `  <url><loc>${SITE}/elecciones/</loc></url>\n</urlset>`));
+  }
+  fs.appendFileSync(path.join(root, "llms.txt"), `\n## Elecciones 29-N\n\n- [${q}](${SITE}/elecciones/): ${E.intro}\n`);
+  console.log("Al Día: página de elecciones generada.");
+}

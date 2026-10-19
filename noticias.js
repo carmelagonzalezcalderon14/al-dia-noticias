@@ -1137,5 +1137,123 @@ window.AL_DIA = {
     "micropena-ep"
    ]
   }
- ]
+ ],
+ "elecciones": {
+  "fecha": "2026-11-29",
+  "titulo": "Elecciones generales del 29 de noviembre",
+  "intro": "Todo lo que va pasando en la campaña, cada día. Mismo espacio para cada partido, todo atribuido a quien lo dice y sin valoraciones.",
+  "orden": "Partidos ordenados por votos en las generales de 2023. Frente Amplio y Podemos, que entonces iban dentro de Sumar, aparecen justo detrás. Los que no tienen novedad hoy salen igual, para que nadie desaparezca del mapa.",
+  "hoy": [
+   {
+    "p": "PP",
+    "t": "Feijóo presenta su “Contrato con España”: un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes."
+   },
+   {
+    "p": "PSOE",
+    "t": "Sánchez hace campaña esta tarde en Valladolid con Óscar Puente. Margarita Robles será su número dos. Anuncia 45 millones para unas 2.000 plazas de residencia universitaria.",
+    "n": "residencias-universitarias"
+   },
+   {
+    "p": "Vox",
+    "t": "Ratifica sus listas, con Montse Lluis de número dos por Madrid. Abascal ofrece al PP “algún entendimiento” en las candidaturas al Senado."
+   },
+   {
+    "p": "Sumar",
+    "t": "Yolanda Díaz critica la ley contra la okupación que propone Feijóo."
+   },
+   {
+    "p": "Frente Amplio",
+    "t": "Ada Colau, cabeza de lista, dice que intentaron “todo” para pactar con Podemos y pide dejar de hablar de ello."
+   },
+   {
+    "p": "Podemos",
+    "t": "Pablo Iglesias acusa al Frente Amplio de intentar “matar” a Podemos."
+   },
+   {
+    "p": "ERC",
+    "t": "Gabriel Rufián publica un libro en el que defiende que ERC presione al PSOE desde el Gobierno."
+   },
+   {
+    "p": "Junts",
+    "t": "Sin novedades destacadas hoy."
+   },
+   {
+    "p": "EH Bildu",
+    "t": "Otegi presenta sus candidatos y dice que bloqueará un gobierno al que llama “FeiVox”."
+   },
+   {
+    "p": "PNV",
+    "t": "Sin novedades destacadas hoy."
+   }
+  ],
+  "dardos": [
+   {
+    "de": "Isabel Díaz Ayuso (PP)",
+    "a": "Pedro Sánchez y la izquierda",
+    "q": "Les acusa de “mandar escraches” contra ella y habla de “izquierda antidemocrática”."
+   },
+   {
+    "de": "Pablo Iglesias (Podemos)",
+    "a": "Frente Amplio",
+    "q": "Acusa al Frente Amplio de intentar “matar” a Podemos."
+   },
+   {
+    "de": "Arnaldo Otegi (EH Bildu)",
+    "a": "PP y Vox",
+    "q": "Dice que bloqueará un posible gobierno de los dos, al que llama “FeiVox”."
+   },
+   {
+    "de": "Yolanda Díaz (Sumar)",
+    "a": "Alberto Núñez Feijóo (PP)",
+    "q": "Critica su propuesta de ley contra la okupación."
+   },
+   {
+    "de": "Santiago Abascal (Vox)",
+    "a": "PP",
+    "q": "No es un ataque: le ofrece “algún entendimiento” en las listas al Senado para que la izquierda no lo controle."
+   }
+  ],
+  "calendario": [
+   [
+    "11 nov",
+    "Huelga general por la vivienda"
+   ],
+   [
+    "12 nov",
+    "Votación de los decretos de vivienda en la Diputación Permanente"
+   ],
+   [
+    "13 nov",
+    "Arranca la campaña oficial"
+   ],
+   [
+    "27 nov",
+    "Último día de campaña"
+   ],
+   [
+    "28 nov",
+    "Jornada de reflexión"
+   ],
+   [
+    "29 nov",
+    "Elecciones generales"
+   ]
+  ],
+  "relacionadas": [
+   "precampana-29n",
+   "vivienda-decretos",
+   "huelga-11n",
+   "residencias-universitarias"
+  ],
+  "src": [
+   [
+    "El Español (directo)",
+    "https://www.elespanol.com/espana/20261019/elecciones-generales-directo-ultima-hora-pedro-sanchez-gobierno-actos-psoe-pp-vox-voto-correo-sondeos-encuestas-espana-2026-partidos/1003744425383_10.html"
+   ],
+   [
+    "EFE, vía Infobae",
+    "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
+   ]
+  ]
+ }
 };

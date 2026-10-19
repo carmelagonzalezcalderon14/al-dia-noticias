@@ -213,6 +213,29 @@ textarea { min-height: 90px; resize: vertical; }
 .weekcta .wchips span { background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 500; }
 .weekcta .wgoarrow { background: var(--accent); color: #fff; font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 999px; margin-top: 2px; }
 @media (prefers-reduced-motion: reduce) { .weekcta, .weekcta:hover { transition: none; transform: none; } }
+.elcta { border-color: var(--ink); }
+.elcta .wkey { background: var(--ink); color: var(--bg); }
+.elcta .wgoarrow { background: var(--ink); color: var(--bg); }
+.daybtn.elecbtn { border-color: var(--ink); }
+.elec { display: flex; flex-direction: column; gap: 12px; }
+.ecount { display: flex; align-items: baseline; gap: 12px; background: var(--ink); color: var(--bg); border-radius: 18px; padding: 18px 20px; }
+.ecount b { font-family: var(--f-display); font-size: 56px; line-height: 1; }
+.ecount span { font-size: 16px; font-weight: 600; }
+.eintro { margin: 0; font-size: 16.5px; max-width: 64ch; }
+.elec > h2 { font-family: var(--f-display); font-size: 22px; margin: 14px 0 0; }
+.eparties { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.eparty { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.eparty h3 { margin: 0; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+.eparty p { margin: 0; font-size: 15px; line-height: 1.5; }
+.eparty.quiet p { color: var(--muted); font-style: italic; }
+.eparty .more { align-self: flex-start; font-size: 13px; }
+.edardos { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.edardos li { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; }
+.edardos p { margin: 0; font-size: 15px; }
+.edardos .ewho { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+.edardos .ewho b { color: var(--ink); }
+.erel { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.erel a { color: var(--accent); font-weight: 500; }
 .idea { background: var(--pop); color: #1a1300; border-radius: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; max-width: 64ch; }
 .idea h3 { margin: 0; font-family: var(--f-display); font-size: 19px; }
 .idea p { margin: 0; font-size: 16px; line-height: 1.55; padding-left: 14px; border-left: 3px solid rgba(26,19,0,.25); }
@@ -416,7 +439,8 @@ h1.edtitle { font-size: 26px; }
   function renderList() {
     feed.textContent = "";
     var edt = document.getElementById("edtitle"), edm = document.getElementById("edmeta");
-    document.getElementById("fywrap").hidden = view.week;
+    document.getElementById("fywrap").hidden = view.week || view.elec;
+    if (view.elec) { renderElec(edt, edm); return; }
     if (view.week) {
       edt.textContent = "Resumen de la semana"; edm.textContent = "Del 12 al 18 de octubre, en cuatro bloques";
       var w = el("section", "week");
@@ -449,6 +473,15 @@ h1.edtitle { font-size: 26px; }
       wk.appendChild(el("span", "wgoarrow", "Leer el resumen →"));
       wk.onclick = function () { track("/resumen-semana", "Resumen de la semana", true); view.week = true; paintNav(); go(); };
       feed.appendChild(wk);
+    }
+    if (view.day === HOY && DATA.elecciones) {
+      var ec = el("button", "weekcta elcta"); ec.type = "button";
+      ec.appendChild(el("span", "wkey", "Elecciones 29-N"));
+      ec.appendChild(el("span", "wtit", "Faltan " + diasElec() + " días. Así va la campaña hoy"));
+      var ech = el("span", "wchips"); ["Lo de cada partido", "Quién ha dicho qué", "Calendario"].forEach(function (t) { ech.appendChild(el("span", null, t)); }); ec.appendChild(ech);
+      ec.appendChild(el("span", "wgoarrow", "Ver la campaña →"));
+      ec.onclick = openElec;
+      feed.appendChild(ec);
     }
     items.forEach(function (it, i) { feed.appendChild(card(it, view.day === HOY && i === 0)); });
     if (view.day === HOY) {
@@ -516,12 +549,49 @@ h1.edtitle { font-size: 26px; }
     b.appendChild(el("small", null, d.key === HOY ? (d.sub || "Hoy") : !d.items.length ? "sin edición" : d.items.length + (d.items.length === 1 ? " noticia" : " noticias")));
     b.appendChild(el("b", null, d.label));
     b.disabled = !d.items.length;
-    b.onclick = function () { view.day = d.key; view.week = false; paintNav(); go(); };
+    b.onclick = function () { view.day = d.key; view.week = false; view.elec = false; paintNav(); go(); };
     daysEl.appendChild(b); dayBtns.push([b, d.key]);
   });
   var wb = el("button", "daybtn"); wb.type = "button"; wb.appendChild(el("small", null, "12–18 oct")); wb.appendChild(el("b", null, "Resumen semana"));
-  wb.onclick = function () { view.week = true; paintNav(); go(); };
+  wb.onclick = function () { view.week = true; view.elec = false; paintNav(); go(); };
   daysEl.appendChild(wb);
+  function diasElec() { var E = DATA.elecciones; if (!E) return 0; return Math.round((new Date(E.fecha) - new Date((DATA.edicion && DATA.edicion.iso) || E.fecha)) / 86400000); }
+  function openElec() { track("/elecciones", "Elecciones 29-N", true); view.elec = true; view.week = false; paintNav(); go(); }
+  var eb = null;
+  if (DATA.elecciones) {
+    eb = el("button", "daybtn elecbtn"); eb.type = "button";
+    eb.appendChild(el("small", null, "Faltan " + diasElec() + " días")); eb.appendChild(el("b", null, "Elecciones 29-N"));
+    eb.onclick = openElec;
+    daysEl.insertBefore(eb, daysEl.children[1] || null);
+  }
+
+  function renderElec(edt, edm) {
+    var E = DATA.elecciones; if (!E) return;
+    var dias = diasElec();
+    edt.textContent = "Elecciones 29-N"; edm.textContent = E.titulo;
+    var w = el("section", "elec");
+    var top = el("div", "ecount"); top.appendChild(el("b", null, String(dias))); top.appendChild(el("span", null, dias === 1 ? "día para votar" : "días para votar")); w.appendChild(top);
+    w.appendChild(el("p", "eintro", E.intro));
+    w.appendChild(el("h2", null, "Hoy en campaña"));
+    w.appendChild(el("p", "note", E.orden));
+    var grid = el("div", "eparties");
+    E.hoy.forEach(function (x) {
+      var c = el("div", "eparty" + (/^Sin novedades/.test(x.t) ? " quiet" : "")); c.appendChild(el("h3", null, x.p)); c.appendChild(el("p", null, x.t));
+      if (x.n && byId[x.n]) { var a = el("a", "more", "Leer la noticia →"); a.href = "#n-" + x.n; c.appendChild(a); }
+      grid.appendChild(c);
+    });
+    w.appendChild(grid);
+    w.appendChild(el("h2", null, "Quién ha dicho qué de quién"));
+    var ul = el("ul", "edardos");
+    E.dardos.forEach(function (d) { var li = el("li"); var who = el("p", "ewho"); who.appendChild(el("b", null, d.de)); who.appendChild(document.createTextNode(" sobre " + d.a)); li.appendChild(who); li.appendChild(el("p", null, d.q)); ul.appendChild(li); });
+    w.appendChild(ul);
+    w.appendChild(el("h2", null, "Calendario hasta el 29-N"));
+    var tl = el("ul", "tl"); E.calendario.forEach(function (r) { var li = el("li"); li.appendChild(el("b", null, r[0])); li.appendChild(el("span", null, r[1])); tl.appendChild(li); }); w.appendChild(tl);
+    w.appendChild(el("h2", null, "Para entenderlo todo"));
+    var rl = el("ul", "erel"); E.relacionadas.forEach(function (id) { var it = byId[id]; if (!it) return; var li = el("li"); var a = el("a", null, it.title); a.href = "#n-" + id; li.appendChild(a); rl.appendChild(li); }); w.appendChild(rl);
+    var s = el("div", "links"); s.appendChild(el("b", null, "Fuentes:")); E.src.forEach(function (x) { s.appendChild(ext(x[0], x[1])); }); w.appendChild(s);
+    feed.appendChild(w);
+  }
 
   var TOPICS = ["Todo"];
   DAYS.forEach(function (d) { d.items.forEach(function (it) { if (TOPICS.indexOf(topic(it)) < 0) TOPICS.push(topic(it)); }); });
@@ -533,13 +603,14 @@ h1.edtitle { font-size: 26px; }
   });
 
   function paintNav() {
-    dayBtns.forEach(function (x) { x[0].setAttribute("aria-pressed", !view.week && view.day === x[1] ? "true" : "false"); });
-    wb.setAttribute("aria-pressed", view.week ? "true" : "false");
+    dayBtns.forEach(function (x) { x[0].setAttribute("aria-pressed", !view.week && !view.elec && view.day === x[1] ? "true" : "false"); });
+    wb.setAttribute("aria-pressed", view.week && !view.elec ? "true" : "false");
+    if (eb) eb.setAttribute("aria-pressed", view.elec ? "true" : "false");
     fbtns.forEach(function (x) { x[0].setAttribute("aria-pressed", view.topic === x[1] ? "true" : "false"); });
-    filtersEl.hidden = view.week;
+    filtersEl.hidden = view.week || view.elec;
   }
   function go() { showList(); window.scrollTo(0, 0); }
-  document.getElementById("home").onclick = function () { view.day = HOY; view.week = false; view.topic = "Todo"; paintNav(); go(); };
+  document.getElementById("home").onclick = function () { view.day = HOY; view.week = false; view.elec = false; view.topic = "Todo"; paintNav(); go(); };
   document.getElementById("foryou").onchange = function () { view.forYou = this.checked; renderList(); };
 
   /* ---------- Panel de prueba ---------- */
