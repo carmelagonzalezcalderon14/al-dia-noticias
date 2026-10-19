@@ -2,7 +2,7 @@
 window.AL_DIA = {
  "edicion": {
   "fecha": "Lunes 19 de octubre",
-  "actualizado": "19 oct 2026, 17:30",
+  "actualizado": "19 oct 2026, 22:20",
   "iso": "2026-10-19"
  },
  "days": [
@@ -15,47 +15,46 @@ window.AL_DIA = {
     {
      "id": "dana-19oct",
      "tag": "España · Tiempo",
-     "title": "La DANA Adam deja 3 muertos y la lluvia de un año entero en un solo día",
-     "desc": "Confinada la costa entre Valencia y Alicante y más de 100.000 alumnos sin clase. Y ahora va hacia Baleares.",
-     "what": "Ha habido tres fallecidos: uno en Cabrera de Mar (Barcelona) y una mujer en la playa de Sagunto el domingo, y una persona hallada sin vida hoy en Oliva. En Pego cayeron 638,5 litros por metro cuadrado en 24 horas, y en Oliva unos 635. El litoral sur de Valencia y el norte de Alicante, sobre todo La Safor y La Marina Alta, siguen confinados hasta nueva orden (EFE habla de 145 municipios). Emergencias ha registrado 1.249 incidentes y siete helicópteros trabajan en rescates. En Pego, una familia de cuatro personas, dos de ellas menores, fue arrastrada con su caravana y evacuada en helicóptero con hipotermia. Para hacerse una idea, 600 litros por metro cuadrado en un día es más de lo que suele llover en Madrid en un año entero.",
+     "title": "La DANA Adam deja 4 muertos y la lluvia de un año entero en un solo día",
+     "desc": "Mejora la situación en Valencia y se levantan casi todos los confinamientos. Ocho pueblos siguen confinados y el martes debería estabilizarse.",
+     "what": "La DANA Adam ha dejado cuatro muertos, tres en la Comunitat Valenciana y uno en Cataluña. Por la noche la situación mejora y se levantan la mayoría de los confinamientos.",
      "next": {
       "rows": [
        [
-        "Baleares",
-        "Aviso rojo en Mallorca, Ibiza y Formentera. Todas las clases suspendidas"
+        "Martes 20",
+        "Tiempo más estable en la península y Baleares, aunque la AEMET dice que sigue siendo adverso"
        ],
        [
         "Cataluña",
-        "Aviso naranja en 14 comarcas"
+        "Hasta 100 litros por metro cuadrado en 24 horas y posibles restricciones de movilidad por la tarde"
        ],
        [
-        "Valencia",
-        "Los avisos del litoral bajan a naranja, pero La Safor y La Marina Alta siguen confinadas"
+        "8 pueblos",
+        "Siguen confinados hasta nueva orden"
        ]
       ],
-      "note": "Nadie da todavía una fecha de final. El Govern balear habla de “mucha incertidumbre”."
+      "note": "Lo peor ya ha pasado, según la AEMET, pero la situación sigue siendo adversa."
      },
      "src": [
+      [
+       "Infobae (EFE)",
+       "https://www.infobae.com/espana/agencias/2026/10/19/cuatro-fallecidos-por-la-dana-adam-y-mejora-la-situacion-en-la-comunidad-valenciana/"
+      ],
       [
        "elDiario.es",
        "https://www.eldiario.es/sociedad/ultima-hora-temporal-alertas-inundacion-despliegue-ume-clases-suspendidas_133_13595902.html"
       ],
       [
-       "Infobae",
+       "Infobae (directo)",
        "https://www.infobae.com/espana/2026/10/19/ultima-hora-de-la-dana-en-la-comunidad-valenciana-se-mantiene-el-riesgo-extremo-por-lluvias-torrenciales/"
-      ],
-      [
-       "EFE, vía Infobae",
-       "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
       ]
      ],
      "body": [
-      "Tres personas han muerto desde el domingo por la DANA Adam: una en Cabrera de Mar (Barcelona), una mujer en la playa de Sagunto y otra encontrada este lunes en Oliva (Valencia).",
+      "La DANA Adam ha dejado cuatro muertos desde el domingo. En Cabrera de Mar (Barcelona), una mujer arrastrada por una riera. En Sagunto, una persona desaparecida mientras se bañaba en la playa de Corinto. Y en Oliva, una mujer con movilidad reducida que vivía sola, encontrada en el bajo de su casa, y un hombre que murió de un infarto.",
       "Lo que ha caído es una barbaridad. En Pego, 638,5 litros por metro cuadrado en 24 horas. En Forna, 635. En Villalonga, 559. Y en la cabecera del río Girona, más de 700.",
-      "La Generalitat ha confinado 145 municipios del sur de Valencia y el norte de Alicante. Traducido: si vives en La Safor o en La Marina Alta, te piden que no salgas de casa salvo urgencia. El president ha pedido “muchísima paciencia”.",
-      "El río Girona se desbordó en Els Poblets. Su alcalde habló de una situación “caótica”, aunque el agua ya baja y los daños son sobre todo en coches y comercios. En Pego, una familia de cuatro, con dos niños, fue arrastrada con su caravana y la sacaron en helicóptero con hipotermia. Hay una quincena de helicópteros trabajando y Emergencias lleva 1.249 avisos.",
-      "Más de 100.000 alumnos se han quedado sin clase: 80.913 en la provincia de Valencia y 21.868 en la de Alicante.",
-      "Y esto no ha acabado. El temporal salta ahora a Baleares: en Ibiza la carretera del aeropuerto está inundada, a la gente le ha llegado una alerta al móvil y la UME ya ha cruzado desde Valencia."
+      "Por la noche la situación ha mejorado en la Comunitat Valenciana y se han levantado la mayoría de los confinamientos. Siguen confinados ocho municipios: Bellreguard, Oliva, Daimús, Piles y Miramar, en el sur de Valencia, y Xàbia, Pego y Els Poblets, en el norte de Alicante. El aviso ha bajado a naranja.",
+      "Durante el día, el río Girona se desbordó en Els Poblets y una familia de cuatro, con dos niños, tuvo que ser rescatada en helicóptero en Pego tras ser arrastrada con su caravana. Más de 100.000 alumnos se quedaron sin clase.",
+      "En Baleares, Ibiza acumuló 83,4 litros por metro cuadrado en 24 horas, y cuatro de los diez sitios de España donde más llovió están en las islas."
      ],
      "idea": [
       "Un litro por metro cuadrado es un milímetro de agua. 600 litros son 60 centímetros: si el agua no se escurriera, en una calle llana te llegaría por encima de la rodilla.",
@@ -178,6 +177,10 @@ window.AL_DIA = {
      "next": {
       "rows": [
        [
+        "26 oct",
+        "Fecha límite para que Vox decida si va en listas del PP"
+       ],
+       [
         "11 nov",
         "Huelga general por la vivienda"
        ],
@@ -220,13 +223,17 @@ window.AL_DIA = {
       [
        "EFE, vía Infobae",
        "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
+      ],
+      [
+       "elDiario.es",
+       "https://www.eldiario.es/politica/vox-sondea-acuerdo-pp-union-izquierdas-senado_1_13598276.html"
       ]
      ],
      "body": [
       "Quedan 41 días para las elecciones generales del 29 de noviembre y hoy cada partido ha movido ficha. Te lo contamos uno a uno, sin valorarlo.",
-      "PSOE: Pedro Sánchez tiene esta tarde un acto en Valladolid con Óscar Puente, y Margarita Robles será su número dos.",
+      "PSOE: Pedro Sánchez hace campaña en Valladolid con Óscar Puente, y Margarita Robles será su número dos. El PSOE ha firmado con el Frente Amplio una coalición para ir en listas unitarias.",
       "PP: Alberto Núñez Feijóo ha presentado su “Contrato con España”. Incluye construir un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes.",
-      "Vox: su comité ha ratificado las candidaturas, con Montse Lluis de número dos por Madrid. Santiago Abascal ha ofrecido al PP “algún entendimiento” en las listas al Senado.",
+      "Vox: su comité ratificó las candidaturas, con Montse Lluis de número dos por Madrid. Santiago Abascal ofreció al PP “algún acuerdo que proteja el Senado” frente a las listas unitarias de la izquierda. El PP, por ahora, no ha respondido.",
       "EH Bildu: Arnaldo Otegi ha presentado a sus candidatos y dice que bloqueará un gobierno al que llama “FeiVox”. A la izquierda del PSOE, el Frente Amplio, con Ada Colau al frente de su lista, y Podemos siguen sin acuerdo."
      ],
      "idea": [
@@ -238,40 +245,44 @@ window.AL_DIA = {
     {
      "id": "francia-toque-queda",
      "tag": "Mundo · Europa",
-     "title": "Francia impone toques de queda tras un fin de semana de saqueos",
-     "desc": "Más de 2.500 detenidos y casi 1.000 agentes heridos. El Gobierno no descarta el estado de emergencia.",
-     "what": "El primer ministro, Sébastien Lecornu, anuncia toques de queda parciales en varias ciudades tras los disturbios del fin de semana.",
+     "title": "Francia pone toque de queda en Lille, Lyon y barrios de París tras un fin de semana de saqueos",
+     "desc": "Más de 2.300 personas bajo custodia. El Gobierno dice que es “un milagro” que no haya habido muertos.",
+     "what": "El Gobierno francés impone toques de queda nocturnos en varias ciudades tras los disturbios y saqueos del fin de semana.",
      "body": [
-      "El primer ministro francés, Sébastien Lecornu, ha anunciado toques de queda “por territorios, parciales” después de un fin de semana en el que una protesta contra el coste de la vida acabó en disturbios y saqueos en varias ciudades.",
-      "El balance es serio: más de 2.500 detenidos y casi 1.000 policías y gendarmes heridos. Las cámaras de comercio hablan de más de 2.000 comercios afectados y daños de cientos de millones de euros.",
-      "Denain, cerca de la frontera con Bélgica, ya tiene toque de queda por la noche, y Marsella ha prohibido manifestarse por la tarde. La lista completa de ciudades se conocerá a lo largo del día.",
-      "Lecornu dice que prefiere esto a un estado de emergencia, aunque no lo descarta, y avisa de que no tolerará que los saqueos “se instalen”. Según EFE, también acusa a un movimiento de extrema izquierda de querer desestabilizar el país de cara a las presidenciales de 2027. En paralelo, los estudiantes de instituto llevan semanas movilizados para pedir mejoras en la educación."
+      "Francia ha impuesto toques de queda nocturnos tras un fin de semana en el que una protesta contra el coste de la vida acabó en disturbios y saqueos. El primer ministro, Sébastien Lecornu, dice que es “un milagro que no haya habido víctimas mortales”.",
+      "Dónde: en el norte, Lille, Douai, Wattignies y Denain, las noches del lunes y el martes. En París, en algunos barrios, como la plaza de la República y Les Halles, de 23:00 a 6:00. En Lyon, en el centro, de 21:00 a 6:00. Y en Niza, solo para menores, en el centro y el casco antiguo.",
+      "Hasta las 8 de la mañana del lunes había 2.331 personas bajo custodia policial. Según el Ministerio de Justicia, el 70 % son mayores de edad, y la Fiscalía pide prisión preventiva en más del 80 % de los casos. Doscientos investigadores revisan las cámaras para identificar a los saqueadores.",
+      "Lecornu culpa a la “extrema izquierda” de los disturbios de día y a la “delincuencia general” de los de noche, y no descarta el estado de emergencia. Para los trabajadores de los comercios afectados habrá paro parcial cubierto al 100 % desde el martes."
      ],
      "next": {
       "rows": [
        [
-        "Hoy",
-        "Se publica la lista de ciudades con toque de queda"
+        "Lun y mar",
+        "Toques de queda nocturnos en las ciudades señaladas"
        ],
        [
         "2027",
         "Elecciones presidenciales en Francia"
        ]
       ],
-      "note": "Italia también ha tenido disturbios este fin de semana, en Milán, y Giorgia Meloni ha convocado hoy una reunión por ello."
+      "note": "El Gobierno no descarta declarar el estado de emergencia si los disturbios siguen."
      },
      "src": [
       [
-       "El Tiempo",
-       "https://www.eltiempo.com/mundo/europa/protestas-en-francia-en-vivo-ultimas-noticias-de-los-disturbios-en-paris-detenidos-y-respuesta-del-presidente-emmanuel-macron-3594524"
+       "elDiarioAR",
+       "https://www.eldiarioar.com/mundo/gobierno-frances-anuncia-toques-queda-ciudades-disturbios-semana_1_13598493.html"
       ],
       [
-       "EFE, vía Infobae",
-       "https://www.infobae.com/america/agencias/2026/10/19/temas-del-dia-de-efe-internacional-del-lunes-19-de-octubre-1200-gmt/"
+       "Infobae",
+       "https://www.infobae.com/america/mundo/2026/10/19/francia-impone-toques-de-queda-parciales-tras-un-fin-de-semana-de-saqueos-masivos-y-casi-2400-detenidos/"
+      ],
+      [
+       "El Tiempo",
+       "https://www.eltiempo.com/mundo/europa/protestas-en-francia-en-vivo-ultimas-noticias-de-los-disturbios-en-paris-detenidos-y-respuesta-del-presidente-emmanuel-macron-3594524"
       ]
      ],
      "q": "¿Qué está pasando en Francia?",
-     "q2": "¿Por qué hay toques de queda en Francia?"
+     "q2": "¿Dónde hay toque de queda en Francia y por qué?"
     },
     {
      "id": "brasil-segunda-vuelta",
@@ -308,6 +319,56 @@ window.AL_DIA = {
      ],
      "q": "¿Qué pasa con las elecciones de Brasil?",
      "q2": "¿Quién va ganando en las elecciones de Brasil entre Lula y Flávio Bolsonaro?"
+    },
+    {
+     "id": "alberta-referendum",
+     "tag": "Mundo · América",
+     "title": "Alberta vota hoy si empieza el camino para separarse de Canadá",
+     "desc": "No es la independencia: es decidir si se prepara un segundo referéndum, este sí vinculante. Las encuestas dan amplia ventaja a quedarse.",
+     "what": "La provincia canadiense de Alberta vota en un referéndum no vinculante si su gobierno debe iniciar el proceso para una consulta de independencia.",
+     "body": [
+      "La provincia canadiense de Alberta vota hoy un referéndum con diez preguntas. La que más atención atrae es la última: si Alberta debe seguir siendo una provincia de Canadá o si su gobierno debe empezar el proceso legal para celebrar un referéndum de separación, esta vez vinculante.",
+      "Traducido: aunque gane la segunda opción, Alberta no se independiza. Solo arrancarían los pasos para votar más adelante, y esa segunda consulta podría no llegar a celebrarse nunca.",
+      "Las encuestas apuntan a que seguirá en Canadá: según el agregador The Writ, el 70 % quiere quedarse y el 22 % quiere iniciar el proceso."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Madrugada",
+        "Primeros resultados, empezando por la pregunta de la separación (en España, pasadas las 4:00)"
+       ],
+       [
+        "Hasta el 21 oct",
+        "Puede alargarse el recuento"
+       ],
+       [
+        "29 oct",
+        "Resultados oficiales"
+       ]
+      ]
+     },
+     "terms": [
+      [
+       "Ley de Claridad",
+       "Ley canadiense que permite al Parlamento federal decidir si la pregunta y la mayoría de un referéndum de separación son lo bastante claras antes de negociar nada."
+      ]
+     ],
+     "src": [
+      [
+       "The Rio Times",
+       "https://www.riotimesonline.com/alberta-referendum-explained-2026/"
+      ],
+      [
+       "Poliwave",
+       "https://www.poliwave.com/ca/ab/live/referendum-2026"
+      ],
+      [
+       "EFE Internacional, vía Infobae",
+       "https://www.infobae.com/america/agencias/2026/10/19/temas-del-dia-de-efe-internacional-del-lunes-19-de-octubre-1200-gmt/"
+      ]
+     ],
+     "q": "¿Qué está pasando en Alberta?",
+     "q2": "¿Se va a independizar Alberta de Canadá?"
     },
     {
      "id": "liga-clasico",
@@ -1146,16 +1207,16 @@ window.AL_DIA = {
   "hoy": [
    {
     "p": "PP",
-    "t": "Feijóo presenta su “Contrato con España”: un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes."
+    "t": "Feijóo presenta su “Contrato con España”: un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes. El PP no responde por ahora a la oferta de Vox para el Senado."
    },
    {
     "p": "PSOE",
-    "t": "Sánchez hace campaña esta tarde en Valladolid con Óscar Puente. Margarita Robles será su número dos. Anuncia 45 millones para unas 2.000 plazas de residencia universitaria.",
+    "t": "Sánchez hace campaña en Valladolid con Óscar Puente; Margarita Robles será su número dos. Anuncia 45 millones para unas 2.000 plazas de residencia universitaria. El PSOE ha firmado con el Frente Amplio una coalición para ir en listas unitarias.",
     "n": "residencias-universitarias"
    },
    {
     "p": "Vox",
-    "t": "Ratifica sus listas, con Montse Lluis de número dos por Madrid. Abascal ofrece al PP “algún entendimiento” en las candidaturas al Senado."
+    "t": "Ratifica sus listas, con Montse Lluis de número dos por Madrid. Abascal ofrece al PP “algún acuerdo que proteja el Senado” frente a las listas unitarias de la izquierda. Tiene hasta el 26 de octubre para decidir si se integra en listas del PP, se retira en algunas provincias o va por su cuenta."
    },
    {
     "p": "Sumar",
@@ -1163,7 +1224,7 @@ window.AL_DIA = {
    },
    {
     "p": "Frente Amplio",
-    "t": "Ada Colau, cabeza de lista, dice que intentaron “todo” para pactar con Podemos y pide dejar de hablar de ello."
+    "t": "Ha firmado una coalición con el PSOE para ir en listas unitarias. Ada Colau, su cabeza de lista, dice que intentaron “todo” para pactar con Podemos."
    },
    {
     "p": "Podemos",
@@ -1188,9 +1249,24 @@ window.AL_DIA = {
   ],
   "dardos": [
    {
+    "de": "Alberto Núñez Feijóo (PP)",
+    "a": "la izquierda radical",
+    "q": "Sobre los disturbios en Francia: “La violencia que está alentando la izquierda radical jamás es el camino para mejorar una nación”."
+   },
+   {
     "de": "Isabel Díaz Ayuso (PP)",
     "a": "Pedro Sánchez y la izquierda",
     "q": "Les acusa de “mandar escraches” contra ella y habla de “izquierda antidemocrática”."
+   },
+   {
+    "de": "Santiago Abascal (Vox)",
+    "a": "Pedro Sánchez",
+    "q": "Sobre las listas unitarias de la izquierda: “Actuaremos con altura de miras y haremos lo necesario para que España sea libre”."
+   },
+   {
+    "de": "Óscar Puente (PSOE)",
+    "a": "Javier Milei y la derecha",
+    "q": "Aprovecha la visita del presidente argentino a España: “La motosierra solo siega”."
    },
    {
     "de": "Pablo Iglesias (Podemos)",
@@ -1206,14 +1282,13 @@ window.AL_DIA = {
     "de": "Yolanda Díaz (Sumar)",
     "a": "Alberto Núñez Feijóo (PP)",
     "q": "Critica su propuesta de ley contra la okupación."
-   },
-   {
-    "de": "Santiago Abascal (Vox)",
-    "a": "PP",
-    "q": "No es un ataque: le ofrece “algún entendimiento” en las listas al Senado para que la izquierda no lo controle."
    }
   ],
   "calendario": [
+   [
+    "26 oct",
+    "Fecha límite para que Vox decida si se integra en listas del PP"
+   ],
    [
     "11 nov",
     "Huelga general por la vivienda"
@@ -1253,6 +1328,14 @@ window.AL_DIA = {
    [
     "EFE, vía Infobae",
     "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
+   ],
+   [
+    "elDiario.es",
+    "https://www.eldiario.es/politica/vox-sondea-acuerdo-pp-union-izquierdas-senado_1_13598276.html"
+   ],
+   [
+    "Córdoba BN",
+    "https://www.cordobabn.com/nacional/29n-puente-aprovecha-visita-milei-espana-hacer-pedagogia-advierte-motosierra-solo-siega/20261019200733271833.html"
    ]
   ]
  }
