@@ -14,9 +14,13 @@ Las noticias del día contadas claras y sin tono de partido. Prototipo en prueba
 1. Se actualiza `noticias.js` y se sube a GitHub.
 2. Netlify lo detecta, genera las páginas y publica en un minuto.
 
-## Antes de lanzar
+## Indexación
 
-En `scripts/build-pages.js` y en `index.html` hay un `noindex` para que Google no indexe la prueba. Al lanzar, poner `INDEXAR = true` y quitar la etiqueta `robots` de `index.html`.
+La web está abierta a Google y a los buscadores con IA (`INDEXAR = true` en `scripts/build-pages.js`). Para ocultarla otra vez, poner `INDEXAR = false` y añadir `<meta name="robots" content="noindex">` en `index.html`.
+
+## Cómo trabajamos
+
+`sobre/index.html`: fuentes, neutralidad, uso de IA, correcciones y privacidad.
 
 ## Analítica
 

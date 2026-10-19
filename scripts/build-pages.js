@@ -8,7 +8,7 @@ const path = require("path");
 const vm = require("vm");
 
 // Mientras sea una prueba, no queremos que Google lo indexe. Cambiar a true al lanzar.
-const INDEXAR = false;
+const INDEXAR = true;
 
 const root = path.join(__dirname, "..");
 const sandbox = { window: {} };
@@ -79,7 +79,7 @@ function page(it, day) {
   }
   if (faq.length > 1) parts.push(`<section class="faq"><h2>Preguntas rápidas</h2>${faq.slice(1).map((f) => `<h3>${esc(f[0])}</h3><p>${esc(f[1])}</p>`).join("")}</section>`);
 
-  const ld = [{ "@context": "https://schema.org", "@type": "NewsArticle", headline: it.title, description: it.desc, datePublished: day.iso, dateModified: (DATA.edicion && DATA.edicion.iso) || day.iso, inLanguage: "es-ES", articleSection: it.tag, publisher: { "@type": "Organization", name: "Al Día" }, isBasedOn: it.src.map((s) => s[1]) }];
+  const ld = [{ "@context": "https://schema.org", "@type": "NewsArticle", headline: it.title, description: it.desc, datePublished: day.iso, dateModified: (DATA.edicion && DATA.edicion.iso) || day.iso, inLanguage: "es-ES", articleSection: it.tag, publisher: { "@type": "Organization", name: "Al Día", url: SITE || undefined }, publishingPrinciples: SITE ? SITE + "/sobre/" : undefined, author: { "@type": "Organization", name: "Redacción de Al Día" }, isBasedOn: it.src.map((s) => s[1]) }];
   if (SITE) ld[0].mainEntityOfPage = SITE + url;
   if (faq.length) ld.push({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f[0], acceptedAnswer: { "@type": "Answer", text: f[1] } })) });
 
@@ -112,6 +112,7 @@ ${SITE ? `<meta property="og:url" content="${SITE + url}">` : ""}
 <p class="desc">${esc(it.desc)}</p>
 ${parts.join("\n")}
 <a class="cta" href="/#n-${esc(it.id)}">Abrir en Al Día y votar</a>
+<p class="links">Redacción de Al Día, con ayuda de IA y a partir de las fuentes enlazadas. <a href="/sobre/">Cómo hacemos Al Día</a> · ¿Ves un error? <a href="/sobre/#correcciones">Avísanos</a></p>
 </main>
 </body>
 </html>
@@ -120,7 +121,7 @@ ${parts.join("\n")}
 
 const outDir = path.join(root, "noticias");
 fs.rmSync(outDir, { recursive: true, force: true });
-const urls = ["/"];
+const urls = ["/", "/sobre/"];
 let n = 0;
 DATA.days.forEach((day) => day.items.forEach((it) => {
   const dir = path.join(outDir, it.id);
@@ -143,7 +144,7 @@ fs.writeFileSync(path.join(root, "robots.txt"),
 const llms = [
   "# Al Día",
   "",
-  "> Las noticias del día contadas claras y sin tono de partido: qué ha pasado, por qué importa y qué viene después. En español, para gente joven. Cada noticia cita sus fuentes.",
+  "> Las noticias del día contadas claras y sin tono de partido: qué ha pasado, por qué importa y qué viene después. En español, para gente joven. Cada noticia cita sus fuentes. Cómo trabajamos: " + SITE + "/sobre/",
   "",
   ...DATA.days.filter((d) => d.items.length).map((d) => [`## ${d.title}`, "", ...d.items.map((it) => `- [${it.q || it.title}](${SITE}/noticias/${it.id}/): ${it.desc}`), ""].join("\n")),
 ].join("\n");
