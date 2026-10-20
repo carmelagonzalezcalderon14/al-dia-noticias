@@ -1,16 +1,327 @@
 /* ¿Qué ha pasado? · contenido. Este es el único archivo que cambia en cada edición. */
 window.AL_DIA = {
  "edicion": {
-  "fecha": "Lunes 19 de octubre",
-  "actualizado": "19 oct 2026, 22:20",
-  "iso": "2026-10-19"
+  "fecha": "Martes 20 de octubre",
+  "iso": "2026-10-20",
+  "actualizado": "20 oct 2026, 10:45"
  },
  "days": [
   {
-   "key": "19",
+   "key": "20",
    "label": "Hoy",
-   "sub": "Lun 19",
-   "title": "Noticias de hoy, lunes 19 de octubre",
+   "sub": "Mar 20",
+   "title": "Noticias de hoy, martes 20 de octubre",
+   "iso": "2026-10-20",
+   "items": [
+    {
+     "id": "dana-20oct",
+     "tag": "España · Tiempo",
+     "title": "La DANA Adam pierde fuerza: se levantan los confinamientos y empieza la limpieza",
+     "desc": "Cuatro muertos, más de 2.000 personas evacuadas y casi 500 rescates en la Comunitat Valenciana. Hoy aún llueve fuerte en Baleares y Cataluña.",
+     "what": "La DANA Adam se debilita este martes tras dejar cuatro muertos y la tercera lluvia más intensa registrada en la Comunitat Valenciana.",
+     "body": [
+      "La DANA Adam pierde fuerza este martes. Durante la noche se levantaron los confinamientos que quedaban en Bellreguard, Daimús, Miramar, Oliva y Piles (Valencia) y en Xàbia, Pego y Els Poblets (Alicante). La Generalitat ha bajado la emergencia al nivel 1 y ha retirado a la UME.",
+      "El balance: cuatro muertos (dos en Oliva, uno en Sagunto y una mujer en Cabrera de Mar, Barcelona), 2.141 personas evacuadas y 496 rescatadas en la Comunitat Valenciana, según la Guardia Civil. El jefe de emergencias valenciano, Juan Carlos Valderrama, dice que es “la tercera lluvia más intensa registrada en la historia de la Comunidad Valenciana”.",
+      "Hoy empieza el achique de agua en sótanos y garajes, y siguen abiertos dos albergues, en Xàbia y Oliva. En Baleares hubo inundaciones, carreteras cortadas y vuelos desviados en Ibiza, y el Govern ha suspendido las clases por precaución."
+     ],
+     "idea": [
+      "En Pego cayeron 632 litros por metro cuadrado en 36 horas: es como si se acumularan 63 centímetros de agua, más o menos hasta la rodilla."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Hoy",
+        "Todavía lluvias fuertes por la mañana en Baleares y Cataluña"
+       ],
+       [
+        "Miércoles 21",
+        "La lluvia queda sobre todo en el norte y en las montañas de Canarias"
+       ]
+      ],
+      "note": "Con el suelo empapado, Protección Civil pide no cruzar ríos ni ramblas con agua aunque llueva menos."
+     },
+     "ctx": [
+      [
+       "19 oct: la DANA deja cuatro muertos",
+       "/noticias/dana-19oct/"
+      ]
+     ],
+     "src": [
+      [
+       "Libertad Digital (EFE)",
+       "https://www.libertaddigital.com/espana/2026-10-20/la-dana-adam-deja-al-menos-cuatro-muertos-mas-de-2-000-evacuados-y-lluvias-historicas-en-el-mediterraneo-7478799/"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-martes-20-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Cómo está la DANA hoy?",
+     "q2": "¿Siguen confinados los pueblos de Valencia por la DANA?"
+    },
+    {
+     "id": "feijoo-vox-senado",
+     "tag": "España · Elecciones",
+     "title": "Feijóo confirma que negocia con Vox para quedarse con el Senado",
+     "desc": "El objetivo es sumar tres quintos de la Cámara Alta. La izquierda irá con listas conjuntas al Senado.",
+     "what": "Alberto Núñez Feijóo confirma conversaciones con Vox para lograr una mayoría de tres quintos en el Senado tras el 29-N.",
+     "body": [
+      "Alberto Núñez Feijóo ha confirmado en la COPE que el PP está negociando con Vox de cara al Senado: “Estamos hablando y vamos a seguir hablando”. Dice que su compromiso es “no entregar el Senado al sanchismo y optar a los tres quintos”.",
+      "Por qué importa: con tres quintos del Senado (unos 160 senadores) se pueden bloquear o decidir nombramientos clave, como los de magistrados del Tribunal Constitucional. El mandato de varios de ellos está caducado desde diciembre de 2025.",
+      "Como ya ha pasado el plazo para registrar coaliciones, las opciones son que Vox vaya dentro de listas del PP o que retire candidatos en algunas provincias. Una fórmula que gana peso, según Infobae, es que el PP ceda a Vox senadores de los que eligen los parlamentos autonómicos. Vox tiene hasta el 26 de octubre.",
+      "Al otro lado, PSOE y Frente Amplio han pactado ir con listas conjuntas al Senado. Feijóo también presentó su “Contrato con España”, un decálogo de principios sin medidas concretas: “Me comprometo a cumplir”."
+     ],
+     "terms": [
+      [
+       "Senadores autonómicos",
+       "Además de los que se votan en las urnas, cada parlamento autonómico elige a sus propios senadores según su peso."
+      ]
+     ],
+     "next": {
+      "rows": [
+       [
+        "21–26 oct",
+        "Registro de candidaturas"
+       ],
+       [
+        "26 oct",
+        "Límite para que Vox decida si va en listas del PP"
+       ]
+      ]
+     },
+     "ctx": [
+      [
+       "19 oct: así va la precampaña",
+       "/noticias/precampana-29n/"
+      ]
+     ],
+     "src": [
+      [
+       "elDiario.es",
+       "https://www.eldiario.es/politica/feijoo-confirma-negociaciones-vox-buscar-mayoria-senado-les-permita-controlar-constitucional_1_13598996.html"
+      ],
+      [
+       "Infobae (directo)",
+       "https://www.infobae.com/espana/2026/10/20/elecciones-generales-29-n-en-directo-ultima-hora-de-los-sondeos-las-pensiones-la-ley-de-nietos-y-el-consejo-de-ministros/"
+      ],
+      [
+       "The Objective",
+       "https://theobjective.com/espana/politica/2026-10-20/feijoo-negociaciones-vox-senado-shanchismo/"
+      ]
+     ],
+     "q": "¿Van a pactar PP y Vox para el Senado?",
+     "q2": "¿Por qué es importante tener tres quintos del Senado?"
+    },
+    {
+     "id": "consejo-medidas-sociales",
+     "tag": "España · Economía",
+     "title": "El Gobierno aprueba un paquete social: viudedad para parejas no casadas y más protección por menopausia",
+     "desc": "También triplica el anticipo por impago de pensiones de alimentos, de 100 a 300 euros. Es uno de los últimos Consejos antes del 29-N.",
+     "what": "El Consejo de Ministros aprueba medidas de Seguridad Social y prestaciones sociales a seis semanas de las elecciones.",
+     "body": [
+      "El Consejo de Ministros aprueba este martes un paquete de medidas sociales. Las principales:",
+      "Las parejas que no estaban casadas pero tenían hijos en común podrán cobrar la pensión de viudedad. Se amplía la protección por incapacidad temporal por problemas asociados a la menopausia y en casos de violencia de género. Mejora la prestación para padres de menores con cáncer. Y el anticipo del Fondo de Garantía del Pago de Alimentos, para quien no cobra la pensión de alimentos que le corresponde, pasa de 100 a 300 euros.",
+      "Llega a seis semanas de las elecciones del 29 de noviembre. Además, el Gobierno destina 45 millones a crear unas 2.000 plazas en residencias universitarias, que anunció ayer."
+     ],
+     "src": [
+      [
+       "Infobae (directo)",
+       "https://www.infobae.com/espana/2026/10/20/elecciones-generales-29-n-en-directo-ultima-hora-de-los-sondeos-las-pensiones-la-ley-de-nietos-y-el-consejo-de-ministros/"
+      ],
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-martes-20-de-octubre-de-2026/"
+      ]
+     ],
+     "q": "¿Qué ha aprobado hoy el Consejo de Ministros?",
+     "q2": "¿Pueden cobrar la viudedad las parejas no casadas?",
+     "ctx": [
+      [
+       "19 oct: 45 millones para residencias universitarias",
+       "/noticias/residencias-universitarias/"
+      ]
+     ]
+    },
+    {
+     "id": "alberta-resultado",
+     "tag": "Mundo · América",
+     "title": "Alberta vota quedarse en Canadá: más del 76 % rechaza abrir el camino a la separación",
+     "desc": "Participación récord. La primera ministra, Danielle Smith, pide aceptar el resultado; los separatistas dicen que no se ha acabado.",
+     "what": "Los votantes de Alberta rechazan, con más de tres cuartas partes de los votos, iniciar un proceso hacia un referéndum de independencia.",
+     "body": [
+      "Alberta se queda en Canadá. Con los resultados provisionales, algo más de 1.005.000 personas votaron seguir en Canadá y unas 310.000 iniciar el camino hacia un referéndum de separación: alrededor del 76 % frente al 24 %.",
+      "La participación ha sido muy alta: más de 1,35 millones de votos, frente a unos 810.000 en las elecciones autonómicas de 2023. La primera ministra de Alberta, Danielle Smith, votó por quedarse y espera que todo el mundo acepte el resultado. Algunos líderes separatistas, como Jeff Rath, dicen que el tema no está cerrado.",
+      "Quedan por contar las otras nueve preguntas, sobre inmigración y sobre el poder del Gobierno federal. Smith dice que necesita que gane el sí en ellas para negociar con Ottawa."
+     ],
+     "idea": [
+      "Tres de cada cuatro votantes eligieron quedarse en Canadá."
+     ],
+     "next": {
+      "rows": [
+       [
+        "Miércoles 21",
+        "Resultados de las otras nueve preguntas"
+       ],
+       [
+        "29 oct",
+        "Resultados oficiales"
+       ]
+      ]
+     },
+     "ctx": [
+      [
+       "19 oct: Alberta vota",
+       "/noticias/alberta-referendum/"
+      ]
+     ],
+     "src": [
+      [
+       "Global News",
+       "https://globalnews.ca/news/12108827/alberta-referendum-result/"
+      ],
+      [
+       "CBC News",
+       "https://www.cbc.ca/news/canada/calgary/alberta-referendum-canada-remain-vote-9.7387871"
+      ],
+      [
+       "The Globe and Mail",
+       "https://www.theglobeandmail.com/canada/article-alberta-referendum-vote-2026-live-updates/"
+      ]
+     ],
+     "q": "¿Qué ha votado Alberta?",
+     "q2": "¿Alberta se separa de Canadá?"
+    },
+    {
+     "id": "francia-20oct",
+     "tag": "Mundo · Europa",
+     "title": "Noche tranquila en Francia: los toques de queda se repetirán donde haga falta",
+     "desc": "Ya son más de 2.500 detenidos por los disturbios del fin de semana. Macron descarta por ahora el estado de emergencia.",
+     "what": "Francia pasa una noche sin incidentes graves y el Gobierno mantiene toques de queda localizados.",
+     "body": [
+      "La noche del lunes al martes fue tranquila en Francia tras el fin de semana de disturbios y saqueos. El primer ministro, Sébastien Lecornu, lo atribuye a los toques de queda en zonas de París, Lyon, Burdeos, Lille y Niza, que “han contribuido a la tranquilidad de esta noche”.",
+      "Se repetirán este martes allí donde los prefectos, junto a los alcaldes, lo vean necesario. El ministro de Justicia, Gérald Darmanin, eleva a más de 2.513 los detenidos. Emmanuel Macron descarta, de momento, declarar el estado de emergencia."
+     ],
+     "ctx": [
+      [
+       "19 oct: toques de queda en Francia",
+       "/noticias/francia-toque-queda/"
+      ]
+     ],
+     "src": [
+      [
+       "EFE, vía Infobae",
+       "https://www.infobae.com/america/agencias/2026/10/20/una-noche-tranquila-en-francia-gracias-a-las-medidas-de-toque-de-queda-segun-lecornu/"
+      ],
+      [
+       "Infobae",
+       "https://www.infobae.com/america/mundo/2026/10/20/protestas-en-francia-el-gobierno-impondra-nuevos-toques-de-queda-localizados-para-este-martes-en-las-zonas-donde-sea-necesario/"
+      ]
+     ],
+     "q": "¿Siguen los disturbios en Francia?",
+     "q2": "¿Hay toque de queda hoy en Francia?"
+    },
+    {
+     "id": "tenis-ranking-viena",
+     "tag": "Deporte · Tenis",
+     "title": "Jódar, 11.º del mundo; Davidovich, 13.º. Y Alcaraz se apunta a Viena",
+     "desc": "El ranking ATP refleja la final española de Shanghái. Alcaraz juega Viena desde el 26 tras el aplazamiento del torneo de exhibición de Arabia Saudí.",
+     "what": "Rafael Jódar y Alejandro Davidovich suben en el ranking ATP tras Shanghái, y Carlos Alcaraz jugará el ATP 500 de Viena.",
+     "body": [
+      "El ranking ATP de este lunes ya recoge la final española de Shanghái. Rafael Jódar, de 20 años, sube al número 11, el mejor puesto de su carrera, y Alejandro Davidovich, campeón, salta al 13, también su mejor puesto. Jódar es ahora noveno en la carrera a las ATP Finals de Turín, justo en el límite para entrar.",
+      "Carlos Alcaraz, que cayó en tercera ronda de Shanghái ante el belga Zizou Bergs, jugará el ATP 500 de Viena, que empieza el 26 de octubre. No estaba previsto: lo añadió después de que se aplazara el Six Kings Slam, una exhibición en Arabia Saudí, tras los ataques de los hutíes de Yemen contra el país. Los organizadores quieren celebrarla del 27 al 30 de diciembre."
+     ],
+     "next": {
+      "rows": [
+       [
+        "26 oct",
+        "Empieza el ATP 500 de Viena"
+       ],
+       [
+        "2–8 nov",
+        "Masters 1000 de París"
+       ],
+       [
+        "15–22 nov",
+        "ATP Finals en Turín"
+       ]
+      ]
+     },
+     "ctx": [
+      [
+       "18 oct: final española en Shanghái",
+       "/noticias/shanghai-davidovich-jodar/"
+      ],
+      [
+       "13 oct: los hutíes alcanzan Aramco",
+       "/noticias/aramco-dhahran/"
+      ]
+     ],
+     "src": [
+      [
+       "ATP Tour",
+       "https://www.atptour.com/en/news/jodar-davidovich-fokina-shanghai-2026-final"
+      ],
+      [
+       "ARY News (AFP)",
+       "https://arynews.tv/alcaraz-to-play-in-vienna-after-saudi-postponement"
+      ],
+      [
+       "Punto de Break",
+       "https://www.puntodebreak.com/en/2026/10/15/alcaraz-adds-the-vienna-tournament-to-his-calendar"
+      ]
+     ],
+     "q": "¿En qué puesto está Jódar en el ranking ATP?",
+     "q2": "¿Por qué juega Alcaraz en Viena?"
+    },
+    {
+     "id": "solden-arranque",
+     "tag": "Deporte · Esquí",
+     "title": "Vuelve el esquí: la Copa del Mundo arranca este fin de semana en Sölden",
+     "desc": "Gigante femenino el sábado 24 y masculino el domingo 25 en el glaciar austriaco. En marzo habrá Copa del Mundo en Andorra.",
+     "what": "La Copa del Mundo de esquí alpino 2026-27 empieza el 24 y 25 de octubre en Sölden (Austria).",
+     "body": [
+      "La temporada de esquí alpino empieza este fin de semana en el glaciar de Sölden, en Austria, como cada año. El sábado 24 se corre el eslalon gigante femenino y el domingo 25 el masculino.",
+      "Para tenerlo en el radar: la Federación Internacional de Esquí (FIS) incluyó a Andorra en el calendario. Grandvalira, en Soldeu, acogerá un fin de semana de Copa del Mundo femenina el 6 y 7 de marzo de 2027, con gigante y eslalon."
+     ],
+     "terms": [
+      [
+       "Eslalon gigante",
+       "Prueba de esquí alpino con puertas más separadas que el eslalon y menos que el súper gigante. Se decide sumando dos mangas."
+      ]
+     ],
+     "next": {
+      "rows": [
+       [
+        "Sáb 24",
+        "Gigante femenino en Sölden"
+       ],
+       [
+        "Dom 25",
+        "Gigante masculino en Sölden"
+       ],
+       [
+        "6–7 mar 2027",
+        "Copa del Mundo femenina en Grandvalira (Andorra)"
+       ]
+      ]
+     },
+     "src": [
+      [
+       "Nevasport",
+       "https://www.nevasport.com/noticias/art/70808/la-fis-incluye-finalmente-a-andorra-en-la-copa-del-mundo-de-esqui-de-2027/"
+      ]
+     ],
+     "single": true,
+     "q": "¿Cuándo empieza la Copa del Mundo de esquí?",
+     "q2": "¿Cuándo es la carrera de Sölden 2026?"
+    }
+   ]
+  },
+  {
+   "key": "19",
+   "label": "Lun 19",
+   "sub": "Lunes",
+   "title": "Lunes 19 de octubre",
    "items": [
     {
      "id": "dana-19oct",
@@ -231,7 +542,7 @@ window.AL_DIA = {
      ],
      "body": [
       "Quedan 41 días para las elecciones generales del 29 de noviembre y hoy cada partido ha movido ficha. Te lo contamos uno a uno, sin valorarlo.",
-      "PSOE: Pedro Sánchez hace campaña en Valladolid con Óscar Puente, y Margarita Robles será su número dos. El PSOE ha firmado con el Frente Amplio una coalición para ir en listas unitarias.",
+      "PSOE: Pedro Sánchez hace campaña en Valladolid con Óscar Puente, y Margarita Robles será su número dos. El PSOE ha firmado con el Frente Amplio una coalición para ir con listas conjuntas al Senado.",
       "PP: Alberto Núñez Feijóo ha presentado su “Contrato con España”. Incluye construir un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes.",
       "Vox: su comité ratificó las candidaturas, con Montse Lluis de número dos por Madrid. Santiago Abascal ofreció al PP “algún acuerdo que proteja el Senado” frente a las listas unitarias de la izquierda. El PP, por ahora, no ha respondido.",
       "EH Bildu: Arnaldo Otegi ha presentado a sus candidatos y dice que bloqueará un gobierno al que llama “FeiVox”. A la izquierda del PSOE, el Frente Amplio, con Ada Colau al frente de su lista, y Podemos siguen sin acuerdo."
@@ -1616,65 +1927,6 @@ window.AL_DIA = {
      "q2": "¿Cuántos títulos lleva Alcaraz en 2026?"
     }
    ]
-  },
-  {
-   "key": "5",
-   "label": "Lun 5",
-   "sub": "Lunes",
-   "title": "Lunes 5 de octubre",
-   "iso": "2026-10-05",
-   "items": [
-    {
-     "id": "sanchez-convoca-29n",
-     "tag": "España · Elecciones",
-     "title": "Sánchez adelanta las elecciones generales al 29 de noviembre",
-     "desc": "Lo anuncia tres días después de que el Congreso tumbara sus dos decretos de vivienda. Quedan 55 días.",
-     "what": "Pedro Sánchez convoca elecciones generales anticipadas para el 29 de noviembre de 2026.",
-     "body": [
-      "Pedro Sánchez ha anunciado elecciones generales anticipadas para el domingo 29 de noviembre. Lo hizo en una comparecencia de unos nueve minutos en La Moncloa, sin preguntas de los periodistas.",
-      "El detonante fue el viernes 2 de octubre, cuando el Congreso tumbó los dos decretos de vivienda del Gobierno. Sánchez lo resumió así: “Para hacer más necesitamos renovar y ampliar el apoyo de la gente”. Reconoció “insatisfacción” en parte de sus votantes y pidió una mayoría “mucho más amplia”.",
-      "Traducido: la legislatura debía durar hasta 2027, pero el Gobierno no tenía apoyos suficientes para sacar adelante sus leyes, y Sánchez prefiere volver a las urnas antes.",
-      "Las encuestas privadas de estos días dan ventaja a PP y Vox. Por ejemplo, la de Winston para Artículo 14 les da juntos 204 escaños, por encima de los 176 de la mayoría absoluta."
-     ],
-     "idea": [
-      "55 días de margen es menos de dos meses: menos de lo que dura un cuatrimestre de la universidad."
-     ],
-     "next": {
-      "rows": [
-       [
-        "6 oct",
-        "El BOE publica la disolución de las Cortes y la convocatoria"
-       ],
-       [
-        "13 nov",
-        "Empieza la campaña oficial"
-       ],
-       [
-        "29 nov",
-        "Elecciones generales"
-       ]
-      ]
-     },
-     "terms": [
-      [
-       "Diputación Permanente",
-       "Grupo reducido de diputados que sigue funcionando cuando las Cortes están disueltas. Puede, por ejemplo, convalidar decretos."
-      ]
-     ],
-     "src": [
-      [
-       "Artículo 14",
-       "https://www.articulo14.es/politica/pedro-sanchez-convoca-elecciones-generales-anticipadas-el-29-de-noviembre-20261005.html"
-      ],
-      [
-       "EFE, vía Infobae",
-       "https://www.infobae.com/espana/agencias/2026/10/05/temas-del-dia-de-efe-espana-del-martes-6-de-octubre-de-2026/"
-      ]
-     ],
-     "q": "¿Por qué hay elecciones el 29 de noviembre?",
-     "q2": "¿Por qué ha adelantado Pedro Sánchez las elecciones?"
-    }
-   ]
   }
  ],
  "week": [
@@ -1714,40 +1966,41 @@ window.AL_DIA = {
   "hoy": [
    {
     "p": "PP",
-    "t": "Feijóo presenta su “Contrato con España”: un millón de viviendas, ordenar la inmigración, garantizar la subida de las pensiones y reforzar la separación de poderes. El PP no responde por ahora a la oferta de Vox para el Senado."
+    "t": "Feijóo confirma que negocia con Vox para sumar tres quintos del Senado: “Estamos hablando y vamos a seguir hablando”. Presenta su “Contrato con España”, un decálogo de principios.",
+    "n": "feijoo-vox-senado"
    },
    {
     "p": "PSOE",
-    "t": "Sánchez hace campaña en Valladolid con Óscar Puente; Margarita Robles será su número dos. Anuncia 45 millones para unas 2.000 plazas de residencia universitaria. El PSOE ha firmado con el Frente Amplio una coalición para ir en listas unitarias.",
-    "n": "residencias-universitarias"
+    "t": "El Consejo de Ministros aprueba un paquete social: viudedad para parejas no casadas con hijos, más protección por menopausia y anticipo de alimentos de 300 euros. Va con listas conjuntas al Senado con el Frente Amplio.",
+    "n": "consejo-medidas-sociales"
    },
    {
     "p": "Vox",
-    "t": "Ratifica sus listas, con Montse Lluis de número dos por Madrid. Abascal ofrece al PP “algún acuerdo que proteja el Senado” frente a las listas unitarias de la izquierda. Tiene hasta el 26 de octubre para decidir si se integra en listas del PP, se retira en algunas provincias o va por su cuenta."
+    "t": "Abascal tiene acto en Ponferrada. Tiene hasta el 26 de octubre para decidir si va en listas del PP o retira candidatos al Senado en algunas provincias."
    },
    {
     "p": "Sumar",
-    "t": "Yolanda Díaz critica la ley contra la okupación que propone Feijóo."
-   },
-   {
-    "p": "Frente Amplio",
-    "t": "Ha firmado una coalición con el PSOE para ir en listas unitarias. Ada Colau, su cabeza de lista, dice que intentaron “todo” para pactar con Podemos."
-   },
-   {
-    "p": "Podemos",
-    "t": "Pablo Iglesias acusa al Frente Amplio de intentar “matar” a Podemos."
-   },
-   {
-    "p": "ERC",
-    "t": "Gabriel Rufián publica un libro en el que defiende que ERC presione al PSOE desde el Gobierno."
-   },
-   {
-    "p": "Junts",
     "t": "Sin novedades destacadas hoy."
    },
    {
+    "p": "Frente Amplio",
+    "t": "Emilio Delgado encabezará la lista por Madrid, con Tesh Sidi de número dos; Mónica García no se presenta a las generales. Colau dice que Podemos no quiso negociar de verdad."
+   },
+   {
+    "p": "Podemos",
+    "t": "Irene Montero atribuye la ruptura con el Frente Amplio a “desacuerdos políticos”. Solo irán juntos en Canarias y la Comunitat Valenciana."
+   },
+   {
+    "p": "ERC",
+    "t": "Sin novedades destacadas hoy."
+   },
+   {
+    "p": "Junts",
+    "t": "Puigdemont, ya sin orden de detención, se suma a la campaña. Laura Borràs dice que no volverá a Cataluña antes del 29-N porque quiere un “regreso de país”."
+   },
+   {
     "p": "EH Bildu",
-    "t": "Otegi presenta sus candidatos y dice que bloqueará un gobierno al que llama “FeiVox”."
+    "t": "Sin novedades destacadas hoy."
    },
    {
     "p": "PNV",
@@ -1757,44 +2010,32 @@ window.AL_DIA = {
   "dardos": [
    {
     "de": "Alberto Núñez Feijóo (PP)",
-    "a": "la izquierda radical",
-    "q": "Sobre los disturbios en Francia: “La violencia que está alentando la izquierda radical jamás es el camino para mejorar una nación”."
+    "a": "el PSOE",
+    "q": "“Tenemos el compromiso de no entregar el Senado al sanchismo y optar a los tres quintos”."
    },
    {
-    "de": "Isabel Díaz Ayuso (PP)",
-    "a": "Pedro Sánchez y la izquierda",
-    "q": "Les acusa de “mandar escraches” contra ella y habla de “izquierda antidemocrática”."
+    "de": "Ada Colau (Frente Amplio)",
+    "a": "Podemos",
+    "q": "Dice que Podemos nunca quiso negociar de verdad una lista conjunta."
    },
    {
-    "de": "Santiago Abascal (Vox)",
-    "a": "Pedro Sánchez",
-    "q": "Sobre las listas unitarias de la izquierda: “Actuaremos con altura de miras y haremos lo necesario para que España sea libre”."
-   },
-   {
-    "de": "Óscar Puente (PSOE)",
-    "a": "Javier Milei y la derecha",
-    "q": "Aprovecha la visita del presidente argentino a España: “La motosierra solo siega”."
-   },
-   {
-    "de": "Pablo Iglesias (Podemos)",
+    "de": "Irene Montero (Podemos)",
     "a": "Frente Amplio",
-    "q": "Acusa al Frente Amplio de intentar “matar” a Podemos."
-   },
-   {
-    "de": "Arnaldo Otegi (EH Bildu)",
-    "a": "PP y Vox",
-    "q": "Dice que bloqueará un posible gobierno de los dos, al que llama “FeiVox”."
-   },
-   {
-    "de": "Yolanda Díaz (Sumar)",
-    "a": "Alberto Núñez Feijóo (PP)",
-    "q": "Critica su propuesta de ley contra la okupación."
+    "q": "Atribuye la ruptura a “desacuerdos políticos” con el espacio que antes era Sumar."
    }
   ],
   "calendario": [
    [
+    "21–26 oct",
+    "Registro de candidaturas al Congreso y al Senado"
+   ],
+   [
     "26 oct",
     "Fecha límite para que Vox decida si se integra en listas del PP"
+   ],
+   [
+    "3 nov",
+    "El BOE publica las candidaturas definitivas"
    ],
    [
     "11 nov",
@@ -1822,6 +2063,8 @@ window.AL_DIA = {
    ]
   ],
   "relacionadas": [
+   "feijoo-vox-senado",
+   "consejo-medidas-sociales",
    "precampana-29n",
    "vivienda-decretos",
    "huelga-11n",
@@ -1834,20 +2077,20 @@ window.AL_DIA = {
   ],
   "src": [
    [
-    "El Español (directo)",
-    "https://www.elespanol.com/espana/20261019/elecciones-generales-directo-ultima-hora-pedro-sanchez-gobierno-actos-psoe-pp-vox-voto-correo-sondeos-encuestas-espana-2026-partidos/1003744425383_10.html"
-   ],
-   [
-    "EFE, vía Infobae",
-    "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-lunes-19-de-octubre-de-2026-1400-horas/"
+    "Infobae (directo)",
+    "https://www.infobae.com/espana/2026/10/20/elecciones-generales-29-n-en-directo-ultima-hora-de-los-sondeos-las-pensiones-la-ley-de-nietos-y-el-consejo-de-ministros/"
    ],
    [
     "elDiario.es",
-    "https://www.eldiario.es/politica/vox-sondea-acuerdo-pp-union-izquierdas-senado_1_13598276.html"
+    "https://www.eldiario.es/politica/feijoo-confirma-negociaciones-vox-buscar-mayoria-senado-les-permita-controlar-constitucional_1_13598996.html"
    ],
    [
-    "Córdoba BN",
-    "https://www.cordobabn.com/nacional/29n-puente-aprovecha-visita-milei-espana-hacer-pedagogia-advierte-motosierra-solo-siega/20261019200733271833.html"
+    "EFE, vía Infobae",
+    "https://www.infobae.com/espana/agencias/2026/10/19/temas-del-dia-de-efe-espana-del-martes-20-de-octubre-de-2026/"
+   ],
+   [
+    "Catalunya Press",
+    "https://www.catalunyapress.es/articulo/politica-catalunya/2026-10-13/6050035-borrs-puigdemont-no-volvera-antes-29n-porque-quiere-regreso-pais"
    ]
   ]
  },

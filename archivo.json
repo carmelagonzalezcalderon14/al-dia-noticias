@@ -1,1 +1,59 @@
-[]
+[
+ {
+  "key": "5",
+  "title": "Lunes 5 de octubre",
+  "iso": "2026-10-05",
+  "items": [
+   {
+    "id": "sanchez-convoca-29n",
+    "tag": "España · Elecciones",
+    "title": "Sánchez adelanta las elecciones generales al 29 de noviembre",
+    "desc": "Lo anuncia tres días después de que el Congreso tumbara sus dos decretos de vivienda. Quedan 55 días.",
+    "what": "Pedro Sánchez convoca elecciones generales anticipadas para el 29 de noviembre de 2026.",
+    "body": [
+     "Pedro Sánchez ha anunciado elecciones generales anticipadas para el domingo 29 de noviembre. Lo hizo en una comparecencia de unos nueve minutos en La Moncloa, sin preguntas de los periodistas.",
+     "El detonante fue el viernes 2 de octubre, cuando el Congreso tumbó los dos decretos de vivienda del Gobierno. Sánchez lo resumió así: “Para hacer más necesitamos renovar y ampliar el apoyo de la gente”. Reconoció “insatisfacción” en parte de sus votantes y pidió una mayoría “mucho más amplia”.",
+     "Traducido: la legislatura debía durar hasta 2027, pero el Gobierno no tenía apoyos suficientes para sacar adelante sus leyes, y Sánchez prefiere volver a las urnas antes.",
+     "Las encuestas privadas de estos días dan ventaja a PP y Vox. Por ejemplo, la de Winston para Artículo 14 les da juntos 204 escaños, por encima de los 176 de la mayoría absoluta."
+    ],
+    "idea": [
+     "55 días de margen es menos de dos meses: menos de lo que dura un cuatrimestre de la universidad."
+    ],
+    "next": {
+     "rows": [
+      [
+       "6 oct",
+       "El BOE publica la disolución de las Cortes y la convocatoria"
+      ],
+      [
+       "13 nov",
+       "Empieza la campaña oficial"
+      ],
+      [
+       "29 nov",
+       "Elecciones generales"
+      ]
+     ]
+    },
+    "terms": [
+     [
+      "Diputación Permanente",
+      "Grupo reducido de diputados que sigue funcionando cuando las Cortes están disueltas. Puede, por ejemplo, convalidar decretos."
+     ]
+    ],
+    "src": [
+     [
+      "Artículo 14",
+      "https://www.articulo14.es/politica/pedro-sanchez-convoca-elecciones-generales-anticipadas-el-29-de-noviembre-20261005.html"
+     ],
+     [
+      "EFE, vía Infobae",
+      "https://www.infobae.com/espana/agencias/2026/10/05/temas-del-dia-de-efe-espana-del-martes-6-de-octubre-de-2026/"
+     ]
+    ],
+    "q": "¿Por qué hay elecciones el 29 de noviembre?",
+    "q2": "¿Por qué ha adelantado Pedro Sánchez las elecciones?"
+   }
+  ]
+ }
+]
